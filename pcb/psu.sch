@@ -4,12 +4,12 @@ EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 7
+Sheet 2 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-06"
+Date "2018-11-07"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
-Comment1 ""
+Comment1 "Power supply"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -1187,21 +1187,21 @@ Wire Wire Line
 	1350 7450 1350 7550
 Connection ~ 7000 10250
 $Sheet
-S 13450 8750 850  250 
+S 14950 9450 850  250 
 U 5C5888E2
 F0 "MCU decoupling" 50
 F1 "mcu-decoupling.sch" 50
-F2 "3V3" I L 13450 8800 50 
-F3 "GND" I L 13450 8900 50 
+F2 "3V3" I L 14950 9500 50 
+F3 "GND" I L 14950 9600 50 
 $EndSheet
-Text Label 13300 8800 2    50   ~ 0
+Text Label 14800 9500 2    50   ~ 0
 3V3
 Wire Wire Line
-	13300 8800 13450 8800
-Text Label 13300 8900 2    50   ~ 0
+	14800 9500 14950 9500
+Text Label 14800 9600 2    50   ~ 0
 GND
 Wire Wire Line
-	13300 8900 13450 8900
+	14800 9600 14950 9600
 Wire Wire Line
 	7000 8050 7100 8050
 Text Label 7000 7950 2    50   ~ 0
@@ -1285,18 +1285,768 @@ Wire Wire Line
 	8400 8550 8300 8550
 Wire Wire Line
 	8300 8650 8400 8650
-Text Notes 6050 2550 0    50   ~ 0
-TODO: SMPS stuff
+Text Notes 5900 2750 0    50   ~ 0
+SMPS input caps
 Text HLabel 2650 7350 2    50   Output ~ 0
 GND
-Text HLabel 1300 7350 0    50   Output ~ 0
+Text HLabel 1500 3200 0    50   Output ~ 0
 3V3
-Text HLabel 4100 8450 0    50   Output ~ 0
+Text HLabel 1500 5150 0    50   Output ~ 0
 1V8
 $Sheet
-S 13450 9300 850  400 
+S 13450 8800 900  1000
 U 5BF920D0
 F0 "FPGA decoupling" 50
 F1 "fpga-decoupling.sch" 50
+F2 "1V0" I L 13450 8850 50 
+F3 "GND" I L 13450 9250 50 
+F4 "1V8" I L 13450 8950 50 
+F5 "3V3" I L 13450 9150 50 
+F6 "2V5" I L 13450 9050 50 
 $EndSheet
+Text Label 13300 9250 2    50   ~ 0
+GND
+Text Label 13300 9150 2    50   ~ 0
+3V3
+Text Label 13300 9050 2    50   ~ 0
+2V5
+Text Label 13300 8950 2    50   ~ 0
+1V8
+Text Label 13300 8850 2    50   ~ 0
+1V0
+Wire Wire Line
+	13300 8850 13450 8850
+Wire Wire Line
+	13450 8950 13300 8950
+Wire Wire Line
+	13300 9050 13450 9050
+Wire Wire Line
+	13450 9150 13300 9150
+Wire Wire Line
+	13300 9250 13450 9250
+Text Label 2550 6750 2    50   ~ 0
+GND
+Wire Wire Line
+	2550 6750 2700 6750
+Text Label 2550 6350 2    50   ~ 0
+5V0
+Wire Wire Line
+	2550 6350 2700 6350
+Text Label 4150 6550 0    50   ~ 0
+GND
+Wire Wire Line
+	4150 6550 4000 6550
+Text Label 4150 6650 0    50   ~ 0
+5V0
+Wire Wire Line
+	4150 6650 4000 6650
+Text Label 4150 6450 0    50   ~ 0
+PGOOD
+$Comp
+L device:R R26
+U 1 1 5C14D062
+P 4650 6300
+F 0 "R26" H 4720 6346 50  0000 L CNN
+F 1 "1K" H 4720 6255 50  0000 L CNN
+F 2 "" V 4580 6300 50  0001 C CNN
+F 3 "" H 4650 6300 50  0001 C CNN
+	1    4650 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 6450 4650 6450
+Text Label 4650 6150 0    50   ~ 0
+3V3
+$Comp
+L conn:CONN_01X01 TP2
+U 1 1 5C1887D2
+P 5050 6450
+F 0 "TP2" H 5128 6491 50  0000 L CNN
+F 1 "TESTPAD" H 5128 6400 50  0000 L CNN
+F 2 "" H 5050 6450 50  0001 C CNN
+F 3 "" H 5050 6450 50  0001 C CNN
+	1    5050 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 6450 4650 6450
+Connection ~ 4650 6450
+Text Label 4150 6350 0    50   ~ 0
+5V0
+Wire Wire Line
+	4150 6350 4000 6350
+$Comp
+L conn:CONN_01X01 TP3
+U 1 1 5C1FEFFC
+P 5050 6750
+F 0 "TP3" H 5128 6791 50  0000 L CNN
+F 1 "TESTPAD" H 5128 6700 50  0000 L CNN
+F 2 "" H 5050 6750 50  0001 C CNN
+F 3 "" H 5050 6750 50  0001 C CNN
+	1    5050 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 6750 4350 6750
+Text HLabel 4350 6850 2    50   Output ~ 0
+PSU_TEMP
+Wire Wire Line
+	4350 6850 4350 6750
+Connection ~ 4350 6750
+Wire Wire Line
+	4350 6750 4000 6750
+Text Label 2500 850  2    50   ~ 0
+5V0
+Wire Wire Line
+	2500 850  2600 850 
+Wire Wire Line
+	2600 850  2600 950 
+Wire Wire Line
+	2600 950  2700 950 
+Connection ~ 2600 850 
+Wire Wire Line
+	2600 850  2700 850 
+$Comp
+L passive-azonenberg:INDUCTOR_PWROUT L1
+U 1 1 5C30695B
+P 1800 1150
+F 0 "L1" V 1993 1150 40  0000 C CNN
+F 1 "SPM6530T-2R2M" V 1917 1150 40  0000 C CNN
+F 2 "" H 1800 1150 60  0000 C CNN
+F 3 "" H 1800 1150 60  0000 C CNN
+	1    1800 1150
+	0    -1   -1   0   
+$EndComp
+Text Label 2300 1150 0    50   ~ 0
+1V0_SW
+Wire Wire Line
+	2100 1150 2700 1150
+Text Label 2600 1250 2    50   ~ 0
+1V0_FB
+Wire Wire Line
+	2600 1250 2700 1250
+Text Label 2500 5450 2    50   ~ 0
+5V0
+Wire Wire Line
+	2500 5450 2600 5450
+Wire Wire Line
+	2600 5450 2600 5550
+Wire Wire Line
+	2600 5550 2700 5550
+Connection ~ 2600 5450
+Wire Wire Line
+	2600 5450 2700 5450
+$Comp
+L passive-azonenberg:INDUCTOR_PWROUT L5
+U 1 1 5C43EA75
+P 1800 5750
+F 0 "L5" V 1993 5750 40  0000 C CNN
+F 1 "NRS5030T2R2NMGJ" V 1917 5750 40  0000 C CNN
+F 2 "" H 1800 5750 60  0000 C CNN
+F 3 "" H 1800 5750 60  0000 C CNN
+	1    1800 5750
+	0    -1   -1   0   
+$EndComp
+Text Label 2300 5750 0    50   ~ 0
+2V5_SW
+Wire Wire Line
+	2100 5750 2700 5750
+Text Label 2600 5850 2    50   ~ 0
+2V5_FB
+Wire Wire Line
+	2600 5850 2700 5850
+Text Label 2500 4850 2    50   ~ 0
+5V0
+Wire Wire Line
+	2500 4850 2600 4850
+Wire Wire Line
+	2600 4850 2600 4950
+Wire Wire Line
+	2600 4950 2700 4950
+Connection ~ 2600 4850
+Wire Wire Line
+	2600 4850 2700 4850
+$Comp
+L passive-azonenberg:INDUCTOR_PWROUT L4
+U 1 1 5C4806D9
+P 1800 5150
+F 0 "L4" V 1993 5150 40  0000 C CNN
+F 1 "NRS5030T2R2NMGJ" V 1917 5150 40  0000 C CNN
+F 2 "" H 1800 5150 60  0000 C CNN
+F 3 "" H 1800 5150 60  0000 C CNN
+	1    1800 5150
+	0    -1   -1   0   
+$EndComp
+Text Label 2300 5150 0    50   ~ 0
+1V8_SW
+Wire Wire Line
+	2100 5150 2700 5150
+Text Label 2600 5250 2    50   ~ 0
+1V8_FB
+Wire Wire Line
+	2600 5250 2700 5250
+Text Label 2500 4200 2    50   ~ 0
+5V0
+Wire Wire Line
+	2500 4200 2600 4200
+Wire Wire Line
+	2600 4200 2600 4300
+Wire Wire Line
+	2600 4300 2700 4300
+Connection ~ 2600 4200
+Wire Wire Line
+	2600 4200 2700 4200
+$Comp
+L passive-azonenberg:INDUCTOR_PWROUT L3
+U 1 1 5C4C3320
+P 1800 4500
+F 0 "L3" V 1993 4500 40  0000 C CNN
+F 1 "NRS5030T2R2NMGJ" V 1917 4500 40  0000 C CNN
+F 2 "" H 1800 4500 60  0000 C CNN
+F 3 "" H 1800 4500 60  0000 C CNN
+	1    1800 4500
+	0    -1   -1   0   
+$EndComp
+Text Label 2300 4500 0    50   ~ 0
+1V2_SW
+Wire Wire Line
+	2100 4500 2700 4500
+Text Label 2600 4600 2    50   ~ 0
+1V2_FB
+Wire Wire Line
+	2600 4600 2700 4600
+Text Label 2500 2900 2    50   ~ 0
+5V0
+Wire Wire Line
+	2500 2900 2600 2900
+Wire Wire Line
+	2600 2900 2600 3000
+Wire Wire Line
+	2600 3000 2700 3000
+Connection ~ 2600 2900
+Wire Wire Line
+	2600 2900 2700 2900
+$Comp
+L passive-azonenberg:INDUCTOR_PWROUT L2
+U 1 1 5C50A8D8
+P 1800 3200
+F 0 "L2" V 1993 3200 40  0000 C CNN
+F 1 "NR6028T2R2N" V 1917 3200 40  0000 C CNN
+F 2 "" H 1800 3200 60  0000 C CNN
+F 3 "" H 1800 3200 60  0000 C CNN
+	1    1800 3200
+	0    -1   -1   0   
+$EndComp
+Text Label 2300 3200 0    50   ~ 0
+3V3_SW
+Wire Wire Line
+	2100 3200 2700 3200
+Text Label 2600 3300 2    50   ~ 0
+3V3_FB
+Wire Wire Line
+	2600 3300 2700 3300
+Text Label 2500 3550 2    50   ~ 0
+GND
+Wire Wire Line
+	2500 3550 2700 3550
+Text Label 2500 3650 2    50   ~ 0
+5V0
+Wire Wire Line
+	2500 3650 2700 3650
+Text Label 2500 3850 2    50   ~ 0
+3V3_SW
+Wire Wire Line
+	2500 3850 2700 3850
+Text Label 2500 3950 2    50   ~ 0
+5V0
+Wire Wire Line
+	2500 3950 2700 3950
+Text Label 2500 2200 2    50   ~ 0
+GND
+Wire Wire Line
+	2500 2200 2700 2200
+Text Label 2500 2300 2    50   ~ 0
+5V0
+Wire Wire Line
+	2500 2300 2700 2300
+Text Label 2500 2500 2    50   ~ 0
+1V0_SW
+Wire Wire Line
+	2500 2500 2700 2500
+Text Label 2500 2600 2    50   ~ 0
+5V0
+Wire Wire Line
+	2500 2600 2700 2600
+Text Label 2500 1500 2    50   ~ 0
+GND
+Wire Wire Line
+	2500 1500 2700 1500
+Text Label 2500 1600 2    50   ~ 0
+5V0
+Wire Wire Line
+	2500 1600 2700 1600
+Text Label 2500 1800 2    50   ~ 0
+1V0_SW
+Wire Wire Line
+	2500 1800 2700 1800
+Text Label 2500 1900 2    50   ~ 0
+5V0
+Wire Wire Line
+	2500 1900 2700 1900
+Text Label 1300 7350 2    50   ~ 0
+3V3
+Text Label 4100 8450 2    50   ~ 0
+1V8
+Text HLabel 1500 5750 0    50   Output ~ 0
+2V5
+Text HLabel 1500 4500 0    50   Output ~ 0
+1V2
+Text HLabel 1500 1150 0    50   Output ~ 0
+1V0
+$Comp
+L device:R R29
+U 1 1 5C97977B
+P 6000 1100
+F 0 "R29" V 6050 1300 50  0000 C CNN
+F 1 "0" V 6000 1100 50  0000 C CNN
+F 2 "" V 5930 1100 50  0001 C CNN
+F 3 "" H 6000 1100 50  0001 C CNN
+	1    6000 1100
+	0    1    1    0   
+$EndComp
+Text Label 5850 1100 2    50   ~ 0
+1V0
+Text Label 6300 1100 0    50   ~ 0
+1V0_SENSE
+Text Label 8000 1100 0    50   ~ 0
+GND
+$Comp
+L device:R R39
+U 1 1 5C979796
+P 7650 1100
+F 0 "R39" V 7700 1300 50  0000 C CNN
+F 1 "1.02M" V 7650 1100 50  0000 C CNN
+F 2 "" V 7580 1100 50  0001 C CNN
+F 3 "" H 7650 1100 50  0001 C CNN
+	1    7650 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 1100 6800 1100
+Wire Wire Line
+	7100 1100 7500 1100
+Wire Wire Line
+	7800 1100 8000 1100
+$Comp
+L device:R R34
+U 1 1 5C979787
+P 6950 1100
+F 0 "R34" V 7000 1300 50  0000 C CNN
+F 1 "255K" V 6950 1100 50  0000 C CNN
+F 2 "" V 6880 1100 50  0001 C CNN
+F 3 "" H 6950 1100 50  0001 C CNN
+	1    6950 1100
+	0    1    1    0   
+$EndComp
+Text Label 7200 1100 0    50   ~ 0
+1V0_FB
+$Comp
+L device:R R30
+U 1 1 5C9CF95B
+P 6000 1250
+F 0 "R30" V 6050 1450 50  0000 C CNN
+F 1 "0" V 6000 1250 50  0000 C CNN
+F 2 "" V 5930 1250 50  0001 C CNN
+F 3 "" H 6000 1250 50  0001 C CNN
+	1    6000 1250
+	0    1    1    0   
+$EndComp
+Text Label 5850 1250 2    50   ~ 0
+1V2
+Text Label 6300 1250 0    50   ~ 0
+1V2_SENSE
+Text Label 8000 1250 0    50   ~ 0
+GND
+$Comp
+L device:R R40
+U 1 1 5C9CF968
+P 7650 1250
+F 0 "R40" V 7700 1450 50  0000 C CNN
+F 1 "464K" V 7650 1250 50  0000 C CNN
+F 2 "" V 7580 1250 50  0001 C CNN
+F 3 "" H 7650 1250 50  0001 C CNN
+	1    7650 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 1250 6800 1250
+Wire Wire Line
+	7100 1250 7500 1250
+Wire Wire Line
+	7800 1250 8000 1250
+$Comp
+L device:R R35
+U 1 1 5C9CF975
+P 6950 1250
+F 0 "R35" V 7000 1450 50  0000 C CNN
+F 1 "232K" V 6950 1250 50  0000 C CNN
+F 2 "" V 6880 1250 50  0001 C CNN
+F 3 "" H 6950 1250 50  0001 C CNN
+	1    6950 1250
+	0    1    1    0   
+$EndComp
+Text Label 7200 1250 0    50   ~ 0
+1V2_FB
+$Comp
+L device:R R31
+U 1 1 5CA6A00B
+P 6000 1400
+F 0 "R31" V 6050 1600 50  0000 C CNN
+F 1 "0" V 6000 1400 50  0000 C CNN
+F 2 "" V 5930 1400 50  0001 C CNN
+F 3 "" H 6000 1400 50  0001 C CNN
+	1    6000 1400
+	0    1    1    0   
+$EndComp
+Text Label 5850 1400 2    50   ~ 0
+1V8
+Text Label 6300 1400 0    50   ~ 0
+1V8_SENSE
+Text Label 8000 1400 0    50   ~ 0
+GND
+$Comp
+L device:R R41
+U 1 1 5CA6A018
+P 7650 1400
+F 0 "R41" V 7700 1600 50  0000 C CNN
+F 1 "649K" V 7650 1400 50  0000 C CNN
+F 2 "" V 7580 1400 50  0001 C CNN
+F 3 "" H 7650 1400 50  0001 C CNN
+	1    7650 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 1400 6800 1400
+Wire Wire Line
+	7100 1400 7500 1400
+Wire Wire Line
+	7800 1400 8000 1400
+$Comp
+L device:R R36
+U 1 1 5CA6A025
+P 6950 1400
+F 0 "R36" V 7000 1600 50  0000 C CNN
+F 1 "806K" V 6950 1400 50  0000 C CNN
+F 2 "" V 6880 1400 50  0001 C CNN
+F 3 "" H 6950 1400 50  0001 C CNN
+	1    6950 1400
+	0    1    1    0   
+$EndComp
+Text Label 7200 1400 0    50   ~ 0
+1V8_FB
+$Comp
+L device:R R32
+U 1 1 5CA6A030
+P 6000 1550
+F 0 "R32" V 6050 1750 50  0000 C CNN
+F 1 "0" V 6000 1550 50  0000 C CNN
+F 2 "" V 5930 1550 50  0001 C CNN
+F 3 "" H 6000 1550 50  0001 C CNN
+	1    6000 1550
+	0    1    1    0   
+$EndComp
+Text Label 5850 1550 2    50   ~ 0
+2V5
+Text Label 6300 1550 0    50   ~ 0
+2V5_SENSE
+Text Label 8000 1550 0    50   ~ 0
+GND
+$Comp
+L device:R R42
+U 1 1 5CA6A03D
+P 7650 1550
+F 0 "R42" V 7700 1750 50  0000 C CNN
+F 1 "475K" V 7650 1550 50  0000 C CNN
+F 2 "" V 7580 1550 50  0001 C CNN
+F 3 "" H 7650 1550 50  0001 C CNN
+	1    7650 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 1550 6800 1550
+Wire Wire Line
+	7100 1550 7500 1550
+Wire Wire Line
+	7800 1550 8000 1550
+$Comp
+L device:R R37
+U 1 1 5CA6A04A
+P 6950 1550
+F 0 "R37" V 7000 1750 50  0000 C CNN
+F 1 "1.02M" V 6950 1550 50  0000 C CNN
+F 2 "" V 6880 1550 50  0001 C CNN
+F 3 "" H 6950 1550 50  0001 C CNN
+	1    6950 1550
+	0    1    1    0   
+$EndComp
+Text Label 7200 1550 0    50   ~ 0
+2V5_FB
+$Comp
+L device:R R33
+U 1 1 5CAB9754
+P 6000 1700
+F 0 "R33" V 6050 1900 50  0000 C CNN
+F 1 "0" V 6000 1700 50  0000 C CNN
+F 2 "" V 5930 1700 50  0001 C CNN
+F 3 "" H 6000 1700 50  0001 C CNN
+	1    6000 1700
+	0    1    1    0   
+$EndComp
+Text Label 5850 1700 2    50   ~ 0
+3V3
+Text Label 6300 1700 0    50   ~ 0
+3V3_SENSE
+Text Label 8000 1700 0    50   ~ 0
+GND
+$Comp
+L device:R R43
+U 1 1 5CAB9761
+P 7650 1700
+F 0 "R43" V 7700 1900 50  0000 C CNN
+F 1 "324K" V 7650 1700 50  0000 C CNN
+F 2 "" V 7580 1700 50  0001 C CNN
+F 3 "" H 7650 1700 50  0001 C CNN
+	1    7650 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 1700 6800 1700
+Wire Wire Line
+	7100 1700 7500 1700
+Wire Wire Line
+	7800 1700 8000 1700
+$Comp
+L device:R R38
+U 1 1 5CAB976E
+P 6950 1700
+F 0 "R38" V 7000 1900 50  0000 C CNN
+F 1 "1.02M" V 6950 1700 50  0000 C CNN
+F 2 "" V 6880 1700 50  0001 C CNN
+F 3 "" H 6950 1700 50  0001 C CNN
+	1    6950 1700
+	0    1    1    0   
+$EndComp
+Text Label 7200 1700 0    50   ~ 0
+3V3_FB
+Text Notes 5900 1850 0    50   ~ 0
+Remote sense and feedback for power rails
+$Comp
+L device:C C107
+U 1 1 5CB13E13
+P 5900 2450
+F 0 "C107" H 6015 2496 50  0000 L CNN
+F 1 "47 uF" H 6015 2405 50  0000 L CNN
+F 2 "" H 5938 2300 50  0001 C CNN
+F 3 "" H 5900 2450 50  0001 C CNN
+	1    5900 2450
+	1    0    0    -1  
+$EndComp
+Text Label 5750 2300 2    50   ~ 0
+5V0
+Text Label 5750 2600 2    50   ~ 0
+GND
+Text Notes 5900 2250 0    50   ~ 0
+for 1V0
+$Comp
+L device:C C109
+U 1 1 5CB668F5
+P 6500 2450
+F 0 "C109" H 6615 2496 50  0000 L CNN
+F 1 "22 uF" H 6615 2405 50  0000 L CNN
+F 2 "" H 6538 2300 50  0001 C CNN
+F 3 "" H 6500 2450 50  0001 C CNN
+	1    6500 2450
+	1    0    0    -1  
+$EndComp
+Text Notes 6500 2250 0    50   ~ 0
+for 3V3
+$Comp
+L device:C C111
+U 1 1 5CB66EA6
+P 7100 2450
+F 0 "C111" H 7215 2496 50  0000 L CNN
+F 1 "10 uF" H 7215 2405 50  0000 L CNN
+F 2 "" H 7138 2300 50  0001 C CNN
+F 3 "" H 7100 2450 50  0001 C CNN
+	1    7100 2450
+	1    0    0    -1  
+$EndComp
+Text Notes 7100 2250 0    50   ~ 0
+for 1V2
+$Comp
+L device:C C113
+U 1 1 5CB672E9
+P 7700 2450
+F 0 "C113" H 7815 2496 50  0000 L CNN
+F 1 "10 uF" H 7815 2405 50  0000 L CNN
+F 2 "" H 7738 2300 50  0001 C CNN
+F 3 "" H 7700 2450 50  0001 C CNN
+	1    7700 2450
+	1    0    0    -1  
+$EndComp
+Text Notes 7700 2250 0    50   ~ 0
+for 1V8
+$Comp
+L device:C C115
+U 1 1 5CBB6441
+P 8200 2450
+F 0 "C115" H 8315 2496 50  0000 L CNN
+F 1 "10 uF" H 8315 2405 50  0000 L CNN
+F 2 "" H 8238 2300 50  0001 C CNN
+F 3 "" H 8200 2450 50  0001 C CNN
+	1    8200 2450
+	1    0    0    -1  
+$EndComp
+Text Notes 8200 2250 0    50   ~ 0
+for 2V5
+Wire Wire Line
+	8200 2300 7700 2300
+Connection ~ 5900 2300
+Wire Wire Line
+	5900 2300 5750 2300
+Connection ~ 6500 2300
+Wire Wire Line
+	6500 2300 5900 2300
+Connection ~ 7100 2300
+Wire Wire Line
+	7100 2300 6500 2300
+Connection ~ 7700 2300
+Wire Wire Line
+	7700 2300 7100 2300
+Wire Wire Line
+	5750 2600 5900 2600
+Connection ~ 5900 2600
+Wire Wire Line
+	5900 2600 6500 2600
+Connection ~ 6500 2600
+Wire Wire Line
+	6500 2600 7100 2600
+Connection ~ 7100 2600
+Wire Wire Line
+	7100 2600 7700 2600
+Connection ~ 7700 2600
+Wire Wire Line
+	7700 2600 8200 2600
+$Comp
+L device:C C117
+U 1 1 5CCA6E51
+P 9300 2450
+F 0 "C117" H 9415 2496 50  0000 L CNN
+F 1 "47 uF" H 9415 2405 50  0000 L CNN
+F 2 "" H 9338 2300 50  0001 C CNN
+F 3 "" H 9300 2450 50  0001 C CNN
+	1    9300 2450
+	1    0    0    -1  
+$EndComp
+Text Label 9200 2300 2    50   ~ 0
+5V0
+Wire Wire Line
+	9200 2300 9300 2300
+Text Label 9200 2600 2    50   ~ 0
+GND
+Wire Wire Line
+	9200 2600 9300 2600
+Text Notes 9300 2700 0    50   ~ 0
+PCB bulk input cap (reduce input ripple)
+Text Label 5750 3000 2    50   ~ 0
+2V5
+$Comp
+L device:C C108
+U 1 1 5CD4FCEA
+P 5900 3150
+F 0 "C108" H 6015 3196 50  0000 L CNN
+F 1 "22 uF" H 6015 3105 50  0000 L CNN
+F 2 "" H 5938 3000 50  0001 C CNN
+F 3 "" H 5900 3150 50  0001 C CNN
+	1    5900 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3000 5900 3000
+Text Label 5750 3300 2    50   ~ 0
+GND
+Wire Wire Line
+	5750 3300 5900 3300
+Text Notes 5900 3400 0    50   ~ 0
+SMPS output caps
+Text Label 6350 3000 2    50   ~ 0
+1V8
+$Comp
+L device:C C110
+U 1 1 5CDF7C69
+P 6500 3150
+F 0 "C110" H 6615 3196 50  0000 L CNN
+F 1 "22 uF" H 6615 3105 50  0000 L CNN
+F 2 "" H 6538 3000 50  0001 C CNN
+F 3 "" H 6500 3150 50  0001 C CNN
+	1    6500 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3000 6500 3000
+Text Label 6950 3000 2    50   ~ 0
+1V2
+$Comp
+L device:C C112
+U 1 1 5CE4BF3E
+P 7100 3150
+F 0 "C112" H 7215 3196 50  0000 L CNN
+F 1 "22 uF" H 7215 3105 50  0000 L CNN
+F 2 "" H 7138 3000 50  0001 C CNN
+F 3 "" H 7100 3150 50  0001 C CNN
+	1    7100 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3000 7100 3000
+$Comp
+L device:C C114
+U 1 1 5CE9FEAC
+P 7700 3150
+F 0 "C114" H 7815 3196 50  0000 L CNN
+F 1 "47 uF" H 7815 3105 50  0000 L CNN
+F 2 "" H 7738 3000 50  0001 C CNN
+F 3 "" H 7700 3150 50  0001 C CNN
+	1    7700 3150
+	1    0    0    -1  
+$EndComp
+Text Label 7550 3000 2    50   ~ 0
+3V3
+Wire Wire Line
+	7550 3000 7700 3000
+$Comp
+L device:C C116
+U 1 1 5CEF45AD
+P 8200 3150
+F 0 "C116" H 8315 3196 50  0000 L CNN
+F 1 "100 uF" H 8315 3105 50  0000 L CNN
+F 2 "" H 8238 3000 50  0001 C CNN
+F 3 "" H 8200 3150 50  0001 C CNN
+	1    8200 3150
+	1    0    0    -1  
+$EndComp
+Text Label 8200 3000 2    50   ~ 0
+1V0
+Wire Wire Line
+	8200 3300 7700 3300
+Connection ~ 5900 3300
+Connection ~ 6500 3300
+Wire Wire Line
+	6500 3300 5900 3300
+Connection ~ 7100 3300
+Wire Wire Line
+	7100 3300 6500 3300
+Connection ~ 7700 3300
+Wire Wire Line
+	7700 3300 7100 3300
 $EndSCHEMATC

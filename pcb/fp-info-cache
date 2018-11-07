@@ -1,4 +1,4 @@
-812720320364815
+824992517900815
 azonenberg_pcb
 BGA_4_1p5_0p8_0.4MM
 
@@ -20,6 +20,13 @@ BGA_5_1p4x1p1_0.5MM
 0
 5
 5
+azonenberg_pcb
+BGA_6_1.5x0.9_0.5MM_TI_YZP
+
+
+0
+12
+6
 azonenberg_pcb
 BGA_8_2x2_DEPOP1_0.5MM
 
@@ -350,6 +357,13 @@ CONN_HIROSE_UX60S-MB-5ST_MINI_USB
 7
 7
 azonenberg_pcb
+CONN_MMCX_J_P_H_ST_EM1
+
+
+0
+5
+2
+azonenberg_pcb
 CONN_MMCX_LINX_CONNMMCX002SMD
 
 
@@ -447,6 +461,13 @@ CONN_SAMTEC_QTH-060-01-L-D-A
 0
 130
 128
+azonenberg_pcb
+CONN_SAMTEC_SMH_110_02_L_D
+
+
+0
+20
+20
 azonenberg_pcb
 CONN_SFP+_AMPHENOL_UE76_A10_2000T
 
@@ -581,6 +602,20 @@ DFN_8_0.8MM_4x4MM
 18
 9
 azonenberg_pcb
+DFN_8_0.35MM_1x1.4MM
+
+
+0
+8
+8
+azonenberg_pcb
+DFN_8_0.65MM_3x3MM
+
+
+0
+9
+9
+azonenberg_pcb
 DFN_8_1.27MM_6x5MM
 
 
@@ -594,6 +629,13 @@ DFN_8_1.27MM_8x6MM
 0
 18
 9
+azonenberg_pcb
+DFN_10_0.5MM_2.5x1MM
+
+
+0
+10
+10
 azonenberg_pcb
 DFN_10_0.5MM_3x3MM
 
@@ -657,6 +699,13 @@ EIA_0402_CAP_NOSILK
 0
 2
 2
+azonenberg_pcb
+EIA_0402_JUMPER
+
+
+0
+3
+3
 azonenberg_pcb
 EIA_0402_LED
 
@@ -1042,6 +1091,13 @@ RELAY_COTO_9007
 0
 4
 4
+azonenberg_pcb
+SOD323
+
+
+0
+2
+2
 azonenberg_pcb
 SOD523
 

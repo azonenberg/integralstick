@@ -4,9 +4,9 @@ EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 7 7
+Sheet 8 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-06"
+Date "2018-11-07"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 ""
@@ -251,8 +251,6 @@ Wire Wire Line
 	13950 1050 14100 1050
 Wire Wire Line
 	14100 950  13950 950 
-Wire Wire Line
-	13950 1350 14100 1350
 Text Label 13950 1950 2    50   ~ 0
 QSPI_CS_N
 Wire Wire Line
@@ -368,8 +366,6 @@ RGMII_RST_N
 Wire Wire Line
 	13950 3550 14100 3550
 NoConn ~ 14100 3850
-NoConn ~ 14100 3950
-NoConn ~ 14100 4050
 NoConn ~ 14100 4250
 NoConn ~ 14100 4350
 $Comp
@@ -743,12 +739,10 @@ NoConn ~ 6150 4150
 NoConn ~ 6150 4250
 NoConn ~ 6150 4350
 NoConn ~ 8850 4350
-NoConn ~ 8850 4250
 NoConn ~ 8850 4150
 NoConn ~ 8850 4050
 NoConn ~ 8850 3950
 NoConn ~ 8850 3850
-NoConn ~ 8850 3750
 NoConn ~ 8850 3650
 NoConn ~ 8850 3550
 NoConn ~ 8850 3450
@@ -821,7 +815,7 @@ Text HLabel 13950 3650 0    50   Input ~ 0
 ETH_LED1_N
 Text HLabel 13950 3750 0    50   Input ~ 0
 ETH_LED2_N
-Text HLabel 13950 1350 0    50   Input ~ 0
+Text HLabel 13200 1350 0    50   Input ~ 0
 3V3
 Text HLabel 1350 10450 0    50   Input ~ 0
 GND
@@ -1017,4 +1011,31 @@ Wire Wire Line
 Text HLabel 3150 10350 2    50   Input ~ 0
 QSPI_CLK
 NoConn ~ 14100 4150
+$Comp
+L device:R R28
+U 1 1 5C76D1A0
+P 13350 1350
+F 0 "R28" V 13300 1550 50  0000 C CNN
+F 1 "0" V 13350 1350 50  0000 C CNN
+F 2 "" V 13280 1350 50  0001 C CNN
+F 3 "" H 13350 1350 50  0001 C CNN
+	1    13350 1350
+	0    1    1    0   
+$EndComp
+Text Label 13950 1350 2    50   ~ 0
+PUDC_B
+Wire Wire Line
+	13500 1350 14100 1350
+Text Label 8850 3750 2    50   ~ 0
+UART6_RX
+Text Label 8850 4250 2    50   ~ 0
+UART6_TX
+Text Label 13950 3950 2    50   ~ 0
+UART6_RX
+Text Label 13950 4050 2    50   ~ 0
+UART6_TX
+Wire Wire Line
+	14100 3950 13950 3950
+Wire Wire Line
+	13950 4050 14100 4050
 $EndSCHEMATC

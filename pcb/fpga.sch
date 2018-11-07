@@ -4,12 +4,12 @@ EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 5 7
+Sheet 6 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-06"
+Date "2018-11-07"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
-Comment1 ""
+Comment1 "FPGA and LVDS/2.5V/3.3V GPIO"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -208,73 +208,72 @@ Text Label 6350 4050 0    50   ~ 0
 IO_3V3_29
 Text Label 8400 750  2    50   ~ 0
 IO_3V3_0
-Text Label 8400 850  2    50   ~ 0
-IO_3V3_1
 Text Label 8400 950  2    50   ~ 0
-IO_3V3_2
+IO_3V3_1
 Text Label 8400 1050 2    50   ~ 0
+IO_3V3_2
+Text Label 8400 1150 2    50   ~ 0
 IO_3V3_3
 Text Label 8400 3050 2    50   ~ 0
 CLK_3V3_0
 Text Label 8400 3250 2    50   ~ 0
 CLK_3V3_1
-Text Label 8400 1150 2    50   ~ 0
-IO_3V3_4
 Text Label 8400 1250 2    50   ~ 0
-IO_3V3_5
+IO_3V3_4
 Text Label 8400 1350 2    50   ~ 0
-IO_3V3_6
+IO_3V3_5
 Text Label 8400 1450 2    50   ~ 0
-IO_3V3_7
+IO_3V3_6
 Text Label 8400 1550 2    50   ~ 0
-IO_3V3_8
+IO_3V3_7
 Text Label 8400 1650 2    50   ~ 0
-IO_3V3_9
+IO_3V3_8
 Text Label 8400 1750 2    50   ~ 0
-IO_3V3_10
+IO_3V3_9
 Text Label 8400 1850 2    50   ~ 0
-IO_3V3_11
+IO_3V3_10
 Text Label 8400 1950 2    50   ~ 0
-IO_3V3_12
+IO_3V3_11
 Text Label 8400 2050 2    50   ~ 0
-IO_3V3_13
+IO_3V3_12
 Text Label 8400 2150 2    50   ~ 0
-IO_3V3_14
+IO_3V3_13
 Text Label 8400 2250 2    50   ~ 0
-IO_3V3_15
+IO_3V3_14
 Text Label 8400 2350 2    50   ~ 0
-IO_3V3_16
+IO_3V3_15
 Text Label 8400 2450 2    50   ~ 0
-IO_3V3_17
+IO_3V3_16
 Text Label 8400 2550 2    50   ~ 0
-IO_3V3_18
+IO_3V3_17
 Text Label 8400 2650 2    50   ~ 0
-IO_3V3_19
+IO_3V3_18
 Text Label 8400 2750 2    50   ~ 0
-IO_3V3_20
+IO_3V3_19
 Text Label 8400 2850 2    50   ~ 0
-IO_3V3_21
+IO_3V3_20
 Text Label 8400 2950 2    50   ~ 0
-IO_3V3_22
+IO_3V3_21
 Text Label 8400 3150 2    50   ~ 0
-IO_3V3_23
+IO_3V3_22
 Text Label 8400 3350 2    50   ~ 0
-IO_3V3_24
-Text Label 8400 3450 2    50   ~ 0
-IO_3V3_25
+IO_3V3_23
 Text Label 8400 3550 2    50   ~ 0
-IO_3V3_26
+IO_3V3_24
 Text Label 8400 3650 2    50   ~ 0
-IO_3V3_27
+IO_3V3_25
 Text Label 8400 3750 2    50   ~ 0
-IO_3V3_28
+IO_3V3_26
 Text Label 8400 3850 2    50   ~ 0
+IO_3V3_27
+Text Label 8400 3950 2    50   ~ 0
+IO_3V3_28
+Text Label 8400 4250 2    50   ~ 0
 IO_3V3_29
 Text Label 8400 4050 2    50   ~ 0
 IN_3V3_0_P
 Text Label 8400 4150 2    50   ~ 0
 IN_3V3_0_N
-NoConn ~ 8400 4250
 NoConn ~ 8400 4350
 NoConn ~ 8400 4450
 NoConn ~ 8400 4550
@@ -298,10 +297,6 @@ F 3 "" H 3850 9000 60  0000 C CNN
 	1    3450 8700
 	1    0    0    -1  
 $EndComp
-Text Label 3250 8150 2    50   ~ 0
-3V3
-Text Label 3250 8250 2    50   ~ 0
-GND
 $Comp
 L device:C C44
 U 1 1 5BE26D62
@@ -386,7 +381,6 @@ F 3 "" H 8600 5650 60  0000 C CNN
 	4    8600 5650
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8400 3950
 $Comp
 L device:R R16
 U 1 1 5BE2B445
@@ -560,4 +554,74 @@ Wire Wire Line
 Connection ~ 13650 4950
 Wire Wire Line
 	13650 4950 13900 4950
+$Comp
+L osc-azonenberg:OSC U?
+U 1 1 5C012681
+P 3850 7100
+AR Path="/5B6B7044/5C012681" Ref="U?"  Part="1" 
+AR Path="/5B6B702C/5C012681" Ref="U12"  Part="1" 
+F 0 "U12" H 3825 7387 60  0000 C CNN
+F 1 "DSC6001HI2A-025.0000‎" H 3825 7281 60  0000 C CNN
+F 2 "" H 3850 7100 60  0000 C CNN
+F 3 "" H 3850 7100 60  0000 C CNN
+	1    3850 7100
+	1    0    0    -1  
+$EndComp
+Text Label 3000 7100 2    50   ~ 0
+3V3
+Wire Wire Line
+	3000 7100 3050 7100
+Wire Wire Line
+	3050 7100 3050 7200
+Wire Wire Line
+	3050 7200 3150 7200
+Connection ~ 3050 7100
+Wire Wire Line
+	3050 7100 3150 7100
+Text Label 3000 7300 2    50   ~ 0
+GND
+$Comp
+L device:R R?
+U 1 1 5C01268E
+P 4750 7100
+AR Path="/5B6B7044/5C01268E" Ref="R?"  Part="1" 
+AR Path="/5B6B702C/5C01268E" Ref="R27"  Part="1" 
+F 0 "R27" V 4650 7000 50  0000 C CNN
+F 1 "33" V 4750 7100 50  0000 C CNN
+F 2 "" V 4680 7100 50  0001 C CNN
+F 3 "" H 4750 7100 50  0001 C CNN
+	1    4750 7100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 7100 4500 7100
+Text Label 4900 7100 0    50   ~ 0
+FPGA_CLK_25MHZ
+$Comp
+L device:C C?
+U 1 1 5C012696
+P 2400 7150
+AR Path="/5B6B7044/5C012696" Ref="C?"  Part="1" 
+AR Path="/5B6B702C/5C012696" Ref="C106"  Part="1" 
+F 0 "C106" H 2515 7196 50  0000 L CNN
+F 1 "0.47 uF" H 2515 7105 50  0000 L CNN
+F 2 "" H 2438 7000 50  0001 C CNN
+F 3 "" H 2400 7150 50  0001 C CNN
+	1    2400 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 7300 3150 7300
+Wire Wire Line
+	2400 7000 3050 7000
+Wire Wire Line
+	3050 7000 3050 7100
+Text Label 8400 3450 2    50   ~ 0
+FPGA_CLK_25MHZ
+Text HLabel 8400 850  0    50   Input ~ 0
+PSU_TEMP
+Text HLabel 2650 7950 0    50   Input ~ 0
+3V3
+Text HLabel 2650 8250 0    50   Input ~ 0
+GND
 $EndSCHEMATC

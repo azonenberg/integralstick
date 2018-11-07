@@ -4,12 +4,12 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 7 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-06"
+Date "2018-11-07"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
-Comment1 ""
+Comment1 "HyperRAM and 1.8V GPIO"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -373,10 +373,10 @@ CLK_1V8_0
 Text Label 8600 3200 2    50   ~ 0
 CLK_1V8_1
 $Comp
-L device:C C?
+L device:C C48
 U 1 1 5BF7E63E
 P 1000 950
-F 0 "C?" H 1115 996 50  0000 L CNN
+F 0 "C48" H 1115 996 50  0000 L CNN
 F 1 "4.7 uF" H 1115 905 50  0000 L CNN
 F 2 "" H 1038 800 50  0001 C CNN
 F 3 "" H 1000 950 50  0001 C CNN
@@ -384,10 +384,10 @@ F 3 "" H 1000 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C?
+L device:C C50
 U 1 1 5BF7F429
 P 1600 950
-F 0 "C?" H 1715 996 50  0000 L CNN
+F 0 "C50" H 1715 996 50  0000 L CNN
 F 1 "0.47 uF" H 1715 905 50  0000 L CNN
 F 2 "" H 1638 800 50  0001 C CNN
 F 3 "" H 1600 950 50  0001 C CNN
@@ -395,10 +395,10 @@ F 3 "" H 1600 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C?
+L device:C C52
 U 1 1 5BF7F82E
 P 2200 950
-F 0 "C?" H 2315 996 50  0000 L CNN
+F 0 "C52" H 2315 996 50  0000 L CNN
 F 1 "0.47 uF" H 2315 905 50  0000 L CNN
 F 2 "" H 2238 800 50  0001 C CNN
 F 3 "" H 2200 950 50  0001 C CNN
@@ -406,10 +406,10 @@ F 3 "" H 2200 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C?
+L device:C C54
 U 1 1 5BF7FC5D
 P 2750 950
-F 0 "C?" H 2865 996 50  0000 L CNN
+F 0 "C54" H 2865 996 50  0000 L CNN
 F 1 "0.47 uF" H 2865 905 50  0000 L CNN
 F 2 "" H 2788 800 50  0001 C CNN
 F 3 "" H 2750 950 50  0001 C CNN
@@ -422,9 +422,6 @@ Text Label 850  1100 2    50   ~ 0
 GND
 Wire Wire Line
 	850  1100 1000 1100
-Wire Wire Line
-	2750 1100 2750 800 
-Connection ~ 2750 1100
 Connection ~ 1000 1100
 Wire Wire Line
 	1000 1100 1600 1100
@@ -436,7 +433,6 @@ Wire Wire Line
 	2200 1100 2750 1100
 Wire Wire Line
 	850  800  1000 800 
-Connection ~ 2750 800 
 Connection ~ 1000 800 
 Wire Wire Line
 	1000 800  1600 800 
@@ -447,10 +443,10 @@ Connection ~ 2200 800
 Wire Wire Line
 	2200 800  2750 800 
 $Comp
-L device:C C?
+L device:C C49
 U 1 1 5BF87471
 P 1000 1500
-F 0 "C?" H 1115 1546 50  0000 L CNN
+F 0 "C49" H 1115 1546 50  0000 L CNN
 F 1 "4.7 uF" H 1115 1455 50  0000 L CNN
 F 2 "" H 1038 1350 50  0001 C CNN
 F 3 "" H 1000 1500 50  0001 C CNN
@@ -458,10 +454,10 @@ F 3 "" H 1000 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C?
+L device:C C51
 U 1 1 5BF8747B
 P 1600 1500
-F 0 "C?" H 1715 1546 50  0000 L CNN
+F 0 "C51" H 1715 1546 50  0000 L CNN
 F 1 "0.47 uF" H 1715 1455 50  0000 L CNN
 F 2 "" H 1638 1350 50  0001 C CNN
 F 3 "" H 1600 1500 50  0001 C CNN
@@ -469,10 +465,10 @@ F 3 "" H 1600 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C?
+L device:C C53
 U 1 1 5BF87485
 P 2200 1500
-F 0 "C?" H 2315 1546 50  0000 L CNN
+F 0 "C53" H 2315 1546 50  0000 L CNN
 F 1 "0.47 uF" H 2315 1455 50  0000 L CNN
 F 2 "" H 2238 1350 50  0001 C CNN
 F 3 "" H 2200 1500 50  0001 C CNN
@@ -480,10 +476,10 @@ F 3 "" H 2200 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C?
+L device:C C55
 U 1 1 5BF8748F
 P 2750 1500
-F 0 "C?" H 2865 1546 50  0000 L CNN
+F 0 "C55" H 2865 1546 50  0000 L CNN
 F 1 "0.47 uF" H 2865 1455 50  0000 L CNN
 F 2 "" H 2788 1350 50  0001 C CNN
 F 3 "" H 2750 1500 50  0001 C CNN
@@ -496,9 +492,6 @@ Text Label 850  1650 2    50   ~ 0
 GND
 Wire Wire Line
 	850  1650 1000 1650
-Wire Wire Line
-	2750 1650 2750 1350
-Connection ~ 2750 1650
 Connection ~ 1000 1650
 Wire Wire Line
 	1000 1650 1600 1650
@@ -510,7 +503,6 @@ Wire Wire Line
 	2200 1650 2750 1650
 Wire Wire Line
 	850  1350 1000 1350
-Connection ~ 2750 1350
 Connection ~ 1000 1350
 Wire Wire Line
 	1000 1350 1600 1350
