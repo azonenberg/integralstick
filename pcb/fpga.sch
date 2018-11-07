@@ -214,7 +214,7 @@ Text Label 8400 1050 2    50   ~ 0
 IO_3V3_2
 Text Label 8400 1150 2    50   ~ 0
 IO_3V3_3
-Text Label 8400 3050 2    50   ~ 0
+Text Label 8400 2850 2    50   ~ 0
 CLK_3V3_0
 Text Label 8400 3250 2    50   ~ 0
 CLK_3V3_1
@@ -250,11 +250,11 @@ Text Label 8400 2650 2    50   ~ 0
 IO_3V3_18
 Text Label 8400 2750 2    50   ~ 0
 IO_3V3_19
-Text Label 8400 2850 2    50   ~ 0
+Text Label 8400 3950 2    50   ~ 0
 IO_3V3_20
-Text Label 8400 2950 2    50   ~ 0
+Text Label 8400 4050 2    50   ~ 0
 IO_3V3_21
-Text Label 8400 3150 2    50   ~ 0
+Text Label 8400 2950 2    50   ~ 0
 IO_3V3_22
 Text Label 8400 3350 2    50   ~ 0
 IO_3V3_23
@@ -266,13 +266,13 @@ Text Label 8400 3750 2    50   ~ 0
 IO_3V3_26
 Text Label 8400 3850 2    50   ~ 0
 IO_3V3_27
-Text Label 8400 3950 2    50   ~ 0
+Text Label 8400 4150 2    50   ~ 0
 IO_3V3_28
 Text Label 8400 4250 2    50   ~ 0
 IO_3V3_29
-Text Label 8400 4050 2    50   ~ 0
+Text Label 8400 3050 2    50   ~ 0
 IN_3V3_0_P
-Text Label 8400 4150 2    50   ~ 0
+Text Label 8400 3150 2    50   ~ 0
 IN_3V3_0_N
 NoConn ~ 8400 4350
 NoConn ~ 8400 4450
@@ -384,26 +384,26 @@ $EndComp
 $Comp
 L device:R R16
 U 1 1 5BE2B445
-P 7550 4100
-F 0 "R16" H 7620 4146 50  0000 L CNN
-F 1 "100" H 7620 4055 50  0000 L CNN
-F 2 "" V 7480 4100 50  0001 C CNN
-F 3 "" H 7550 4100 50  0001 C CNN
-	1    7550 4100
+P 7550 3100
+F 0 "R16" H 7620 3146 50  0000 L CNN
+F 1 "100" H 7620 3055 50  0000 L CNN
+F 2 "" V 7480 3100 50  0001 C CNN
+F 3 "" H 7550 3100 50  0001 C CNN
+	1    7550 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 3950 7900 3950
+	7550 2950 7900 2950
 Wire Wire Line
-	7900 3950 7900 4050
+	7900 2950 7900 3050
 Wire Wire Line
-	7900 4050 8400 4050
+	7900 3050 8400 3050
 Wire Wire Line
-	8400 4150 7900 4150
+	8400 3150 7900 3150
 Wire Wire Line
-	7900 4150 7900 4250
+	7900 3150 7900 3250
 Wire Wire Line
-	7900 4250 7550 4250
+	7900 3250 7550 3250
 Text Label 6350 1250 0    50   ~ 0
 IN_3V3_0_P
 Text Label 6350 1450 0    50   ~ 0
