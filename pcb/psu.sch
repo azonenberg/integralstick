@@ -1253,8 +1253,6 @@ Text Label 8400 8050 0    50   ~ 0
 GND
 Wire Wire Line
 	8400 8050 8300 8050
-Text Label 8400 8350 0    50   ~ 0
-GND
 Text HLabel 9650 8450 2    50   Input ~ 0
 MCU_RST_N
 $Comp
@@ -1279,8 +1277,6 @@ Text Label 8400 8550 0    50   ~ 0
 GND
 Text Label 8400 8650 0    50   ~ 0
 3V3
-Wire Wire Line
-	8400 8350 8300 8350
 Wire Wire Line
 	8400 8550 8300 8550
 Wire Wire Line
@@ -2049,4 +2045,24 @@ Wire Wire Line
 Connection ~ 7700 3300
 Wire Wire Line
 	7700 3300 7100 3300
+Text HLabel 8800 8350 2    50   Input ~ 0
+MCU_BOOT0
+$Comp
+L device:R R44
+U 1 1 5CFC62C6
+P 8700 8200
+F 0 "R44" V 8600 8200 50  0000 C CNN
+F 1 "10K" V 8700 8200 50  0000 C CNN
+F 2 "" V 8630 8200 50  0001 C CNN
+F 3 "" H 8700 8200 50  0001 C CNN
+	1    8700 8200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8300 8350 8700 8350
+Connection ~ 8700 8350
+Wire Wire Line
+	8700 8350 8800 8350
+Text Label 8700 8050 0    50   ~ 0
+GND
 $EndSCHEMATC
