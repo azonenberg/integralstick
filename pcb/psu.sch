@@ -1208,8 +1208,6 @@ Text Label 7000 7950 2    50   ~ 0
 3V3
 Wire Wire Line
 	7000 7950 7100 7950
-Wire Wire Line
-	7000 8150 7100 8150
 $Comp
 L device:C C1
 U 1 1 5BF38454
@@ -1223,9 +1221,6 @@ F 3 "" H 6450 8200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7000 7950 7000 8050
-Connection ~ 7000 8050
-Wire Wire Line
-	7000 8050 7000 8150
 $Comp
 L device:C C2
 U 1 1 5BF6EA24
@@ -2065,4 +2060,58 @@ Wire Wire Line
 	8700 8350 8800 8350
 Text Label 8700 8050 0    50   ~ 0
 GND
+Text Label 7000 8150 2    50   ~ 0
+MCU_VBAT
+Wire Wire Line
+	7000 8150 7100 8150
+Text Label 7900 6550 2    50   ~ 0
+MCU_VBAT
+$Comp
+L device:R R45
+U 1 1 5D0C77C0
+P 8000 6350
+F 0 "R45" H 8070 6396 50  0000 L CNN
+F 1 "330" H 8070 6305 50  0000 L CNN
+F 2 "" V 7930 6350 50  0001 C CNN
+F 3 "" H 8000 6350 50  0001 C CNN
+	1    8000 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:CP1 C46
+U 1 1 5D0C7C66
+P 8000 6750
+F 0 "C46" H 8115 6796 50  0000 L CNN
+F 1 "CPH3225A-2K" H 8115 6705 50  0000 L CNN
+F 2 "" H 8000 6750 50  0001 C CNN
+F 3 "" H 8000 6750 50  0001 C CNN
+	1    8000 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 6500 8000 6550
+Wire Wire Line
+	7900 6550 8000 6550
+Connection ~ 8000 6550
+Wire Wire Line
+	8000 6550 8000 6600
+Text Label 7900 6900 2    50   ~ 0
+GND
+Wire Wire Line
+	7900 6900 8000 6900
+Text Label 7900 5900 2    50   ~ 0
+3V3
+$Comp
+L device:D_Schottky D2
+U 1 1 5D1CE534
+P 8000 6050
+F 0 "D2" V 8046 5971 50  0000 R CNN
+F 1 "CTS520,L3F‎" V 7955 5971 50  0000 R CNN
+F 2 "" H 8000 6050 50  0001 C CNN
+F 3 "" H 8000 6050 50  0001 C CNN
+	1    8000 6050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7900 5900 8000 5900
 $EndSCHEMATC
