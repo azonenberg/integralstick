@@ -1,0 +1,7 @@
+Prepregs: 0.1mm Isola 370HR
+
+Impedances:
+	175 um = 50 ohms
+	150 um = 54 ohms
+
+	165 um / 100 um = 100 differential
