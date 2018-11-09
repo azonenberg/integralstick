@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 2 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-07"
+Date "2018-11-09"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 "Power supply"

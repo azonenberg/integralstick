@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 8 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-07"
+Date "2018-11-09"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 ""
@@ -184,7 +184,7 @@ Text Label 13950 5350 2    50   ~ 0
 DCMI_D3
 Text Label 13950 5450 2    50   ~ 0
 DCMI_D4
-Text Label 13950 2350 2    50   ~ 0
+Text Label 13950 3350 2    50   ~ 0
 RMII_REFCLK
 Text Label 13950 1850 2    50   ~ 0
 RMII_MDIO
@@ -213,9 +213,9 @@ Wire Wire Line
 	3150 10150 3000 10150
 Wire Wire Line
 	1350 10450 1500 10450
-Text Label 3150 10450 0    50   ~ 0
+Text Label 3450 10450 0    50   ~ 0
 QSPI_DQ0
-Text Label 1350 10250 2    50   ~ 0
+Text Label 950  10250 2    50   ~ 0
 QSPI_DQ1
 Text Label 1350 10150 2    50   ~ 0
 QSPI_CS_N
@@ -227,21 +227,21 @@ Wire Wire Line
 	1350 10350 1500 10350
 Wire Wire Line
 	3150 10450 3000 10450
-Text Label 1350 10350 2    50   ~ 0
+Text Label 950  10350 2    50   ~ 0
 QSPI_DQ2
-Text Label 3150 10250 0    50   ~ 0
+Text Label 3450 10250 0    50   ~ 0
 QSPI_DQ3
 Wire Wire Line
 	3150 10350 3000 10350
 Wire Wire Line
 	3000 10250 3150 10250
-Text Label 13950 950  2    50   ~ 0
+Text Label 13650 950  2    50   ~ 0
 QSPI_DQ0
-Text Label 13950 1050 2    50   ~ 0
+Text Label 13650 1050 2    50   ~ 0
 QSPI_DQ1
-Text Label 13950 1150 2    50   ~ 0
+Text Label 13650 1150 2    50   ~ 0
 QSPI_DQ2
-Text Label 13950 1250 2    50   ~ 0
+Text Label 13650 1250 2    50   ~ 0
 QSPI_DQ3
 Wire Wire Line
 	13950 1250 14100 1250
@@ -251,7 +251,7 @@ Wire Wire Line
 	13950 1050 14100 1050
 Wire Wire Line
 	14100 950  13950 950 
-Text Label 13950 1950 2    50   ~ 0
+Text Label 13650 1950 2    50   ~ 0
 QSPI_CS_N
 Wire Wire Line
 	13950 1950 14100 1950
@@ -282,7 +282,7 @@ Wire Wire Line
 Wire Wire Line
 	13950 2250 14100 2250
 Wire Wire Line
-	14100 2350 13950 2350
+	14100 3350 13950 3350
 Wire Wire Line
 	14100 2650 13950 2650
 Wire Wire Line
@@ -353,14 +353,14 @@ Wire Wire Line
 	13950 3150 14100 3150
 Wire Wire Line
 	14100 3250 13950 3250
-Text HLabel 13950 3350 0    50   BiDi ~ 0
+Text HLabel 13950 2350 0    50   BiDi ~ 0
 RGMII_MDIO
 Text HLabel 13950 3450 0    50   Output ~ 0
 RGMII_MDC
 Wire Wire Line
 	13950 3450 14100 3450
 Wire Wire Line
-	14100 3350 13950 3350
+	14100 2350 13950 2350
 Text HLabel 13950 3550 0    50   Output ~ 0
 RGMII_RST_N
 Wire Wire Line
@@ -878,28 +878,10 @@ Text Label 2700 10700 2    50   ~ 0
 Text Label 2700 11000 2    50   ~ 0
 GND
 NoConn ~ 11800 2950
-$Comp
-L osc-azonenberg:OSC U10
-U 1 1 5BE5F5BA
-P 2150 8450
-F 0 "U10" H 2125 8737 60  0000 C CNN
-F 1 "DSC6083MI2A-032K768" H 2125 8631 60  0000 C CNN
-F 2 "" H 2150 8450 60  0000 C CNN
-F 3 "" H 2150 8450 60  0000 C CNN
-	1    2150 8450
-	1    0    0    -1  
-$EndComp
-Text Label 1300 8450 2    50   ~ 0
+Text Label 700  8350 2    50   ~ 0
 3V3
 Wire Wire Line
-	1300 8450 1350 8450
-Wire Wire Line
-	1350 8450 1350 8550
-Wire Wire Line
 	1350 8550 1450 8550
-Connection ~ 1350 8450
-Wire Wire Line
-	1350 8450 1450 8450
 Text Label 1300 8650 2    50   ~ 0
 GND
 $Comp
@@ -932,8 +914,6 @@ Wire Wire Line
 	700  8650 1450 8650
 Wire Wire Line
 	700  8350 1350 8350
-Wire Wire Line
-	1350 8350 1350 8450
 Text Label 8300 2250 2    50   ~ 0
 CLK_32KHZ
 Wire Wire Line
@@ -951,9 +931,9 @@ F 3 "" H 13800 4150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 13650 4150 2    50   ~ 0
-MCU_CLK_25MHZ
+MCU_CLK
 Text Label 11650 2850 2    50   ~ 0
-MCU_CLK_25MHZ
+MCU_CLK
 Wire Wire Line
 	11650 2850 11800 2850
 Text HLabel 3150 10350 2    50   Input ~ 0
@@ -1018,4 +998,120 @@ Wire Wire Line
 	13950 4250 14100 4250
 Wire Wire Line
 	13950 4350 14100 4350
+$Comp
+L osc-azonenberg:DSC6083 U10
+U 1 1 5D305E88
+P 2150 8450
+F 0 "U10" H 2125 8737 60  0000 C CNN
+F 1 "DSC6083MI2A-032K768" H 2125 8631 60  0000 C CNN
+F 2 "" H 2150 8450 60  0000 C CNN
+F 3 "" H 2150 8450 60  0000 C CNN
+	1    2150 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 8350 1350 8550
+$Comp
+L device:R R53
+U 1 1 5D3680F9
+P 3300 10250
+F 0 "R53" V 3250 10100 50  0000 C CNN
+F 1 "33" V 3300 10250 50  0000 C CNN
+F 2 "" V 3230 10250 50  0001 C CNN
+F 3 "" H 3300 10250 50  0001 C CNN
+	1    3300 10250
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R54
+U 1 1 5D3687A9
+P 3300 10450
+F 0 "R54" V 3250 10300 50  0000 C CNN
+F 1 "33" V 3300 10450 50  0000 C CNN
+F 2 "" V 3230 10450 50  0001 C CNN
+F 3 "" H 3300 10450 50  0001 C CNN
+	1    3300 10450
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R52
+U 1 1 5D368B11
+P 1200 10350
+F 0 "R52" V 1150 10200 50  0000 C CNN
+F 1 "33" V 1200 10350 50  0000 C CNN
+F 2 "" V 1130 10350 50  0001 C CNN
+F 3 "" H 1200 10350 50  0001 C CNN
+	1    1200 10350
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R51
+U 1 1 5D379C82
+P 1200 10250
+F 0 "R51" V 1150 10100 50  0000 C CNN
+F 1 "33" V 1200 10250 50  0000 C CNN
+F 2 "" V 1130 10250 50  0001 C CNN
+F 3 "" H 1200 10250 50  0001 C CNN
+	1    1200 10250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	950  10250 1050 10250
+Wire Wire Line
+	1050 10350 950  10350
+$Comp
+L device:R R55
+U 1 1 5D3D3279
+P 13800 950
+F 0 "R55" V 13750 1150 50  0000 C CNN
+F 1 "33" V 13800 950 50  0000 C CNN
+F 2 "" V 13730 950 50  0001 C CNN
+F 3 "" H 13800 950 50  0001 C CNN
+	1    13800 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R56
+U 1 1 5D3D36A5
+P 13800 1050
+F 0 "R56" V 13750 1250 50  0000 C CNN
+F 1 "33" V 13800 1050 50  0000 C CNN
+F 2 "" V 13730 1050 50  0001 C CNN
+F 3 "" H 13800 1050 50  0001 C CNN
+	1    13800 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R57
+U 1 1 5D3D390E
+P 13800 1150
+F 0 "R57" V 13750 1350 50  0000 C CNN
+F 1 "33" V 13800 1150 50  0000 C CNN
+F 2 "" V 13730 1150 50  0001 C CNN
+F 3 "" H 13800 1150 50  0001 C CNN
+	1    13800 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R58
+U 1 1 5D3D3C3B
+P 13800 1250
+F 0 "R58" V 13750 1450 50  0000 C CNN
+F 1 "33" V 13800 1250 50  0000 C CNN
+F 2 "" V 13730 1250 50  0001 C CNN
+F 3 "" H 13800 1250 50  0001 C CNN
+	1    13800 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R59
+U 1 1 5D3E7347
+P 13800 1950
+F 0 "R59" V 13750 2150 50  0000 C CNN
+F 1 "33" V 13800 1950 50  0000 C CNN
+F 2 "" V 13730 1950 50  0001 C CNN
+F 3 "" H 13800 1950 50  0001 C CNN
+	1    13800 1950
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

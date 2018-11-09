@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-07"
+Date "2018-11-09"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 "MCU decoupling"
@@ -355,4 +355,21 @@ Wire Wire Line
 	4200 4800 4750 4800
 Wire Wire Line
 	4750 4500 4200 4500
+$Comp
+L device:C C118
+U 1 1 5D2E7FF4
+P 7550 3300
+F 0 "C118" H 7665 3346 50  0000 L CNN
+F 1 "4.7 uF" H 7665 3255 50  0000 L CNN
+F 2 "" H 7588 3150 50  0001 C CNN
+F 3 "" H 7550 3300 50  0001 C CNN
+	1    7550 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3450 6950 3450
+Connection ~ 6950 3450
+Wire Wire Line
+	7550 3150 6950 3150
+Connection ~ 6950 3150
 $EndSCHEMATC

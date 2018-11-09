@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 6 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-07"
+Date "2018-11-09"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 "FPGA and LVDS/2.5V/3.3V GPIO"
@@ -416,13 +416,13 @@ Text Label 13900 4050 2    50   ~ 0
 GND
 Text HLabel 13900 4250 0    50   Input ~ 0
 JTAG_TCK
-Text HLabel 13900 4350 0    50   Output ~ 0
+Text HLabel 13350 4350 0    50   Output ~ 0
 JTAG_TDO
 Text HLabel 13900 4450 0    50   Input ~ 0
 JTAG_TDI
 Text HLabel 13900 4550 0    50   Input ~ 0
 JTAG_TMS
-Text HLabel 13900 4750 0    50   Output ~ 0
+Text HLabel 13600 4750 0    50   Output ~ 0
 QSPI_CLK
 Text Label 13900 5350 2    50   ~ 0
 3V3
@@ -794,4 +794,28 @@ Text Label 8400 4550 2    50   ~ 0
 GPIO_LED2
 Text Label 8400 4650 2    50   ~ 0
 GPIO_LED3
+$Comp
+L device:R R50
+U 1 1 5D36315D
+P 13750 4750
+F 0 "R50" V 13800 4950 50  0000 C CNN
+F 1 "33" V 13750 4750 50  0000 C CNN
+F 2 "" V 13680 4750 50  0001 C CNN
+F 3 "" H 13750 4750 50  0001 C CNN
+	1    13750 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R61
+U 1 1 5D3F599B
+P 13500 4350
+F 0 "R61" V 13550 4550 50  0000 C CNN
+F 1 "33" V 13500 4350 50  0000 C CNN
+F 2 "" V 13430 4350 50  0001 C CNN
+F 3 "" H 13500 4350 50  0001 C CNN
+	1    13500 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13650 4350 13900 4350
 $EndSCHEMATC
