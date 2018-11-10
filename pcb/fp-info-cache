@@ -1,4 +1,4 @@
-824992517900815
+829618019924815
 azonenberg_pcb
 BGA_4_1p5_0p8_0.4MM
 
@@ -155,6 +155,13 @@ CAP_AL_6.3MM_SMT
 2
 azonenberg_pcb
 CAP_AL_10MM_SMT
+
+
+0
+2
+2
+azonenberg_pcb
+CAP_SEIKO_CPH3225A
 
 
 0
@@ -945,6 +952,13 @@ OHMITE_LVK25
 4
 4
 azonenberg_pcb
+OSCILLATOR_1.6x1.2
+
+
+0
+4
+4
+azonenberg_pcb
 OSCILLATOR_2.0x1.6
 
 
@@ -1107,6 +1121,13 @@ SOD523
 2
 azonenberg_pcb
 SOD523F
+
+
+0
+2
+2
+azonenberg_pcb
+SOD882
 
 
 0
