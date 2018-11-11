@@ -234,11 +234,11 @@ Text Label 8400 1850 2    50   ~ 0
 IO_3V3_10
 Text Label 8400 1950 2    50   ~ 0
 IO_3V3_11
-Text Label 8400 2050 2    50   ~ 0
+Text Label 8400 5250 2    50   ~ 0
 IO_3V3_12
-Text Label 8400 2150 2    50   ~ 0
+Text Label 8400 5350 2    50   ~ 0
 IO_3V3_13
-Text Label 8400 2250 2    50   ~ 0
+Text Label 8400 2050 2    50   ~ 0
 IO_3V3_14
 Text Label 8400 2350 2    50   ~ 0
 IO_3V3_15
@@ -250,17 +250,17 @@ Text Label 8400 2650 2    50   ~ 0
 IO_3V3_18
 Text Label 8400 2750 2    50   ~ 0
 IO_3V3_19
-Text Label 8400 3950 2    50   ~ 0
+Text Label 8400 5050 2    50   ~ 0
 IO_3V3_20
 Text Label 8400 4050 2    50   ~ 0
 IO_3V3_21
-Text Label 8400 2950 2    50   ~ 0
+Text Label 8400 2250 2    50   ~ 0
 IO_3V3_22
 Text Label 8400 3350 2    50   ~ 0
 IO_3V3_23
 Text Label 8400 3550 2    50   ~ 0
 IO_3V3_24
-Text Label 8400 3650 2    50   ~ 0
+Text Label 8400 2150 2    50   ~ 0
 IO_3V3_25
 Text Label 8400 3750 2    50   ~ 0
 IO_3V3_26
@@ -277,10 +277,6 @@ IN_3V3_0_N
 NoConn ~ 8400 4750
 NoConn ~ 8400 4850
 NoConn ~ 8400 4950
-NoConn ~ 8400 5050
-NoConn ~ 8400 5150
-NoConn ~ 8400 5250
-NoConn ~ 8400 5350
 NoConn ~ 8400 5650
 $Comp
 L memory-azonenberg:24Cxx-DFN8 U9
@@ -362,21 +358,10 @@ Wire Wire Line
 Connection ~ 5000 7850
 Wire Wire Line
 	5000 7850 5350 7850
-Text Label 8400 5450 2    50   ~ 0
+Text Label 8400 5150 2    50   ~ 0
 I2C_SCL
 Text Label 8400 5550 2    50   ~ 0
 I2C_SDA
-$Comp
-L xilinx-azonenberg:XC7AxT-xFTG256x U2
-U 4 1 5B8B9F8B
-P 8600 5650
-F 0 "U2" H 8600 5550 60  0000 L CNN
-F 1 "XC7A50T-1FTG256C" H 8600 5450 60  0000 L CNN
-F 2 "azonenberg_pcb:BGA_256_17x17_FULLARRAY_1MM" H 8600 5650 60  0001 C CNN
-F 3 "" H 8600 5650 60  0000 C CNN
-	4    8600 5650
-	1    0    0    -1  
-$EndComp
 $Comp
 L device:R R16
 U 1 1 5BE2B445
@@ -818,4 +803,19 @@ F 3 "" H 13500 4350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	13650 4350 13900 4350
+NoConn ~ 8400 5450
+NoConn ~ 8400 3950
+NoConn ~ 8400 3650
+$Comp
+L xilinx-azonenberg:XC7AxT-xFTG256x U2
+U 4 1 5B8B9F8B
+P 8600 5650
+F 0 "U2" H 8600 5550 60  0000 L CNN
+F 1 "XC7A50T-1FTG256C" H 8600 5450 60  0000 L CNN
+F 2 "azonenberg_pcb:BGA_256_17x17_FULLARRAY_1MM" H 8600 5650 60  0001 C CNN
+F 3 "" H 8600 5650 60  0000 C CNN
+	4    8600 5650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8400 2950
 $EndSCHEMATC
