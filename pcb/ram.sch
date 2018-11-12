@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-09"
+Date "2018-11-11"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 "HyperRAM and 1.8V GPIO"
@@ -20,7 +20,7 @@ U 6 1 5B7F05A1
 P 8800 5800
 F 0 "U2" H 10177 8308 60  0000 L CNN
 F 1 "XC7A50T-1FTG256C" H 10177 8202 60  0000 L CNN
-F 2 "azonenberg_pcb:BGA_256_17x17_FULLARRAY_1MM" H 8800 5800 60  0001 C CNN
+F 2 "azonenberg_pcb:BGA_256_17x17_FULLARRAY_1MM_0.4MM_FTG256" H 8800 5800 60  0001 C CNN
 F 3 "" H 8800 5800 60  0000 C CNN
 	6    8800 5800
 	1    0    0    -1  
@@ -120,65 +120,65 @@ Wire Wire Line
 	5600 1700 5500 1700
 Wire Wire Line
 	5500 1800 5600 1800
-Text Label 8600 900  2    50   ~ 0
-RAM0_DQS
-Text Label 8600 1000 2    50   ~ 0
-RAM0_DQ0
-Text Label 8600 1100 2    50   ~ 0
-RAM0_DQ1
-Text Label 8600 1200 2    50   ~ 0
-RAM0_DQ2
 Text Label 8600 1300 2    50   ~ 0
-RAM0_DQ3
+RAM0_DQS
 Text Label 8600 1400 2    50   ~ 0
-RAM0_DQ4
+RAM0_DQ0
 Text Label 8600 1500 2    50   ~ 0
+RAM0_DQ1
+Text Label 8600 1100 2    50   ~ 0
+RAM0_DQ2
+Text Label 8600 1200 2    50   ~ 0
+RAM0_DQ3
+Text Label 8600 1000 2    50   ~ 0
+RAM0_DQ4
+Text Label 8600 2000 2    50   ~ 0
 RAM0_DQ5
 Text Label 8600 1600 2    50   ~ 0
 RAM0_DQ6
-Text Label 8600 1700 2    50   ~ 0
-RAM0_DQ7
-Text Label 8600 1900 2    50   ~ 0
-RAM0_RST_N
-Text Label 8600 1800 2    50   ~ 0
-RAM0_CS_N
-Text Label 8600 2000 2    50   ~ 0
-RAM0_CK_P
-Text Label 8600 2100 2    50   ~ 0
-RAM0_CK_N
-Text Label 8600 2200 2    50   ~ 0
-RAM0_PSC_P
-Text Label 8600 2300 2    50   ~ 0
-RAM0_PSC_N
-Text Label 8600 2400 2    50   ~ 0
-RAM1_DQS
-Text Label 8600 2500 2    50   ~ 0
-RAM1_DQ0
-Text Label 8600 2600 2    50   ~ 0
-RAM1_DQ1
-Text Label 8600 2700 2    50   ~ 0
-RAM1_DQ2
-Text Label 8600 2800 2    50   ~ 0
-RAM1_DQ3
-Text Label 8600 2900 2    50   ~ 0
-RAM1_DQ4
-Text Label 8600 3000 2    50   ~ 0
-RAM1_DQ5
-Text Label 8600 3100 2    50   ~ 0
-RAM1_DQ6
 Text Label 8600 3300 2    50   ~ 0
-RAM1_DQ7
-Text Label 8600 4000 2    50   ~ 0
-RAM1_RST_N
-Text Label 8600 3500 2    50   ~ 0
-RAM1_CS_N
-Text Label 8600 3600 2    50   ~ 0
-RAM1_CK_P
-Text Label 8600 3700 2    50   ~ 0
-RAM1_CK_N
-Text Label 8600 3800 2    50   ~ 0
-RAM1_PSC_P
+RAM0_DQ7
+Text Label 8600 2100 2    50   ~ 0
+RAM0_RST_N
+Text Label 8600 1700 2    50   ~ 0
+RAM0_CS_N
+Text Label 8600 2400 2    50   ~ 0
+RAM0_CK_P
+Text Label 8600 2500 2    50   ~ 0
+RAM0_CK_N
+Text Label 8600 1800 2    50   ~ 0
+RAM0_PSC_P
+Text Label 8600 1900 2    50   ~ 0
+RAM0_PSC_N
+Text Label 8600 2800 2    50   ~ 0
+RAM1_DQS
+Text Label 8600 3100 2    50   ~ 0
+RAM1_DQ0
 Text Label 8600 3900 2    50   ~ 0
+RAM1_DQ1
+Text Label 8600 3000 2    50   ~ 0
+RAM1_DQ2
+Text Label 8600 2200 2    50   ~ 0
+RAM1_DQ3
+Text Label 8600 2300 2    50   ~ 0
+RAM1_DQ4
+Text Label 8600 2900 2    50   ~ 0
+RAM1_DQ5
+Text Label 8600 3700 2    50   ~ 0
+RAM1_DQ6
+Text Label 8600 3800 2    50   ~ 0
+RAM1_DQ7
+Text Label 8600 4100 2    50   ~ 0
+RAM1_RST_N
+Text Label 8600 3600 2    50   ~ 0
+RAM1_CS_N
+Text Label 8600 4200 2    50   ~ 0
+RAM1_CK_P
+Text Label 8600 4300 2    50   ~ 0
+RAM1_CK_N
+Text Label 8600 2600 2    50   ~ 0
+RAM1_PSC_P
+Text Label 8600 2700 2    50   ~ 0
 RAM1_PSC_N
 $Comp
 L cypress-azonenberg:S27KS0641 U4
@@ -292,11 +292,11 @@ F 3 "" H 4850 6800 50  0001 C CNN
 	2    4850 6800
 	-1   0    0    -1  
 $EndComp
-Text Label 8600 4100 2    50   ~ 0
+Text Label 8600 3500 2    50   ~ 0
 GPIO_1V8_0
-Text Label 8600 4200 2    50   ~ 0
+Text Label 8600 900  2    50   ~ 0
 GPIO_1V8_1
-Text Label 8600 4300 2    50   ~ 0
+Text Label 8600 4000 2    50   ~ 0
 GPIO_1V8_2
 Text Label 8600 4400 2    50   ~ 0
 GPIO_1V8_3

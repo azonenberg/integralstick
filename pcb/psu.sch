@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 2 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-09"
+Date "2018-11-11"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 "Power supply"
@@ -20,7 +20,7 @@ U 2 1 5B6B763A
 P 12450 6050
 F 0 "U2" H 13125 11197 60  0000 C CNN
 F 1 "XC7A50T-1FTG256C" H 13125 11091 60  0000 C CNN
-F 2 "azonenberg_pcb:BGA_256_17x17_FULLARRAY_1MM" H 12450 6050 60  0001 C CNN
+F 2 "azonenberg_pcb:BGA_256_17x17_FULLARRAY_1MM_0.4MM_FTG256" H 12450 6050 60  0001 C CNN
 F 3 "" H 12450 6050 60  0000 C CNN
 	2    12450 6050
 	1    0    0    -1  

@@ -1,4 +1,11 @@
-829618019924815
+852880283429815
+azonenberg_pcb
+ATC_AT_0603
+
+
+0
+4
+3
 azonenberg_pcb
 BGA_4_1p5_0p8_0.4MM
 
@@ -119,6 +126,13 @@ BGA_256_17x17_FULLARRAY_1MM
 256
 256
 azonenberg_pcb
+BGA_256_17x17_FULLARRAY_1MM_0.4MM_FTG256
+
+
+0
+256
+256
+azonenberg_pcb
 BGA_324_18x18_FULLARRAY_0.8MM
 
 
@@ -146,6 +160,13 @@ BOURNS_0612_4TERM
 0
 4
 4
+azonenberg_pcb
+BOURNS_PT61020EL
+
+
+0
+24
+24
 azonenberg_pcb
 CAP_AL_6.3MM_SMT
 
@@ -462,6 +483,13 @@ CONN_SAMTEC_QTH-030-01-L-D-A
 66
 61
 azonenberg_pcb
+CONN_SAMTEC_QTH-040-01-L-D-DP-A
+
+
+0
+90
+81
+azonenberg_pcb
 CONN_SAMTEC_QTH-060-01-L-D-A
 
 
@@ -503,6 +531,13 @@ CONN_SMA_PTH
 0
 5
 2
+azonenberg_pcb
+CONN_STEWART_SS_74500_024
+
+
+0
+105
+98
 azonenberg_pcb
 CRYSTAL_2.5x2.0
 
@@ -658,6 +693,13 @@ DFN_12_0.5MM_3x4MM
 21
 13
 azonenberg_pcb
+DFN_14_0.5MM_4x3MM_DUALPAD_LTC_DE14MA
+
+
+0
+16
+16
+azonenberg_pcb
 DFN_20_0.4MM_2x4MM
 
 
@@ -792,6 +834,13 @@ EIA_1206_CAP_NOSILK
 2
 azonenberg_pcb
 EIA_1210_CAP_NOSILK
+
+
+0
+2
+2
+azonenberg_pcb
+EIA_1812_CAP_NOSILK
 
 
 0
@@ -1029,11 +1078,25 @@ QFN_14_0.4MM_2x2MM_TI_RUC
 14
 14
 azonenberg_pcb
+QFN_16_0.4MM_2p5x2.5MM_NOPAD
+
+
+0
+16
+16
+azonenberg_pcb
 QFN_16_0.5MM_3x3MM
 
 
 0
 21
+17
+azonenberg_pcb
+QFN_16_0.65MM_4x4MM
+
+
+0
+17
 17
 azonenberg_pcb
 QFN_20_0.4MM_3x2MM_SILEGO_STQFN
@@ -1049,6 +1112,13 @@ QFN_24_0.5MM_4x4MM
 0
 30
 25
+azonenberg_pcb
+QFN_28_0.65MM_6x6MM
+
+
+0
+29
+29
 azonenberg_pcb
 QFN_32_0.5MM_5x5MM
 
@@ -1105,6 +1175,20 @@ RELAY_COTO_9007
 0
 4
 4
+azonenberg_pcb
+RELAY_TE_HF3_2COIL_50OHM
+
+
+0
+16
+16
+azonenberg_pcb
+SOD123
+
+
+0
+2
+2
 azonenberg_pcb
 SOD323
 
@@ -1182,6 +1266,13 @@ SOP_8_0.5MM_3MM
 0
 8
 8
+azonenberg_pcb
+SOP_8_0.5MM_3MM_EPAD
+
+
+0
+9
+9
 azonenberg_pcb
 SOP_10_0.5MM_3MM
 
@@ -1315,6 +1406,20 @@ TSSOP_14_0.65MM_5p6MM_NOPINS_1_2
 0
 14
 12
+azonenberg_pcb
+TSSOP_24_0.65MM_5MM
+
+
+0
+24
+24
+azonenberg_pcb
+TSSOP_24_0.65MM_5MM_EPAD_5x3p2
+
+
+0
+25
+25
 azonenberg_pcb
 VICOR_PI34XX
 

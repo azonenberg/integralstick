@@ -5,3 +5,18 @@ Impedances:
 	150 um = 54 ohms
 
 	165 um / 100 um = 100 differential
+	125 um / 100 um = 115 differential
+
+Tolerances for HyperRAM routing
+	RAM0 CLK = 19.615 mm
+	DQ to clock: +/- 12.7 mm = 6.9 to 32.3
+	DQ to DQ: +/- 1.27 mm
+	DQ to DQS: +/- 0.635 mm
+	Longest DQ: 13.019
+	Shortest needs to be 11.749
+	DQS needs to be 12.384
+
+	RAM1 CLK = 32.05 mm
+	DQ to clock: 19.35 to 44.75
+	DQS: 20.143
+	DQ range: 19.508 to 20.778
