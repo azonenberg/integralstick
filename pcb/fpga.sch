@@ -206,11 +206,11 @@ Text Label 6350 3950 0    50   ~ 0
 IO_3V3_28
 Text Label 6350 4050 0    50   ~ 0
 IO_3V3_29
-Text Label 8400 750  2    50   ~ 0
-IO_3V3_0
 Text Label 8400 1950 2    50   ~ 0
+IO_3V3_0
+Text Label 8400 1850 2    50   ~ 0
 IO_3V3_1
-Text Label 8400 1050 2    50   ~ 0
+Text Label 8400 750  2    50   ~ 0
 IO_3V3_2
 Text Label 8400 2450 2    50   ~ 0
 IO_3V3_3
@@ -218,7 +218,7 @@ Text Label 8400 2850 2    50   ~ 0
 CLK_3V3_0
 Text Label 8400 3250 2    50   ~ 0
 CLK_3V3_1
-Text Label 8400 1850 2    50   ~ 0
+Text Label 8400 1050 2    50   ~ 0
 IO_3V3_4
 Text Label 8400 2550 2    50   ~ 0
 IO_3V3_5
