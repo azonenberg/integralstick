@@ -304,15 +304,15 @@ Text Label 8600 5600 2    50   ~ 0
 GPIO_1V8_4
 Text Label 8600 5100 2    50   ~ 0
 GPIO_1V8_5
-Text Label 8600 4700 2    50   ~ 0
-GPIO_1V8_6
-Text Label 8600 900  2    50   ~ 0
-GPIO_1V8_7
-Text Label 8600 4400 2    50   ~ 0
-GPIO_1V8_8
 Text Label 8600 3500 2    50   ~ 0
+GPIO_1V8_6
+Text Label 8600 5700 2    50   ~ 0
+GPIO_1V8_7
+Text Label 8600 900  2    50   ~ 0
+GPIO_1V8_8
+Text Label 8600 5800 2    50   ~ 0
 GPIO_1V8_9
-Text Label 8600 4600 2    50   ~ 0
+Text Label 8600 4500 2    50   ~ 0
 GPIO_1V8_10
 Text Label 8600 5200 2    50   ~ 0
 GPIO_1V8_11
@@ -320,11 +320,11 @@ Text Label 8600 4000 2    50   ~ 0
 GPIO_1V8_12
 Text Label 8600 5400 2    50   ~ 0
 GPIO_1V8_13
-Text Label 8600 5500 2    50   ~ 0
+Text Label 8600 4700 2    50   ~ 0
 GPIO_1V8_14
-Text Label 8600 4500 2    50   ~ 0
+Text Label 8600 5500 2    50   ~ 0
 GPIO_1V8_15
-Text Label 8600 5700 2    50   ~ 0
+Text Label 8600 4400 2    50   ~ 0
 GPIO_1V8_16
 Text Label 5050 4850 0    50   ~ 0
 GPIO_1V8_0
@@ -366,7 +366,7 @@ Text Label 5050 6650 0    50   ~ 0
 CLK_1V8_0
 Text Label 5050 6750 0    50   ~ 0
 CLK_1V8_1
-Text Label 8600 5800 2    50   ~ 0
+Text Label 8600 4600 2    50   ~ 0
 GPIO_1V8_17
 Text Label 8600 3400 2    50   ~ 0
 CLK_1V8_0

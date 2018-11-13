@@ -820,7 +820,7 @@ NoConn ~ 8400 3850
 NoConn ~ 8400 3550
 NoConn ~ 8400 4550
 NoConn ~ 8400 4450
-Text Notes 11150 8700 0    50   ~ 0
+Text Notes 11200 9700 0    50   ~ 0
 Layer-change caps
 $Comp
 L device:C C?
@@ -1054,4 +1054,82 @@ Connection ~ 11750 8800
 Wire Wire Line
 	12300 9100 11750 9100
 Connection ~ 11750 9100
+$Comp
+L device:C C?
+U 1 1 5C091EF9
+P 11200 9450
+AR Path="/5B6B7044/5C091EF9" Ref="C?"  Part="1" 
+AR Path="/5B6B702C/5C091EF9" Ref="C131"  Part="1" 
+F 0 "C131" H 11315 9496 50  0000 L CNN
+F 1 "0.47 uF" H 11315 9405 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 11238 9300 50  0001 C CNN
+F 3 "" H 11200 9450 50  0001 C CNN
+	1    11200 9450
+	1    0    0    -1  
+$EndComp
+Text Label 11100 9600 2    50   ~ 0
+GND
+Wire Wire Line
+	11100 9600 11200 9600
+Wire Wire Line
+	11200 9300 11100 9300
+$Comp
+L device:C C?
+U 1 1 5C091F07
+P 11750 9450
+AR Path="/5B6B7044/5C091F07" Ref="C?"  Part="1" 
+AR Path="/5B6B702C/5C091F07" Ref="C132"  Part="1" 
+F 0 "C132" H 11865 9496 50  0000 L CNN
+F 1 "0.47 uF" H 11865 9405 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 11788 9300 50  0001 C CNN
+F 3 "" H 11750 9450 50  0001 C CNN
+	1    11750 9450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11750 9300 11200 9300
+Connection ~ 11200 9300
+Wire Wire Line
+	11750 9600 11200 9600
+Connection ~ 11200 9600
+$Comp
+L device:C C?
+U 1 1 5C091F15
+P 12300 9450
+AR Path="/5B6B7044/5C091F15" Ref="C?"  Part="1" 
+AR Path="/5B6B702C/5C091F15" Ref="C133"  Part="1" 
+F 0 "C133" H 12415 9496 50  0000 L CNN
+F 1 "0.47 uF" H 12415 9405 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 12338 9300 50  0001 C CNN
+F 3 "" H 12300 9450 50  0001 C CNN
+	1    12300 9450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 9300 11750 9300
+Connection ~ 11750 9300
+Wire Wire Line
+	12300 9600 11750 9600
+Connection ~ 11750 9600
+$Comp
+L device:C C?
+U 1 1 5C094F88
+P 12850 9450
+AR Path="/5B6B7044/5C094F88" Ref="C?"  Part="1" 
+AR Path="/5B6B702C/5C094F88" Ref="C134"  Part="1" 
+F 0 "C134" H 12965 9496 50  0000 L CNN
+F 1 "0.47 uF" H 12965 9405 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 12888 9300 50  0001 C CNN
+F 3 "" H 12850 9450 50  0001 C CNN
+	1    12850 9450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12850 9300 12300 9300
+Connection ~ 12300 9300
+Wire Wire Line
+	12850 9600 12300 9600
+Connection ~ 12300 9600
+Text HLabel 11100 9300 0    50   Input ~ 0
+1V8
 $EndSCHEMATC
