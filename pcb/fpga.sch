@@ -148,49 +148,49 @@ Text Label 6350 1050 0    50   ~ 0
 IO_3V3_1
 Text Label 6350 1150 0    50   ~ 0
 IO_3V3_2
-Text Label 6350 1350 0    50   ~ 0
+Text Label 6350 1250 0    50   ~ 0
 IO_3V3_3
 Text Label 6350 750  0    50   ~ 0
 CLK_3V3_0
 Text Label 6350 850  0    50   ~ 0
 CLK_3V3_1
-Text Label 6350 1550 0    50   ~ 0
+Text Label 6350 1350 0    50   ~ 0
 IO_3V3_4
-Text Label 6350 1650 0    50   ~ 0
+Text Label 6350 1450 0    50   ~ 0
 IO_3V3_5
-Text Label 6350 1750 0    50   ~ 0
+Text Label 6350 1550 0    50   ~ 0
 IO_3V3_6
-Text Label 6350 1850 0    50   ~ 0
+Text Label 6350 1650 0    50   ~ 0
 IO_3V3_7
-Text Label 6350 1950 0    50   ~ 0
+Text Label 6350 1750 0    50   ~ 0
 IO_3V3_8
-Text Label 6350 2050 0    50   ~ 0
+Text Label 6350 1850 0    50   ~ 0
 IO_3V3_9
-Text Label 6350 2150 0    50   ~ 0
+Text Label 6350 1950 0    50   ~ 0
 IO_3V3_10
-Text Label 6350 2250 0    50   ~ 0
+Text Label 6350 2050 0    50   ~ 0
 IO_3V3_11
-Text Label 6350 2350 0    50   ~ 0
+Text Label 6350 2150 0    50   ~ 0
 IO_3V3_12
-Text Label 6350 2450 0    50   ~ 0
+Text Label 6350 2250 0    50   ~ 0
 IO_3V3_13
-Text Label 6350 2550 0    50   ~ 0
+Text Label 6350 2350 0    50   ~ 0
 IO_3V3_14
-Text Label 6350 2650 0    50   ~ 0
+Text Label 6350 2450 0    50   ~ 0
 IO_3V3_15
-Text Label 6350 2750 0    50   ~ 0
+Text Label 6350 2550 0    50   ~ 0
 IO_3V3_16
-Text Label 6350 2850 0    50   ~ 0
+Text Label 6350 2650 0    50   ~ 0
 IO_3V3_17
-Text Label 6350 2950 0    50   ~ 0
+Text Label 6350 2750 0    50   ~ 0
 IO_3V3_18
-Text Label 6350 3050 0    50   ~ 0
+Text Label 6350 2850 0    50   ~ 0
 IO_3V3_19
-Text Label 6350 3150 0    50   ~ 0
+Text Label 6350 2950 0    50   ~ 0
 IO_3V3_20
-Text Label 6350 3250 0    50   ~ 0
+Text Label 6350 3050 0    50   ~ 0
 IO_3V3_21
-Text Label 6350 3350 0    50   ~ 0
+Text Label 6350 3250 0    50   ~ 0
 IO_3V3_22
 Text Label 6350 3450 0    50   ~ 0
 IO_3V3_23
@@ -208,65 +208,65 @@ Text Label 6350 4050 0    50   ~ 0
 IO_3V3_29
 Text Label 8400 750  2    50   ~ 0
 IO_3V3_0
-Text Label 8400 950  2    50   ~ 0
+Text Label 8400 1950 2    50   ~ 0
 IO_3V3_1
 Text Label 8400 1050 2    50   ~ 0
 IO_3V3_2
-Text Label 8400 1150 2    50   ~ 0
+Text Label 8400 2450 2    50   ~ 0
 IO_3V3_3
 Text Label 8400 2850 2    50   ~ 0
 CLK_3V3_0
 Text Label 8400 3250 2    50   ~ 0
 CLK_3V3_1
-Text Label 8400 1250 2    50   ~ 0
-IO_3V3_4
-Text Label 8400 1350 2    50   ~ 0
-IO_3V3_5
-Text Label 8400 1450 2    50   ~ 0
-IO_3V3_6
-Text Label 8400 1550 2    50   ~ 0
-IO_3V3_7
-Text Label 8400 1650 2    50   ~ 0
-IO_3V3_8
-Text Label 8400 2250 2    50   ~ 0
-IO_3V3_9
 Text Label 8400 1850 2    50   ~ 0
-IO_3V3_10
-Text Label 8400 3750 2    50   ~ 0
-IO_3V3_11
+IO_3V3_4
 Text Label 8400 2550 2    50   ~ 0
-IO_3V3_12
-Text Label 8400 4150 2    50   ~ 0
-IO_3V3_13
-Text Label 8400 2050 2    50   ~ 0
-IO_3V3_14
-Text Label 8400 3350 2    50   ~ 0
-IO_3V3_15
-Text Label 8400 2450 2    50   ~ 0
-IO_3V3_16
-Text Label 8400 4350 2    50   ~ 0
-IO_3V3_17
+IO_3V3_5
+Text Label 8400 1150 2    50   ~ 0
+IO_3V3_6
+Text Label 8400 2750 2    50   ~ 0
+IO_3V3_7
+Text Label 8400 1250 2    50   ~ 0
+IO_3V3_8
 Text Label 8400 2650 2    50   ~ 0
+IO_3V3_9
+Text Label 8400 1450 2    50   ~ 0
+IO_3V3_10
+Text Label 8400 2250 2    50   ~ 0
+IO_3V3_11
+Text Label 8400 1350 2    50   ~ 0
+IO_3V3_12
+Text Label 8400 3750 2    50   ~ 0
+IO_3V3_13
+Text Label 8400 950  2    50   ~ 0
+IO_3V3_14
+Text Label 8400 4150 2    50   ~ 0
+IO_3V3_15
+Text Label 8400 1550 2    50   ~ 0
+IO_3V3_16
+Text Label 8400 3350 2    50   ~ 0
+IO_3V3_17
+Text Label 8400 1650 2    50   ~ 0
 IO_3V3_18
-Text Label 8400 4050 2    50   ~ 0
+Text Label 8400 4350 2    50   ~ 0
 IO_3V3_19
-Text Label 8400 2350 2    50   ~ 0
-IO_3V3_20
-Text Label 8400 4250 2    50   ~ 0
-IO_3V3_21
 Text Label 8400 1750 2    50   ~ 0
+IO_3V3_20
+Text Label 8400 4050 2    50   ~ 0
+IO_3V3_21
+Text Label 8400 4250 2    50   ~ 0
 IO_3V3_22
 Text Label 8400 4950 2    50   ~ 0
 IO_3V3_23
-Text Label 8400 2150 2    50   ~ 0
+Text Label 8400 2050 2    50   ~ 0
 IO_3V3_24
 Text Label 8400 3950 2    50   ~ 0
 IO_3V3_25
-Text Label 8400 1950 2    50   ~ 0
+Text Label 8400 2150 2    50   ~ 0
 IO_3V3_26
 Text Label 8400 5150 2    50   ~ 0
 IO_3V3_27
-Text Label 8400 2750 2    50   ~ 0
+Text Label 8400 2350 2    50   ~ 0
 IO_3V3_28
 Text Label 8400 5550 2    50   ~ 0
 IO_3V3_29
@@ -383,9 +383,9 @@ Wire Wire Line
 	7900 3150 7900 3250
 Wire Wire Line
 	7900 3250 7550 3250
-Text Label 6350 1250 0    50   ~ 0
+Text Label 6350 3350 0    50   ~ 0
 IN_3V3_0_P
-Text Label 6350 1450 0    50   ~ 0
+Text Label 6350 3150 0    50   ~ 0
 IN_3V3_0_N
 NoConn ~ 13900 3450
 NoConn ~ 13900 3550
