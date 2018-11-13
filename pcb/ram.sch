@@ -292,37 +292,37 @@ F 3 "" H 4850 6800 50  0001 C CNN
 	2    4850 6800
 	-1   0    0    -1  
 $EndComp
-Text Label 8600 3500 2    50   ~ 0
+Text Label 8600 5000 2    50   ~ 0
 GPIO_1V8_0
-Text Label 8600 900  2    50   ~ 0
+Text Label 8600 4800 2    50   ~ 0
 GPIO_1V8_1
-Text Label 8600 4000 2    50   ~ 0
+Text Label 8600 5300 2    50   ~ 0
 GPIO_1V8_2
-Text Label 8600 4400 2    50   ~ 0
+Text Label 8600 4900 2    50   ~ 0
 GPIO_1V8_3
-Text Label 8600 4500 2    50   ~ 0
+Text Label 8600 5600 2    50   ~ 0
 GPIO_1V8_4
-Text Label 8600 4600 2    50   ~ 0
+Text Label 8600 5100 2    50   ~ 0
 GPIO_1V8_5
 Text Label 8600 4700 2    50   ~ 0
 GPIO_1V8_6
-Text Label 8600 4800 2    50   ~ 0
+Text Label 8600 900  2    50   ~ 0
 GPIO_1V8_7
-Text Label 8600 4900 2    50   ~ 0
+Text Label 8600 4400 2    50   ~ 0
 GPIO_1V8_8
-Text Label 8600 5000 2    50   ~ 0
+Text Label 8600 3500 2    50   ~ 0
 GPIO_1V8_9
-Text Label 8600 5100 2    50   ~ 0
+Text Label 8600 4600 2    50   ~ 0
 GPIO_1V8_10
 Text Label 8600 5200 2    50   ~ 0
 GPIO_1V8_11
-Text Label 8600 5300 2    50   ~ 0
+Text Label 8600 4000 2    50   ~ 0
 GPIO_1V8_12
 Text Label 8600 5400 2    50   ~ 0
 GPIO_1V8_13
 Text Label 8600 5500 2    50   ~ 0
 GPIO_1V8_14
-Text Label 8600 5600 2    50   ~ 0
+Text Label 8600 4500 2    50   ~ 0
 GPIO_1V8_15
 Text Label 8600 5700 2    50   ~ 0
 GPIO_1V8_16
