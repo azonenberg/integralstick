@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 6 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-11"
+Date "2018-11-12"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 "FPGA and LVDS/2.5V/3.3V GPIO"
@@ -228,55 +228,53 @@ Text Label 8400 1550 2    50   ~ 0
 IO_3V3_7
 Text Label 8400 1650 2    50   ~ 0
 IO_3V3_8
-Text Label 8400 1750 2    50   ~ 0
+Text Label 8400 2250 2    50   ~ 0
 IO_3V3_9
 Text Label 8400 1850 2    50   ~ 0
 IO_3V3_10
-Text Label 8400 1950 2    50   ~ 0
+Text Label 8400 3750 2    50   ~ 0
 IO_3V3_11
-Text Label 8400 5250 2    50   ~ 0
+Text Label 8400 2550 2    50   ~ 0
 IO_3V3_12
-Text Label 8400 5350 2    50   ~ 0
+Text Label 8400 4150 2    50   ~ 0
 IO_3V3_13
 Text Label 8400 2050 2    50   ~ 0
 IO_3V3_14
-Text Label 8400 2350 2    50   ~ 0
+Text Label 8400 3350 2    50   ~ 0
 IO_3V3_15
 Text Label 8400 2450 2    50   ~ 0
 IO_3V3_16
-Text Label 8400 2550 2    50   ~ 0
+Text Label 8400 4350 2    50   ~ 0
 IO_3V3_17
 Text Label 8400 2650 2    50   ~ 0
 IO_3V3_18
-Text Label 8400 2750 2    50   ~ 0
-IO_3V3_19
-Text Label 8400 5050 2    50   ~ 0
-IO_3V3_20
 Text Label 8400 4050 2    50   ~ 0
-IO_3V3_21
-Text Label 8400 2250 2    50   ~ 0
-IO_3V3_22
-Text Label 8400 3350 2    50   ~ 0
-IO_3V3_23
-Text Label 8400 3550 2    50   ~ 0
-IO_3V3_24
-Text Label 8400 2150 2    50   ~ 0
-IO_3V3_25
-Text Label 8400 3750 2    50   ~ 0
-IO_3V3_26
-Text Label 8400 3850 2    50   ~ 0
-IO_3V3_27
-Text Label 8400 4150 2    50   ~ 0
-IO_3V3_28
+IO_3V3_19
+Text Label 8400 2350 2    50   ~ 0
+IO_3V3_20
 Text Label 8400 4250 2    50   ~ 0
+IO_3V3_21
+Text Label 8400 1750 2    50   ~ 0
+IO_3V3_22
+Text Label 8400 4950 2    50   ~ 0
+IO_3V3_23
+Text Label 8400 2150 2    50   ~ 0
+IO_3V3_24
+Text Label 8400 3950 2    50   ~ 0
+IO_3V3_25
+Text Label 8400 1950 2    50   ~ 0
+IO_3V3_26
+Text Label 8400 5150 2    50   ~ 0
+IO_3V3_27
+Text Label 8400 2750 2    50   ~ 0
+IO_3V3_28
+Text Label 8400 5550 2    50   ~ 0
 IO_3V3_29
 Text Label 8400 3050 2    50   ~ 0
 IN_3V3_0_P
 Text Label 8400 3150 2    50   ~ 0
 IN_3V3_0_N
-NoConn ~ 8400 4750
 NoConn ~ 8400 4850
-NoConn ~ 8400 4950
 NoConn ~ 8400 5650
 $Comp
 L memory-azonenberg:24Cxx-DFN8 U9
@@ -358,9 +356,9 @@ Wire Wire Line
 Connection ~ 5000 7850
 Wire Wire Line
 	5000 7850 5350 7850
-Text Label 8400 5150 2    50   ~ 0
+Text Label 8400 5050 2    50   ~ 0
 I2C_SCL
-Text Label 8400 5550 2    50   ~ 0
+Text Label 8400 5450 2    50   ~ 0
 I2C_SDA
 $Comp
 L device:R R16
@@ -771,11 +769,11 @@ Wire Wire Line
 Connection ~ 8150 9450
 Wire Wire Line
 	8150 9450 9300 9450
-Text Label 8400 4350 2    50   ~ 0
+Text Label 8400 5250 2    50   ~ 0
 GPIO_LED0
-Text Label 8400 4450 2    50   ~ 0
+Text Label 8400 5350 2    50   ~ 0
 GPIO_LED1
-Text Label 8400 4550 2    50   ~ 0
+Text Label 8400 4750 2    50   ~ 0
 GPIO_LED2
 Text Label 8400 4650 2    50   ~ 0
 GPIO_LED3
@@ -803,8 +801,6 @@ F 3 "" H 13500 4350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	13650 4350 13900 4350
-NoConn ~ 8400 5450
-NoConn ~ 8400 3950
 NoConn ~ 8400 3650
 $Comp
 L xilinx-azonenberg:XC7AxT-xFTG256x U2
@@ -820,4 +816,8 @@ $EndComp
 NoConn ~ 8400 2950
 Text Notes 900  4000 0    50   ~ 0
 LVDS_DQ3 polarity swapped for routability
+NoConn ~ 8400 3850
+NoConn ~ 8400 3550
+NoConn ~ 8400 4550
+NoConn ~ 8400 4450
 $EndSCHEMATC
