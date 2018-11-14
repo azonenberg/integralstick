@@ -49,49 +49,49 @@ F 3 "" H 1450 3600 50  0001 C CNN
 	3    1450 3600
 	-1   0    0    -1  
 $EndComp
-Text Label 3300 750  2    50   ~ 0
-GPIO_2V5_0
 Text Label 3300 2650 2    50   ~ 0
+GPIO_2V5_0
+Text Label 3300 750  2    50   ~ 0
 GPIO_2V5_1
 Text Label 1650 3550 0    50   ~ 0
 GPIO_2V5_1
 Text Label 1650 3450 0    50   ~ 0
 GPIO_2V5_0
-Text Label 3300 850  2    50   ~ 0
-LVDS_DQ0_P
-Text Label 3300 950  2    50   ~ 0
-LVDS_DQ0_N
 Text Label 3300 1050 2    50   ~ 0
-LVDS_DQ1_P
+LVDS_DQ0_P
 Text Label 3300 1150 2    50   ~ 0
+LVDS_DQ0_N
+Text Label 3300 850  2    50   ~ 0
+LVDS_DQ1_P
+Text Label 3300 950  2    50   ~ 0
 LVDS_DQ1_N
 Text Label 3300 1250 2    50   ~ 0
 LVDS_DQ2_P
 Text Label 3300 1350 2    50   ~ 0
 LVDS_DQ2_N
-Text Label 3300 1450 2    50   ~ 0
-LVDS_DQ3_P
-Text Label 3300 1550 2    50   ~ 0
-LVDS_DQ3_N
-Text Label 3300 1650 2    50   ~ 0
-LVDS_DQ4_P
-Text Label 3300 1750 2    50   ~ 0
-LVDS_DQ4_N
 Text Label 3300 1850 2    50   ~ 0
-LVDS_DQ5_P
+LVDS_DQ3_P
 Text Label 3300 1950 2    50   ~ 0
+LVDS_DQ3_N
+Text Label 3300 1450 2    50   ~ 0
+LVDS_DQ4_P
+Text Label 3300 1550 2    50   ~ 0
+LVDS_DQ4_N
+Text Label 3300 1650 2    50   ~ 0
+LVDS_DQ5_P
+Text Label 3300 1750 2    50   ~ 0
 LVDS_DQ5_N
 Text Label 3300 2050 2    50   ~ 0
 LVDS_DQ6_P
 Text Label 3300 2150 2    50   ~ 0
 LVDS_DQ6_N
-Text Label 3300 2250 2    50   ~ 0
-LVDS_DQ7_P
-Text Label 3300 2350 2    50   ~ 0
-LVDS_DQ7_N
 Text Label 3300 2450 2    50   ~ 0
-LVDS_DQ8_P
+LVDS_DQ7_P
 Text Label 3300 2550 2    50   ~ 0
+LVDS_DQ7_N
+Text Label 3300 2250 2    50   ~ 0
+LVDS_DQ8_P
+Text Label 3300 2350 2    50   ~ 0
 LVDS_DQ8_N
 Text Label 1650 750  0    50   ~ 0
 LVDS_DQ0_P
@@ -105,9 +105,9 @@ Text Label 1650 1350 0    50   ~ 0
 LVDS_DQ2_P
 Text Label 1650 1450 0    50   ~ 0
 LVDS_DQ2_N
-Text Label 1650 1750 0    50   ~ 0
-LVDS_DQ3_P
 Text Label 1650 1650 0    50   ~ 0
+LVDS_DQ3_P
+Text Label 1650 1750 0    50   ~ 0
 LVDS_DQ3_N
 Text Label 1650 1950 0    50   ~ 0
 LVDS_DQ4_P
@@ -814,8 +814,6 @@ F 3 "" H 8600 5650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 8400 2950
-Text Notes 900  4000 0    50   ~ 0
-LVDS_DQ3 polarity swapped for routability
 NoConn ~ 8400 3850
 NoConn ~ 8400 3550
 NoConn ~ 8400 4550

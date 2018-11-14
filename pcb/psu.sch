@@ -678,24 +678,14 @@ Wire Wire Line
 	4150 8250 4150 8150
 Connection ~ 4150 8150
 Wire Wire Line
-	4100 8450 4150 8450
-Wire Wire Line
-	4150 8450 4150 8550
-Wire Wire Line
-	4150 8550 4250 8550
-Connection ~ 4150 8450
-Wire Wire Line
-	4150 8450 4250 8450
-Wire Wire Line
-	4150 8550 4150 8650
-Wire Wire Line
-	4150 8650 4250 8650
-Connection ~ 4150 8550
+	4100 8650 4150 8650
 Wire Wire Line
 	4150 8650 4150 8750
 Wire Wire Line
 	4150 8750 4250 8750
 Connection ~ 4150 8650
+Wire Wire Line
+	4150 8650 4250 8650
 Wire Wire Line
 	4150 8750 4150 8850
 Wire Wire Line
@@ -1586,7 +1576,7 @@ Wire Wire Line
 	2500 1900 2700 1900
 Text Label 1300 7350 2    50   ~ 0
 3V3
-Text Label 4100 8450 2    50   ~ 0
+Text Label 4100 8650 2    50   ~ 0
 1V8
 Text HLabel 1500 5750 0    50   Output ~ 0
 2V5
@@ -2114,4 +2104,14 @@ F 3 "" H 8000 6050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7900 5900 8000 5900
+Wire Wire Line
+	4150 8450 4250 8450
+Connection ~ 4150 8250
+Wire Wire Line
+	4250 8350 4150 8350
+Wire Wire Line
+	4150 8250 4150 8350
+Connection ~ 4150 8350
+Wire Wire Line
+	4150 8350 4150 8450
 $EndSCHEMATC
