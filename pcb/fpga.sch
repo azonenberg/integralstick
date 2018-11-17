@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 6 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-13"
+Date "2018-11-14"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 "FPGA and LVDS/2.5V/3.3V GPIO"
@@ -216,7 +216,7 @@ Text Label 8400 2450 2    50   ~ 0
 IO_3V3_3
 Text Label 8400 2850 2    50   ~ 0
 CLK_3V3_0
-Text Label 8400 3250 2    50   ~ 0
+Text Label 8400 3450 2    50   ~ 0
 CLK_3V3_1
 Text Label 8400 1050 2    50   ~ 0
 IO_3V3_4
@@ -595,7 +595,7 @@ Wire Wire Line
 	2400 7000 3050 7000
 Wire Wire Line
 	3050 7000 3050 7100
-Text Label 8400 3450 2    50   ~ 0
+Text Label 8400 3250 2    50   ~ 0
 FPGA_CLK_25MHZ
 Text HLabel 8400 850  0    50   Input ~ 0
 PSU_TEMP
@@ -1270,8 +1270,8 @@ L device:C C?
 U 1 1 5C3E05B4
 P 15050 7900
 AR Path="/5B6B7044/5C3E05B4" Ref="C?"  Part="1" 
-AR Path="/5B6B702C/5C3E05B4" Ref="C?"  Part="1" 
-F 0 "C?" H 15165 7946 50  0000 L CNN
+AR Path="/5B6B702C/5C3E05B4" Ref="C142"  Part="1" 
+F 0 "C142" H 15165 7946 50  0000 L CNN
 F 1 "0.47 uF" H 15165 7855 50  0000 L CNN
 F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 15088 7750 50  0001 C CNN
 F 3 "" H 15050 7900 50  0001 C CNN
@@ -1283,8 +1283,8 @@ L device:C C?
 U 1 1 5C3E0A0B
 P 15600 7900
 AR Path="/5B6B7044/5C3E0A0B" Ref="C?"  Part="1" 
-AR Path="/5B6B702C/5C3E0A0B" Ref="C?"  Part="1" 
-F 0 "C?" H 15715 7946 50  0000 L CNN
+AR Path="/5B6B702C/5C3E0A0B" Ref="C143"  Part="1" 
+F 0 "C143" H 15715 7946 50  0000 L CNN
 F 1 "0.47 uF" H 15715 7855 50  0000 L CNN
 F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 15638 7750 50  0001 C CNN
 F 3 "" H 15600 7900 50  0001 C CNN

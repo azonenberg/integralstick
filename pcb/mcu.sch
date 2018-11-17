@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 8 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-13"
+Date "2018-11-14"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 ""
@@ -162,29 +162,29 @@ Text Label 13950 1550 2    50   ~ 0
 RMII_TXD0
 Text Label 13950 1650 2    50   ~ 0
 RMII_TXD1
-Text Label 13950 5550 2    50   ~ 0
+Text Label 13950 2850 2    50   ~ 0
 DCMI_D5
 Text Label 13950 2550 2    50   ~ 0
 DCMI_VSYNC
-Text Label 13950 5650 2    50   ~ 0
+Text Label 13950 2750 2    50   ~ 0
 DCMI_D6
-Text Label 13950 5750 2    50   ~ 0
+Text Label 13950 4550 2    50   ~ 0
 DCMI_D7
 Text Label 13950 2150 2    50   ~ 0
 RMII_RXD0
 Text Label 13950 2250 2    50   ~ 0
 RMII_RXD1
-Text Label 13950 5050 2    50   ~ 0
+Text Label 13950 2950 2    50   ~ 0
 DCMI_D0
-Text Label 13950 5150 2    50   ~ 0
+Text Label 13950 2350 2    50   ~ 0
 DCMI_D1
-Text Label 13950 5250 2    50   ~ 0
+Text Label 13950 3050 2    50   ~ 0
 DCMI_D2
-Text Label 13950 5350 2    50   ~ 0
+Text Label 13950 3250 2    50   ~ 0
 DCMI_D3
-Text Label 13950 5450 2    50   ~ 0
+Text Label 13950 3550 2    50   ~ 0
 DCMI_D4
-Text Label 13950 3350 2    50   ~ 0
+Text Label 13950 3150 2    50   ~ 0
 RMII_REFCLK
 Text Label 13950 1850 2    50   ~ 0
 RMII_MDIO
@@ -192,7 +192,7 @@ Text Label 13950 2050 2    50   ~ 0
 RMII_CRS_DV
 Text Label 13950 2450 2    50   ~ 0
 DCMI_HSYNC
-Text Label 13950 2650 2    50   ~ 0
+Text Label 13950 3750 2    50   ~ 0
 DCMI_PIXCLK
 $Comp
 L memory-azonenberg:W25Q80BV U?
@@ -305,15 +305,15 @@ Wire Wire Line
 	13950 5650 14100 5650
 Wire Wire Line
 	14100 5750 13950 5750
-Text HLabel 13950 4950 0    50   Output ~ 0
-RGMII_TX_CLK
-Text HLabel 13950 4850 0    50   Output ~ 0
-RGMII_TX_EN
 Text HLabel 13950 4750 0    50   Output ~ 0
+RGMII_TX_CLK
+Text HLabel 13950 5050 0    50   Output ~ 0
+RGMII_TX_EN
+Text HLabel 13950 4150 0    50   Output ~ 0
 RGMII_TXD0
-Text HLabel 13950 4650 0    50   Output ~ 0
+Text HLabel 13950 5250 0    50   Output ~ 0
 RGMII_TXD1
-Text HLabel 13950 4550 0    50   Output ~ 0
+Text HLabel 13950 5150 0    50   Output ~ 0
 RGMII_TXD2
 Text HLabel 13950 4450 0    50   Output ~ 0
 RGMII_TXD3
@@ -329,17 +329,17 @@ Wire Wire Line
 	13950 4850 14100 4850
 Wire Wire Line
 	14100 4950 13950 4950
-Text HLabel 13950 3150 0    50   Input ~ 0
+Text HLabel 13950 3350 0    50   Input ~ 0
 RGMII_RX_CLK
-Text HLabel 13950 3250 0    50   Input ~ 0
+Text HLabel 13950 5750 0    50   Input ~ 0
 RGMII_RX_DV
-Text HLabel 13950 2750 0    50   Input ~ 0
+Text HLabel 13950 4650 0    50   Input ~ 0
 RGMII_RXD0
-Text HLabel 13950 2850 0    50   Input ~ 0
+Text HLabel 13950 4950 0    50   Input ~ 0
 RGMII_RXD1
-Text HLabel 13950 2950 0    50   Input ~ 0
+Text HLabel 13950 5650 0    50   Input ~ 0
 RGMII_RXD2
-Text HLabel 13950 3050 0    50   Input ~ 0
+Text HLabel 13950 4850 0    50   Input ~ 0
 RGMII_RXD3
 Wire Wire Line
 	13950 2750 14100 2750
@@ -353,15 +353,15 @@ Wire Wire Line
 	13950 3150 14100 3150
 Wire Wire Line
 	14100 3250 13950 3250
-Text HLabel 13950 2350 0    50   BiDi ~ 0
+Text HLabel 13950 5450 0    50   BiDi ~ 0
 RGMII_MDIO
-Text HLabel 13950 3450 0    50   Output ~ 0
+Text HLabel 13950 5350 0    50   Output ~ 0
 RGMII_MDC
 Wire Wire Line
 	13950 3450 14100 3450
 Wire Wire Line
 	14100 2350 13950 2350
-Text HLabel 13950 3550 0    50   Output ~ 0
+Text HLabel 13950 5550 0    50   Output ~ 0
 RGMII_RST_N
 Wire Wire Line
 	13950 3550 14100 3550
@@ -802,9 +802,9 @@ Wire Wire Line
 	13950 3650 14100 3650
 Wire Wire Line
 	13950 3750 14100 3750
-Text HLabel 13950 3650 0    50   Input ~ 0
+Text HLabel 13950 4250 0    50   Input ~ 0
 ETH_LED1_N
-Text HLabel 13950 3750 0    50   Input ~ 0
+Text HLabel 13950 3650 0    50   Input ~ 0
 ETH_LED2_N
 Text HLabel 13200 1350 0    50   Input ~ 0
 3V3
@@ -922,15 +922,15 @@ NoConn ~ 8500 2350
 $Comp
 L device:R R22
 U 1 1 5BEE00F4
-P 13800 4150
-F 0 "R22" V 13750 4350 50  0000 C CNN
-F 1 "33" V 13800 4150 50  0000 C CNN
-F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 13730 4150 50  0001 C CNN
-F 3 "" H 13800 4150 50  0001 C CNN
-	1    13800 4150
+P 13800 2650
+F 0 "R22" V 13750 2850 50  0000 C CNN
+F 1 "33" V 13800 2650 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 13730 2650 50  0001 C CNN
+F 3 "" H 13800 2650 50  0001 C CNN
+	1    13800 2650
 	0    1    1    0   
 $EndComp
-Text Label 13650 4150 2    50   ~ 0
+Text Label 13650 2650 2    50   ~ 0
 MCU_CLK
 Text Label 11650 2850 2    50   ~ 0
 MCU_CLK
@@ -988,7 +988,7 @@ Wire Wire Line
 	14100 850  13950 850 
 Text Label 13950 3850 2    50   ~ 0
 SPI5_CS_N
-Text Label 13950 4250 2    50   ~ 0
+Text Label 13950 3450 2    50   ~ 0
 SPI5_SCK
 Text Label 13950 4350 2    50   ~ 0
 SPI5_MISO

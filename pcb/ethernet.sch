@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-13"
+Date "2018-11-14"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 "Ethernet"
@@ -150,17 +150,17 @@ Wire Wire Line
 	4050 2150 3950 2150
 Wire Wire Line
 	4050 1750 3950 1750
-Text HLabel 4050 2400 2    50   Output ~ 0
+Text HLabel 4350 2400 2    50   Output ~ 0
 RGMII_RXD3
-Text HLabel 4050 2500 2    50   Output ~ 0
+Text HLabel 4350 2500 2    50   Output ~ 0
 RGMII_RXD2
-Text HLabel 4050 2600 2    50   Output ~ 0
+Text HLabel 4350 2600 2    50   Output ~ 0
 RGMII_RXD1
-Text HLabel 4050 2700 2    50   Output ~ 0
+Text HLabel 4350 2700 2    50   Output ~ 0
 RGMII_RXD0
-Text HLabel 4050 2800 2    50   Output ~ 0
+Text HLabel 4350 2800 2    50   Output ~ 0
 RGMII_RX_DV
-Text HLabel 4050 2900 2    50   Output ~ 0
+Text HLabel 4350 2900 2    50   Output ~ 0
 RGMII_RX_CLK
 Text HLabel 4050 3000 2    50   Input ~ 0
 RGMII_MDC
@@ -261,10 +261,8 @@ F 3 "" H 4750 3300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3950 3300 4600 3300
-Text Label 5000 3300 0    50   ~ 0
+Text Label 5350 3300 0    50   ~ 0
 3V3
-Wire Wire Line
-	5000 3300 4900 3300
 $Comp
 L device:R R8
 U 1 1 5BE7DCD1
@@ -800,26 +798,96 @@ Wire Wire Line
 Connection ~ 3350 7400
 Wire Wire Line
 	3350 7400 2750 7400
-Wire Wire Line
-	3950 3100 5050 3100
 $Comp
 L device:R R6
 U 1 1 5BEF5A2A
-P 5050 2950
-F 0 "R6" V 4950 2950 50  0000 C CNN
-F 1 "1K" V 5050 2950 50  0000 C CNN
-F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 4980 2950 50  0001 C CNN
-F 3 "" H 5050 2950 50  0001 C CNN
-	1    5050 2950
-	-1   0    0    1   
+P 5200 3200
+F 0 "R6" V 5100 3200 50  0000 C CNN
+F 1 "1K" V 5200 3200 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 5130 3200 50  0001 C CNN
+F 3 "" H 5200 3200 50  0001 C CNN
+	1    5200 3200
+	0    -1   1    0   
 $EndComp
-Connection ~ 5050 3100
-Wire Wire Line
-	5050 3100 5350 3100
-Text Label 5050 2800 0    50   ~ 0
-3V3
 Text HLabel 1000 5000 0    50   Input ~ 0
 2V5
 Text Label 4050 3750 0    50   ~ 0
 ETH_CLK_25MHZ
+Wire Wire Line
+	3950 3100 5050 3100
+Wire Wire Line
+	5050 3200 5050 3100
+Connection ~ 5050 3100
+Wire Wire Line
+	5050 3100 5350 3100
+Wire Wire Line
+	5350 3300 5350 3200
+Wire Wire Line
+	4900 3300 5350 3300
+$Comp
+L device:R R62
+U 1 1 5C46B5A3
+P 4200 2400
+F 0 "R62" V 4150 2200 50  0000 C CNN
+F 1 "33" V 4200 2400 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 4130 2400 50  0001 C CNN
+F 3 "" H 4200 2400 50  0001 C CNN
+	1    4200 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R63
+U 1 1 5C471F48
+P 4200 2500
+F 0 "R63" V 4150 2300 50  0000 C CNN
+F 1 "33" V 4200 2500 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 4130 2500 50  0001 C CNN
+F 3 "" H 4200 2500 50  0001 C CNN
+	1    4200 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R64
+U 1 1 5C472432
+P 4200 2600
+F 0 "R64" V 4150 2400 50  0000 C CNN
+F 1 "33" V 4200 2600 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 4130 2600 50  0001 C CNN
+F 3 "" H 4200 2600 50  0001 C CNN
+	1    4200 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R65
+U 1 1 5C4727BD
+P 4200 2700
+F 0 "R65" V 4150 2500 50  0000 C CNN
+F 1 "33" V 4200 2700 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 4130 2700 50  0001 C CNN
+F 3 "" H 4200 2700 50  0001 C CNN
+	1    4200 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R66
+U 1 1 5C472B4C
+P 4200 2800
+F 0 "R66" V 4150 2600 50  0000 C CNN
+F 1 "33" V 4200 2800 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 4130 2800 50  0001 C CNN
+F 3 "" H 4200 2800 50  0001 C CNN
+	1    4200 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R67
+U 1 1 5C472F18
+P 4200 2900
+F 0 "R67" V 4150 2700 50  0000 C CNN
+F 1 "33" V 4200 2900 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 4130 2900 50  0001 C CNN
+F 3 "" H 4200 2900 50  0001 C CNN
+	1    4200 2900
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
