@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-14"
+Date "2018-11-19"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 "Top Level"
@@ -65,7 +65,7 @@ F29 "GND" I L 3450 2800 50
 F30 "2V5" I L 3450 2600 50 
 $EndSheet
 $Sheet
-S 2700 4000 600  1600
+S 2700 4000 600  1700
 U 5B6B702C
 F0 "FPGA" 50
 F1 "fpga.sch" 50
@@ -78,9 +78,10 @@ F7 "FPGA_RST_N" I L 2700 4750 50
 F8 "FPGA_DONE" I L 2700 4850 50 
 F9 "PSU_TEMP" I L 2700 5050 50 
 F10 "3V3" I L 2700 5250 50 
-F11 "GND" I L 2700 5550 50 
+F11 "GND" I L 2700 5650 50 
 F12 "1V8" I L 2700 5450 50 
 F13 "2V5" I L 2700 5350 50 
+F14 "1V0" I L 2700 5550 50 
 $EndSheet
 $Sheet
 S 3650 4000 550  1250
@@ -328,7 +329,7 @@ Wire Wire Line
 	5000 4450 5100 4450
 Text Label 2700 5250 2    50   ~ 0
 3V3
-Text Label 2700 5550 2    50   ~ 0
+Text Label 2700 5650 2    50   ~ 0
 GND
 Text Label 1500 4850 0    50   ~ 0
 MCU_BOOT0
@@ -444,4 +445,6 @@ Text Label 2700 5450 2    50   ~ 0
 1V8
 Text Label 2700 5350 2    50   ~ 0
 2V5
+Text Label 2700 5550 2    50   ~ 0
+1V0
 $EndSCHEMATC

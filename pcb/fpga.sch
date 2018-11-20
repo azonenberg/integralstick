@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 6 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-14"
+Date "2018-11-19"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 "FPGA and LVDS/2.5V/3.3V GPIO"
@@ -1303,4 +1303,25 @@ Connection ~ 14500 8050
 Connection ~ 15050 8050
 Wire Wire Line
 	15050 8050 15600 8050
+$Comp
+L device:C C?
+U 1 1 5BFC76E4
+P 11200 7300
+AR Path="/5B6B7044/5BFC76E4" Ref="C?"  Part="1" 
+AR Path="/5B6B702C/5BFC76E4" Ref="C?"  Part="1" 
+F 0 "C?" H 11315 7346 50  0000 L CNN
+F 1 "0.47 uF" H 11315 7255 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 11238 7150 50  0001 C CNN
+F 3 "" H 11200 7300 50  0001 C CNN
+	1    11200 7300
+	1    0    0    -1  
+$EndComp
+Text HLabel 11100 7150 0    50   Input ~ 0
+1V0
+Text Label 11100 7450 2    50   ~ 0
+3V3
+Wire Wire Line
+	11100 7450 11200 7450
+Wire Wire Line
+	11200 7150 11100 7150
 $EndSCHEMATC
