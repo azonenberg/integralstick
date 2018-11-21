@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 8 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-19"
+Date "2018-11-20"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 ""
@@ -158,9 +158,9 @@ Text Notes 14300 800  0    50   ~ 0
 VCCO=3V3
 Text Label 13950 1450 2    50   ~ 0
 RMII_TX_EN
-Text Label 13950 1550 2    50   ~ 0
+Text Label 13950 2050 2    50   ~ 0
 RMII_TXD0
-Text Label 13950 1650 2    50   ~ 0
+Text Label 13950 2150 2    50   ~ 0
 RMII_TXD1
 Text Label 13950 2850 2    50   ~ 0
 DCMI_D5
@@ -170,9 +170,9 @@ Text Label 13950 2750 2    50   ~ 0
 DCMI_D6
 Text Label 13950 4550 2    50   ~ 0
 DCMI_D7
-Text Label 13950 2150 2    50   ~ 0
+Text Label 13950 1850 2    50   ~ 0
 RMII_RXD0
-Text Label 13950 2250 2    50   ~ 0
+Text Label 13950 1650 2    50   ~ 0
 RMII_RXD1
 Text Label 13950 2950 2    50   ~ 0
 DCMI_D0
@@ -180,19 +180,19 @@ Text Label 13950 2350 2    50   ~ 0
 DCMI_D1
 Text Label 13950 3050 2    50   ~ 0
 DCMI_D2
-Text Label 13950 3250 2    50   ~ 0
+Text Label 13950 2450 2    50   ~ 0
 DCMI_D3
 Text Label 13950 3550 2    50   ~ 0
 DCMI_D4
-Text Label 13950 3150 2    50   ~ 0
+Text Label 13950 850  2    50   ~ 0
 RMII_REFCLK
-Text Label 13950 1850 2    50   ~ 0
+Text Label 13950 1750 2    50   ~ 0
 RMII_MDIO
-Text Label 13950 2050 2    50   ~ 0
+Text Label 13950 1550 2    50   ~ 0
 RMII_CRS_DV
-Text Label 13950 2450 2    50   ~ 0
-DCMI_HSYNC
 Text Label 13950 3750 2    50   ~ 0
+DCMI_HSYNC
+Text Label 13950 3250 2    50   ~ 0
 DCMI_PIXCLK
 $Comp
 L memory-azonenberg:W25Q80BV U?
@@ -263,7 +263,7 @@ Wire Wire Line
 	8300 1350 8500 1350
 Wire Wire Line
 	8300 1250 8500 1250
-Text Label 13950 1750 2    50   ~ 0
+Text Label 13950 2250 2    50   ~ 0
 RMII_MDC
 Wire Wire Line
 	13950 1450 14100 1450
@@ -982,7 +982,7 @@ Text Label 11650 3550 2    50   ~ 0
 SPI5_MISO
 Text Label 6150 3950 2    50   ~ 0
 SPI5_MOSI
-Text Label 13950 850  2    50   ~ 0
+Text Label 13950 3150 2    50   ~ 0
 SPI5_MOSI
 Wire Wire Line
 	14100 850  13950 850 

@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-19"
+Date "2018-11-20"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 "Ethernet"
