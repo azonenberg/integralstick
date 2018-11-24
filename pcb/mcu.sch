@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 8 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-20"
+Date "2018-11-23"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 ""
@@ -158,41 +158,41 @@ Text Notes 14300 800  0    50   ~ 0
 VCCO=3V3
 Text Label 13950 1450 2    50   ~ 0
 RMII_TX_EN
-Text Label 13950 2050 2    50   ~ 0
-RMII_TXD0
-Text Label 13950 2150 2    50   ~ 0
-RMII_TXD1
-Text Label 13950 2850 2    50   ~ 0
-DCMI_D5
-Text Label 13950 2550 2    50   ~ 0
-DCMI_VSYNC
-Text Label 13950 2750 2    50   ~ 0
-DCMI_D6
-Text Label 13950 4550 2    50   ~ 0
-DCMI_D7
-Text Label 13950 1850 2    50   ~ 0
-RMII_RXD0
-Text Label 13950 1650 2    50   ~ 0
-RMII_RXD1
-Text Label 13950 2950 2    50   ~ 0
-DCMI_D0
 Text Label 13950 2350 2    50   ~ 0
+RMII_TXD0
+Text Label 13950 2850 2    50   ~ 0
+RMII_TXD1
+Text Label 13950 3750 2    50   ~ 0
+DCMI_D5
+Text Label 13950 3850 2    50   ~ 0
+DCMI_VSYNC
+Text Label 13950 4550 2    50   ~ 0
+DCMI_D6
+Text Label 13950 1650 2    50   ~ 0
+DCMI_D7
+Text Label 13950 2650 2    50   ~ 0
+RMII_RXD0
+Text Label 13950 2550 2    50   ~ 0
+RMII_RXD1
+Text Label 13950 2750 2    50   ~ 0
+DCMI_D0
+Text Label 13950 3950 2    50   ~ 0
 DCMI_D1
 Text Label 13950 3050 2    50   ~ 0
 DCMI_D2
-Text Label 13950 2450 2    50   ~ 0
+Text Label 13950 4050 2    50   ~ 0
 DCMI_D3
-Text Label 13950 3550 2    50   ~ 0
+Text Label 13950 3450 2    50   ~ 0
 DCMI_D4
 Text Label 13950 850  2    50   ~ 0
 RMII_REFCLK
 Text Label 13950 1750 2    50   ~ 0
 RMII_MDIO
-Text Label 13950 1550 2    50   ~ 0
-RMII_CRS_DV
-Text Label 13950 3750 2    50   ~ 0
-DCMI_HSYNC
 Text Label 13950 3250 2    50   ~ 0
+RMII_CRS_DV
+Text Label 13950 2450 2    50   ~ 0
+DCMI_HSYNC
+Text Label 13950 1550 2    50   ~ 0
 DCMI_PIXCLK
 $Comp
 L memory-azonenberg:W25Q80BV U?
@@ -263,7 +263,7 @@ Wire Wire Line
 	8300 1350 8500 1350
 Wire Wire Line
 	8300 1250 8500 1250
-Text Label 13950 2250 2    50   ~ 0
+Text Label 13950 3150 2    50   ~ 0
 RMII_MDC
 Wire Wire Line
 	13950 1450 14100 1450
@@ -922,15 +922,15 @@ NoConn ~ 8500 2350
 $Comp
 L device:R R22
 U 1 1 5BEE00F4
-P 13800 2650
-F 0 "R22" V 13750 2850 50  0000 C CNN
-F 1 "33" V 13800 2650 50  0000 C CNN
-F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 13730 2650 50  0001 C CNN
-F 3 "" H 13800 2650 50  0001 C CNN
-	1    13800 2650
+P 13800 2950
+F 0 "R22" V 13750 3150 50  0000 C CNN
+F 1 "33" V 13800 2950 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 13730 2950 50  0001 C CNN
+F 3 "" H 13800 2950 50  0001 C CNN
+	1    13800 2950
 	0    1    1    0   
 $EndComp
-Text Label 13650 2650 2    50   ~ 0
+Text Label 13650 2950 2    50   ~ 0
 MCU_CLK
 Text Label 11650 2850 2    50   ~ 0
 MCU_CLK
@@ -957,9 +957,9 @@ Text Label 8850 3750 2    50   ~ 0
 UART6_RX
 Text Label 8850 4250 2    50   ~ 0
 UART6_TX
-Text Label 13950 3950 2    50   ~ 0
+Text Label 13950 1850 2    50   ~ 0
 UART6_RX
-Text Label 13950 4050 2    50   ~ 0
+Text Label 13950 4350 2    50   ~ 0
 UART6_TX
 Wire Wire Line
 	14100 3950 13950 3950
@@ -982,15 +982,15 @@ Text Label 11650 3550 2    50   ~ 0
 SPI5_MISO
 Text Label 6150 3950 2    50   ~ 0
 SPI5_MOSI
-Text Label 13950 3150 2    50   ~ 0
+Text Label 13950 2050 2    50   ~ 0
 SPI5_MOSI
 Wire Wire Line
 	14100 850  13950 850 
-Text Label 13950 3850 2    50   ~ 0
+Text Label 13950 2250 2    50   ~ 0
 SPI5_CS_N
-Text Label 13950 3450 2    50   ~ 0
+Text Label 13950 2150 2    50   ~ 0
 SPI5_SCK
-Text Label 13950 4350 2    50   ~ 0
+Text Label 13950 3550 2    50   ~ 0
 SPI5_MISO
 Wire Wire Line
 	13950 3850 14100 3850

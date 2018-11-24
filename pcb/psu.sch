@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 2 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-20"
+Date "2018-11-23"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 "Power supply"
@@ -998,16 +998,11 @@ Text Label 14100 2600 0    50   ~ 0
 1V8
 Wire Wire Line
 	1300 7350 1350 7350
-Wire Wire Line
-	1350 10850 1450 10850
 Connection ~ 1350 7350
 Wire Wire Line
 	1350 7350 1450 7350
 Wire Wire Line
 	1450 10750 1350 10750
-Connection ~ 1350 10750
-Wire Wire Line
-	1350 10750 1350 10850
 Wire Wire Line
 	1450 10650 1350 10650
 Connection ~ 1350 10650
@@ -2114,4 +2109,24 @@ Wire Wire Line
 Connection ~ 4150 8350
 Wire Wire Line
 	4150 8350 4150 8450
+$Comp
+L conn:CONN_01X01 TP?
+U 1 1 5C11F6A8
+P 8650 6550
+AR Path="/5C11F6A8" Ref="TP?"  Part="1" 
+AR Path="/5B6B7005/5C11F6A8" Ref="TP11"  Part="1" 
+F 0 "TP11" H 8728 6591 50  0000 L CNN
+F 1 "TESTPAD" H 8728 6500 50  0000 L CNN
+F 2 "azonenberg_pcb:TESTPOINT_SMT_0.5MM" H 8650 6550 50  0001 C CNN
+F 3 "" H 8650 6550 50  0001 C CNN
+	1    8650 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 6550 8000 6550
+Wire Wire Line
+	2650 8550 2650 8650
+Wire Wire Line
+	2650 8650 2550 8650
+Connection ~ 2650 8550
 $EndSCHEMATC
