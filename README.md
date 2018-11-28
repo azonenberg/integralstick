@@ -1,2 +1,2 @@
 # integralstick
-STM32F7 + Spartan-7 SoM
+STM32F7 + Artix-7 SoM
