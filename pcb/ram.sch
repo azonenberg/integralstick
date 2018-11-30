@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-23"
+Date "2018-11-29"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 "HyperRAM and 1.8V GPIO"

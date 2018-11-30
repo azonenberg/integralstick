@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 6 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-23"
+Date "2018-11-29"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 "FPGA and LVDS/2.5V/3.3V GPIO"
