@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 6 8
 Title "INTEGRALSTICK Compute Module"
-Date "2018-11-29"
+Date "2018-12-02"
 Rev "0.1"
 Comp "Andrew D. Zonenberg"
 Comment1 "FPGA and LVDS/2.5V/3.3V GPIO"
@@ -1324,4 +1324,120 @@ Wire Wire Line
 	11100 7450 11200 7450
 Wire Wire Line
 	11200 7150 11100 7150
+$Comp
+L device:C C?
+U 1 1 5C06A03D
+P 11200 6800
+AR Path="/5B6B7044/5C06A03D" Ref="C?"  Part="1" 
+AR Path="/5B6B702C/5C06A03D" Ref="C145"  Part="1" 
+F 0 "C145" H 11315 6846 50  0000 L CNN
+F 1 "0.47 uF" H 11315 6755 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 11238 6650 50  0001 C CNN
+F 3 "" H 11200 6800 50  0001 C CNN
+	1    11200 6800
+	1    0    0    -1  
+$EndComp
+Text Label 11100 6650 2    50   ~ 0
+3V3
+Text Label 11100 6950 2    50   ~ 0
+1V8
+Wire Wire Line
+	11100 6950 11200 6950
+Wire Wire Line
+	11100 6650 11200 6650
+$Comp
+L device:C C?
+U 1 1 5C0711F3
+P 11750 6800
+AR Path="/5B6B7044/5C0711F3" Ref="C?"  Part="1" 
+AR Path="/5B6B702C/5C0711F3" Ref="C146"  Part="1" 
+F 0 "C146" H 11865 6846 50  0000 L CNN
+F 1 "0.47 uF" H 11865 6755 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 11788 6650 50  0001 C CNN
+F 3 "" H 11750 6800 50  0001 C CNN
+	1    11750 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11750 6650 11200 6650
+Connection ~ 11200 6650
+Wire Wire Line
+	11200 6950 11750 6950
+Connection ~ 11200 6950
+$Comp
+L device:C C?
+U 1 1 5C078B6E
+P 12300 6800
+AR Path="/5B6B7044/5C078B6E" Ref="C?"  Part="1" 
+AR Path="/5B6B702C/5C078B6E" Ref="C147"  Part="1" 
+F 0 "C147" H 12415 6846 50  0000 L CNN
+F 1 "0.47 uF" H 12415 6755 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 12338 6650 50  0001 C CNN
+F 3 "" H 12300 6800 50  0001 C CNN
+	1    12300 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5C079069
+P 12850 6800
+AR Path="/5B6B7044/5C079069" Ref="C?"  Part="1" 
+AR Path="/5B6B702C/5C079069" Ref="C148"  Part="1" 
+F 0 "C148" H 12965 6846 50  0000 L CNN
+F 1 "0.47 uF" H 12965 6755 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 12888 6650 50  0001 C CNN
+F 3 "" H 12850 6800 50  0001 C CNN
+	1    12850 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12850 6650 12300 6650
+Connection ~ 11750 6650
+Connection ~ 12300 6650
+Wire Wire Line
+	12300 6650 11750 6650
+Wire Wire Line
+	12850 6950 12300 6950
+Connection ~ 11750 6950
+Connection ~ 12300 6950
+Wire Wire Line
+	12300 6950 11750 6950
+$Comp
+L device:C C?
+U 1 1 5C08E6D3
+P 13450 6800
+AR Path="/5B6B7044/5C08E6D3" Ref="C?"  Part="1" 
+AR Path="/5B6B702C/5C08E6D3" Ref="C149"  Part="1" 
+F 0 "C149" H 13565 6846 50  0000 L CNN
+F 1 "0.47 uF" H 13565 6755 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 13488 6650 50  0001 C CNN
+F 3 "" H 13450 6800 50  0001 C CNN
+	1    13450 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13450 6650 12850 6650
+Connection ~ 12850 6650
+Wire Wire Line
+	13450 6950 12850 6950
+Connection ~ 12850 6950
+$Comp
+L device:C C?
+U 1 1 5C09A189
+P 14050 6800
+AR Path="/5B6B7044/5C09A189" Ref="C?"  Part="1" 
+AR Path="/5B6B702C/5C09A189" Ref="C150"  Part="1" 
+F 0 "C150" H 14165 6846 50  0000 L CNN
+F 1 "0.47 uF" H 14165 6755 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 14088 6650 50  0001 C CNN
+F 3 "" H 14050 6800 50  0001 C CNN
+	1    14050 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14050 6650 13450 6650
+Connection ~ 13450 6650
+Wire Wire Line
+	14050 6950 13450 6950
+Connection ~ 13450 6950
 $EndSCHEMATC
