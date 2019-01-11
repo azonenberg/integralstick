@@ -1,0 +1,585 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "INTEGRALSTICK Minimal Left Breakout"
+Date "2019-01-11"
+Rev "0.1"
+Comp "Antikernel Labs"
+Comment1 "Andrew D. Zonenberg"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power-azonenberg:CONN_3_PWROUT J1
+U 1 1 5C39562E
+P 1050 1050
+F 0 "J1" H 917 1350 50  0000 C CNN
+F 1 "BARREL" H 917 1266 40  0000 C CNN
+F 2 "azonenberg_pcb:CONN_CUI_PJ-058BH_HIPWR_BARREL_NOSLOT" H 1050 1050 60  0001 C CNN
+F 3 "" H 1050 1050 60  0000 C CNN
+	1    1050 1050
+	-1   0    0    -1  
+$EndComp
+Text Label 1550 1050 0    50   ~ 0
+GND
+Wire Wire Line
+	1550 1050 1500 1050
+Wire Wire Line
+	1500 1050 1500 1150
+Wire Wire Line
+	1500 1150 1400 1150
+Connection ~ 1500 1050
+Wire Wire Line
+	1500 1050 1400 1050
+Text Label 1500 950  0    50   ~ 0
+5V0_UNFUSED
+$Comp
+L passive-azonenberg:FERRITE_CHIP L1
+U 1 1 5C3964D4
+P 3350 950
+F 0 "L1" H 3350 1197 60  0000 C CNN
+F 1 "BLM31KN271SH1L" H 3350 1091 60  0000 C CNN
+F 2 "azonenberg_pcb:EIA_1206_CAP_NOSILK" H 3350 950 60  0001 C CNN
+F 3 "" H 3350 950 60  0000 C CNN
+	1    3350 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Fuse F1
+U 1 1 5C396EFB
+P 2200 950
+F 0 "F1" V 2003 950 50  0000 C CNN
+F 1 "2A" V 2094 950 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0603_CAP_NOSILK" V 2130 950 50  0001 C CNN
+F 3 "" H 2200 950 50  0001 C CNN
+	1    2200 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 950  2050 950 
+Text Label 2350 950  0    50   ~ 0
+5V0_FUSED
+Wire Wire Line
+	2350 950  2750 950 
+Text Label 3950 950  0    50   ~ 0
+5V0
+$Comp
+L special-azonenberg:PMOD_HOST J3
+U 1 1 5C39B3C3
+P 7450 2550
+F 0 "J3" H 7828 3258 60  0000 L CNN
+F 1 "PMOD_HOST" H 7828 3152 60  0000 L CNN
+F 2 "azonenberg_pcb:CONN_HEADER_2.54MM_2x6_RA_PMOD_HOST" H 7450 2550 60  0001 C CNN
+F 3 "" H 7450 2550 60  0001 C CNN
+	1    7450 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L special-azonenberg:CONN_INTEGRALSTICK_FPGA_HOST J2
+U 1 1 5C39B82C
+P 1800 4950
+F 0 "J2" H 2275 8125 50  0000 C CNN
+F 1 "CONN_INTEGRALSTICK_FPGA_HOST" H 2275 8034 50  0000 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 1800 4950 50  0001 C CNN
+F 3 "" H 1800 4950 50  0001 C CNN
+	1    1800 4950
+	1    0    0    -1  
+$EndComp
+Text Label 1400 2000 2    50   ~ 0
+5V0
+Wire Wire Line
+	1400 2000 1500 2000
+Wire Wire Line
+	1500 2000 1500 2100
+Wire Wire Line
+	1500 2100 1600 2100
+Connection ~ 1500 2000
+Wire Wire Line
+	1500 2000 1600 2000
+Wire Wire Line
+	1500 2100 1500 2200
+Wire Wire Line
+	1500 2200 1600 2200
+Connection ~ 1500 2100
+Wire Wire Line
+	1500 2200 1500 2300
+Wire Wire Line
+	1500 2300 1600 2300
+Connection ~ 1500 2200
+Wire Wire Line
+	1500 2300 1500 2400
+Wire Wire Line
+	1500 2400 1600 2400
+Connection ~ 1500 2300
+Wire Wire Line
+	1500 2400 1500 2500
+Wire Wire Line
+	1500 2500 1600 2500
+Connection ~ 1500 2400
+NoConn ~ 1600 2700
+NoConn ~ 1600 2800
+NoConn ~ 1600 2900
+NoConn ~ 1600 3000
+NoConn ~ 1600 3100
+NoConn ~ 1600 3200
+NoConn ~ 1600 3300
+NoConn ~ 1600 3400
+NoConn ~ 1600 3500
+NoConn ~ 1600 3600
+NoConn ~ 1600 3800
+NoConn ~ 1600 3900
+NoConn ~ 1600 4000
+NoConn ~ 1600 4100
+NoConn ~ 1600 4200
+NoConn ~ 1600 4300
+NoConn ~ 1600 4400
+NoConn ~ 1600 4500
+NoConn ~ 1600 4600
+NoConn ~ 1600 4700
+NoConn ~ 1600 4800
+NoConn ~ 1600 4900
+Text Label 3150 2000 0    50   ~ 0
+GND
+Wire Wire Line
+	2950 2000 3050 2000
+Wire Wire Line
+	3050 2000 3050 2100
+Wire Wire Line
+	3050 2700 2950 2700
+Connection ~ 3050 2000
+Wire Wire Line
+	3050 2000 3150 2000
+Wire Wire Line
+	2950 2600 3050 2600
+Connection ~ 3050 2600
+Wire Wire Line
+	3050 2600 3050 2700
+Wire Wire Line
+	2950 2500 3050 2500
+Connection ~ 3050 2500
+Wire Wire Line
+	3050 2500 3050 2600
+Wire Wire Line
+	2950 2400 3050 2400
+Connection ~ 3050 2400
+Wire Wire Line
+	3050 2400 3050 2500
+Wire Wire Line
+	2950 2300 3050 2300
+Connection ~ 3050 2300
+Wire Wire Line
+	3050 2300 3050 2400
+Wire Wire Line
+	2950 2200 3050 2200
+Connection ~ 3050 2200
+Wire Wire Line
+	3050 2200 3050 2300
+Wire Wire Line
+	2950 2100 3050 2100
+Connection ~ 3050 2100
+Wire Wire Line
+	3050 2100 3050 2200
+Text Label 3150 2900 0    50   ~ 0
+3V3
+Wire Wire Line
+	3150 2900 3050 2900
+Wire Wire Line
+	3050 2900 3050 3000
+Wire Wire Line
+	3050 4600 2950 4600
+Connection ~ 3050 2900
+Wire Wire Line
+	3050 2900 2950 2900
+Wire Wire Line
+	2950 4500 3050 4500
+Connection ~ 3050 4500
+Wire Wire Line
+	3050 4500 3050 4600
+Wire Wire Line
+	3050 4400 2950 4400
+Connection ~ 3050 4400
+Wire Wire Line
+	3050 4400 3050 4500
+Wire Wire Line
+	2950 4300 3050 4300
+Connection ~ 3050 4300
+Wire Wire Line
+	3050 4300 3050 4400
+Wire Wire Line
+	3050 4200 2950 4200
+Connection ~ 3050 4200
+Wire Wire Line
+	3050 4200 3050 4300
+Wire Wire Line
+	2950 4100 3050 4100
+Connection ~ 3050 4100
+Wire Wire Line
+	3050 4100 3050 4200
+Wire Wire Line
+	3050 4000 2950 4000
+Connection ~ 3050 4000
+Wire Wire Line
+	3050 4000 3050 4100
+Wire Wire Line
+	2950 3900 3050 3900
+Connection ~ 3050 3900
+Wire Wire Line
+	3050 3900 3050 4000
+Wire Wire Line
+	3050 3800 2950 3800
+Connection ~ 3050 3800
+Wire Wire Line
+	3050 3800 3050 3900
+Wire Wire Line
+	2950 3700 3050 3700
+Connection ~ 3050 3700
+Wire Wire Line
+	3050 3700 3050 3800
+Wire Wire Line
+	2950 3600 3050 3600
+Connection ~ 3050 3600
+Wire Wire Line
+	3050 3600 3050 3700
+Wire Wire Line
+	3050 3500 2950 3500
+Connection ~ 3050 3500
+Wire Wire Line
+	3050 3500 3050 3600
+Wire Wire Line
+	2950 3400 3050 3400
+Connection ~ 3050 3400
+Wire Wire Line
+	3050 3400 3050 3500
+Wire Wire Line
+	3050 3300 2950 3300
+Connection ~ 3050 3300
+Wire Wire Line
+	3050 3300 3050 3400
+Wire Wire Line
+	2950 3200 3050 3200
+Connection ~ 3050 3200
+Wire Wire Line
+	3050 3200 3050 3300
+Wire Wire Line
+	2950 3100 3050 3100
+Connection ~ 3050 3100
+Wire Wire Line
+	3050 3100 3050 3200
+Wire Wire Line
+	2950 3000 3050 3000
+Connection ~ 3050 3000
+Wire Wire Line
+	3050 3000 3050 3100
+$Comp
+L special-azonenberg:CONN_INTEGRALSTICK_FPGA_HOST J2
+U 4 1 5C3B52EB
+P 4450 5000
+F 0 "J2" H 4613 8575 50  0000 C CNN
+F 1 "CONN_INTEGRALSTICK_FPGA_HOST" H 4613 8484 50  0000 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 4450 5000 50  0001 C CNN
+F 3 "" H 4450 5000 50  0001 C CNN
+	4    4450 5000
+	-1   0    0    -1  
+$EndComp
+Text Label 4800 2450 0    50   ~ 0
+PMOD0_DQ0
+Wire Wire Line
+	4800 1650 4650 1650
+Text Label 4800 2850 0    50   ~ 0
+PMOD0_DQ1
+Text Label 4800 3250 0    50   ~ 0
+PMOD0_DQ2
+Text Label 4800 3650 0    50   ~ 0
+PMOD0_DQ3
+Text Label 4800 2650 0    50   ~ 0
+PMOD0_DQ4
+Text Label 4800 3050 0    50   ~ 0
+PMOD0_DQ5
+Text Label 4800 3450 0    50   ~ 0
+PMOD0_DQ6
+Text Label 4800 3850 0    50   ~ 0
+PMOD0_DQ7
+Wire Wire Line
+	4800 1750 4650 1750
+Wire Wire Line
+	4650 1850 4800 1850
+Wire Wire Line
+	4800 1950 4650 1950
+Wire Wire Line
+	4650 2050 4800 2050
+Wire Wire Line
+	4800 2150 4650 2150
+Wire Wire Line
+	4650 2250 4800 2250
+Wire Wire Line
+	4800 2350 4650 2350
+Text Label 7100 1800 2    50   ~ 0
+PMOD0_DQ0
+Text Label 7100 1900 2    50   ~ 0
+PMOD0_DQ1
+Text Label 7100 2000 2    50   ~ 0
+PMOD0_DQ2
+Text Label 7100 2100 2    50   ~ 0
+PMOD0_DQ3
+Text Label 7100 2200 2    50   ~ 0
+PMOD0_DQ4
+Text Label 7100 2300 2    50   ~ 0
+PMOD0_DQ5
+Text Label 7100 2400 2    50   ~ 0
+PMOD0_DQ6
+Text Label 7100 2500 2    50   ~ 0
+PMOD0_DQ7
+Wire Wire Line
+	7250 2500 7100 2500
+Wire Wire Line
+	7250 2400 7100 2400
+Wire Wire Line
+	7100 2300 7250 2300
+Wire Wire Line
+	7250 2200 7100 2200
+Wire Wire Line
+	7100 2100 7250 2100
+Wire Wire Line
+	7250 2000 7100 2000
+Wire Wire Line
+	7100 1900 7250 1900
+Wire Wire Line
+	7250 1800 7100 1800
+Text Label 7100 1500 2    50   ~ 0
+GND
+Wire Wire Line
+	7100 1500 7150 1500
+Wire Wire Line
+	7250 1600 7150 1600
+Wire Wire Line
+	7150 1600 7150 1500
+Connection ~ 7150 1500
+Wire Wire Line
+	7150 1500 7250 1500
+Text Label 7100 1300 2    50   ~ 0
+3V3
+Wire Wire Line
+	7100 1300 7150 1300
+Wire Wire Line
+	7150 1300 7150 1400
+Wire Wire Line
+	7150 1400 7250 1400
+Connection ~ 7150 1300
+Wire Wire Line
+	7150 1300 7250 1300
+$Comp
+L device:C C1
+U 1 1 5C3E6CE3
+P 4300 800
+F 0 "C1" H 4415 846 50  0000 L CNN
+F 1 "47 uF" H 4415 755 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_1210_CAP_NOSILK" H 4338 650 50  0001 C CNN
+F 3 "" H 4300 800 50  0001 C CNN
+	1    4300 800 
+	1    0    0    -1  
+$EndComp
+Text Label 4150 650  2    50   ~ 0
+GND
+Wire Wire Line
+	4150 650  4300 650 
+Wire Wire Line
+	3950 950  4300 950 
+$Comp
+L special-azonenberg:PMOD_HOST J4
+U 1 1 5C3EDCF6
+P 7450 4050
+F 0 "J4" H 7828 4758 60  0000 L CNN
+F 1 "PMOD_HOST" H 7828 4652 60  0000 L CNN
+F 2 "azonenberg_pcb:CONN_HEADER_2.54MM_2x6_RA_PMOD_HOST" H 7450 4050 60  0001 C CNN
+F 3 "" H 7450 4050 60  0001 C CNN
+	1    7450 4050
+	1    0    0    -1  
+$EndComp
+Text Label 7100 3300 2    50   ~ 0
+PMOD1_DQ0
+Text Label 7100 3400 2    50   ~ 0
+PMOD1_DQ1
+Text Label 7100 3500 2    50   ~ 0
+PMOD1_DQ2
+Text Label 7100 3600 2    50   ~ 0
+PMOD1_DQ3
+Text Label 7100 3700 2    50   ~ 0
+PMOD1_DQ4
+Text Label 7100 3800 2    50   ~ 0
+PMOD1_DQ5
+Text Label 7100 3900 2    50   ~ 0
+PMOD1_DQ6
+Text Label 7100 4000 2    50   ~ 0
+PMOD1_DQ7
+Wire Wire Line
+	7250 4000 7100 4000
+Wire Wire Line
+	7250 3900 7100 3900
+Wire Wire Line
+	7100 3800 7250 3800
+Wire Wire Line
+	7250 3700 7100 3700
+Wire Wire Line
+	7100 3600 7250 3600
+Wire Wire Line
+	7250 3500 7100 3500
+Wire Wire Line
+	7100 3400 7250 3400
+Wire Wire Line
+	7250 3300 7100 3300
+Text Label 7100 3000 2    50   ~ 0
+GND
+Wire Wire Line
+	7100 3000 7150 3000
+Wire Wire Line
+	7250 3100 7150 3100
+Wire Wire Line
+	7150 3100 7150 3000
+Connection ~ 7150 3000
+Wire Wire Line
+	7150 3000 7250 3000
+Text Label 7100 2800 2    50   ~ 0
+3V3
+Wire Wire Line
+	7100 2800 7150 2800
+Wire Wire Line
+	7150 2800 7150 2900
+Wire Wire Line
+	7150 2900 7250 2900
+Connection ~ 7150 2800
+Wire Wire Line
+	7150 2800 7250 2800
+$Comp
+L special-azonenberg:PMOD_HOST J5
+U 1 1 5C3F6054
+P 7450 5550
+F 0 "J5" H 7828 6258 60  0000 L CNN
+F 1 "PMOD_HOST" H 7828 6152 60  0000 L CNN
+F 2 "azonenberg_pcb:CONN_HEADER_2.54MM_2x6_RA_PMOD_HOST" H 7450 5550 60  0001 C CNN
+F 3 "" H 7450 5550 60  0001 C CNN
+	1    7450 5550
+	1    0    0    -1  
+$EndComp
+Text Label 7100 4800 2    50   ~ 0
+PMOD2_DQ0
+Text Label 7100 4900 2    50   ~ 0
+PMOD2_DQ1
+Text Label 7100 5000 2    50   ~ 0
+PMOD2_DQ2
+Text Label 7100 5100 2    50   ~ 0
+PMOD2_DQ3
+Text Label 7100 5200 2    50   ~ 0
+PMOD2_DQ4
+Text Label 7100 5300 2    50   ~ 0
+PMOD2_DQ5
+Text Label 7100 5400 2    50   ~ 0
+PMOD2_DQ6
+Text Label 7100 5500 2    50   ~ 0
+PMOD2_DQ7
+Wire Wire Line
+	7250 5500 7100 5500
+Wire Wire Line
+	7250 5400 7100 5400
+Wire Wire Line
+	7100 5300 7250 5300
+Wire Wire Line
+	7250 5200 7100 5200
+Wire Wire Line
+	7100 5100 7250 5100
+Wire Wire Line
+	7250 5000 7100 5000
+Wire Wire Line
+	7100 4900 7250 4900
+Wire Wire Line
+	7250 4800 7100 4800
+Text Label 7100 4500 2    50   ~ 0
+GND
+Wire Wire Line
+	7100 4500 7150 4500
+Wire Wire Line
+	7250 4600 7150 4600
+Wire Wire Line
+	7150 4600 7150 4500
+Connection ~ 7150 4500
+Wire Wire Line
+	7150 4500 7250 4500
+Text Label 7100 4300 2    50   ~ 0
+3V3
+Wire Wire Line
+	7100 4300 7150 4300
+Wire Wire Line
+	7150 4300 7150 4400
+Wire Wire Line
+	7150 4400 7250 4400
+Connection ~ 7150 4300
+Wire Wire Line
+	7150 4300 7250 4300
+Text Label 4800 2050 0    50   ~ 0
+PMOD1_DQ1
+Text Label 4800 2150 0    50   ~ 0
+PMOD1_DQ3
+Text Label 4800 1850 0    50   ~ 0
+PMOD1_DQ4
+Text Label 4800 2250 0    50   ~ 0
+PMOD1_DQ5
+Text Label 4800 1950 0    50   ~ 0
+PMOD1_DQ6
+Text Label 4800 2350 0    50   ~ 0
+PMOD1_DQ7
+Text Label 4800 2750 0    50   ~ 0
+PMOD2_DQ0
+Text Label 4800 3150 0    50   ~ 0
+PMOD2_DQ1
+Text Label 4800 3550 0    50   ~ 0
+PMOD2_DQ2
+Text Label 4800 3950 0    50   ~ 0
+PMOD2_DQ3
+Text Label 4800 2550 0    50   ~ 0
+PMOD2_DQ4
+Text Label 4800 2950 0    50   ~ 0
+PMOD2_DQ5
+Text Label 4800 3350 0    50   ~ 0
+PMOD2_DQ6
+Text Label 4800 3750 0    50   ~ 0
+PMOD2_DQ7
+Wire Wire Line
+	4650 2450 4800 2450
+Wire Wire Line
+	4800 2550 4650 2550
+Wire Wire Line
+	4650 2650 4800 2650
+Wire Wire Line
+	4800 2750 4650 2750
+Wire Wire Line
+	4650 2850 4800 2850
+Wire Wire Line
+	4800 2950 4650 2950
+Wire Wire Line
+	4650 3050 4800 3050
+Wire Wire Line
+	4650 3150 4800 3150
+Wire Wire Line
+	4800 3250 4650 3250
+Wire Wire Line
+	4650 3350 4800 3350
+Wire Wire Line
+	4800 3450 4650 3450
+Wire Wire Line
+	4650 3550 4800 3550
+Wire Wire Line
+	4800 3650 4650 3650
+Wire Wire Line
+	4800 3750 4650 3750
+Wire Wire Line
+	4650 3850 4800 3850
+Wire Wire Line
+	4800 3950 4650 3950
+Text Label 4800 1750 0    50   ~ 0
+PMOD1_DQ2
+Text Label 4800 1650 0    50   ~ 0
+PMOD1_DQ0
+$EndSCHEMATC
