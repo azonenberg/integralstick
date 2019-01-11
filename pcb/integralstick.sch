@@ -351,7 +351,7 @@ F 3 "" H 6700 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L conn:CONN_01X01 TP4
+L integralstick-rescue:CONN_01X01-conn TP4
 U 1 1 5D3FC56A
 P 10250 1050
 F 0 "TP4" H 10328 1091 50  0000 L CNN
@@ -364,7 +364,7 @@ $EndComp
 Text Label 10050 1050 2    50   ~ 0
 GND
 $Comp
-L conn:CONN_01X01 TP5
+L integralstick-rescue:CONN_01X01-conn TP5
 U 1 1 5D3FCCF4
 P 10250 1250
 F 0 "TP5" H 10328 1291 50  0000 L CNN
@@ -377,7 +377,7 @@ $EndComp
 Text Label 10050 1250 2    50   ~ 0
 GND
 $Comp
-L conn:CONN_01X01 TP6
+L integralstick-rescue:CONN_01X01-conn TP6
 U 1 1 5D3FE87E
 P 10250 1500
 F 0 "TP6" H 10328 1541 50  0000 L CNN
@@ -390,7 +390,7 @@ $EndComp
 Text Label 10050 1500 2    50   ~ 0
 1V0
 $Comp
-L conn:CONN_01X01 TP7
+L integralstick-rescue:CONN_01X01-conn TP7
 U 1 1 5D3FEB71
 P 10250 1750
 F 0 "TP7" H 10328 1791 50  0000 L CNN
@@ -403,7 +403,7 @@ $EndComp
 Text Label 10050 1750 2    50   ~ 0
 1V2
 $Comp
-L conn:CONN_01X01 TP8
+L integralstick-rescue:CONN_01X01-conn TP8
 U 1 1 5D4007A9
 P 10250 2000
 F 0 "TP8" H 10328 2041 50  0000 L CNN
@@ -416,7 +416,7 @@ $EndComp
 Text Label 10050 2000 2    50   ~ 0
 1V8
 $Comp
-L conn:CONN_01X01 TP9
+L integralstick-rescue:CONN_01X01-conn TP9
 U 1 1 5D402358
 P 10250 2250
 F 0 "TP9" H 10328 2291 50  0000 L CNN
@@ -429,7 +429,7 @@ $EndComp
 Text Label 10050 2250 2    50   ~ 0
 2V5
 $Comp
-L conn:CONN_01X01 TP10
+L integralstick-rescue:CONN_01X01-conn TP10
 U 1 1 5D403FC0
 P 10250 2500
 F 0 "TP10" H 10328 2541 50  0000 L CNN
@@ -448,7 +448,7 @@ Text Label 2700 5350 2    50   ~ 0
 Text Label 2700 5550 2    50   ~ 0
 1V0
 $Comp
-L conn:CONN_01X01 TP12
+L integralstick-rescue:CONN_01X01-conn TP12
 U 1 1 5C00F507
 P 10250 2800
 F 0 "TP12" H 10328 2841 50  0000 L CNN
@@ -461,7 +461,7 @@ $EndComp
 Text Label 10050 2800 2    50   ~ 0
 GND
 $Comp
-L conn:CONN_01X01 TP13
+L integralstick-rescue:CONN_01X01-conn TP13
 U 1 1 5C011C4C
 P 10250 3100
 F 0 "TP13" H 10328 3141 50  0000 L CNN
@@ -474,7 +474,7 @@ $EndComp
 Text Label 10050 3100 2    50   ~ 0
 GND
 $Comp
-L conn:CONN_01X01 TP14
+L integralstick-rescue:CONN_01X01-conn TP14
 U 1 1 5C017C13
 P 10250 3350
 F 0 "TP14" H 10328 3391 50  0000 L CNN
@@ -487,7 +487,7 @@ $EndComp
 Text Label 10050 3350 2    50   ~ 0
 GND
 $Comp
-L conn:CONN_01X01 TP15
+L integralstick-rescue:CONN_01X01-conn TP15
 U 1 1 5C01BAEF
 P 10250 3600
 F 0 "TP15" H 10328 3641 50  0000 L CNN
@@ -500,7 +500,7 @@ $EndComp
 Text Label 10050 3600 2    50   ~ 0
 GND
 $Comp
-L conn:CONN_01X01 TP16
+L integralstick-rescue:CONN_01X01-conn TP16
 U 1 1 5C01FB32
 P 10250 3850
 F 0 "TP16" H 10328 3891 50  0000 L CNN
@@ -513,7 +513,7 @@ $EndComp
 Text Label 10050 3850 2    50   ~ 0
 GND
 $Comp
-L conn:CONN_01X01 TP17
+L integralstick-rescue:CONN_01X01-conn TP17
 U 1 1 5C027F8E
 P 10250 4100
 F 0 "TP17" H 10328 4141 50  0000 L CNN
@@ -526,7 +526,7 @@ $EndComp
 Text Label 10050 4100 2    50   ~ 0
 GND
 $Comp
-L conn:CONN_01X01 TP18
+L integralstick-rescue:CONN_01X01-conn TP18
 U 1 1 5C03F491
 P 10250 4350
 F 0 "TP18" H 10328 4391 50  0000 L CNN
@@ -539,7 +539,7 @@ $EndComp
 Text Label 10050 4350 2    50   ~ 0
 GND
 $Comp
-L conn:CONN_01X01 TP19
+L integralstick-rescue:CONN_01X01-conn TP19
 U 1 1 5C04B243
 P 10250 4600
 F 0 "TP19" H 10328 4641 50  0000 L CNN
