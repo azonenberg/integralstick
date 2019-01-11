@@ -1,0 +1,924 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "INTEGRALSTICK Minimal Right Breakout"
+Date "2019-01-11"
+Rev "0.1"
+Comp "Antikernel Labs"
+Comment1 "Andrew D. Zonenberg"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L special-azonenberg:BEL_FUSE_0826-1G1T-23-F J3
+U 1 1 5C38E9A7
+P 9500 3500
+F 0 "J3" H 9500 3200 60  0000 L CNN
+F 1 "BEL_FUSE_0826-1G1T-23-F" H 9500 3300 60  0000 L CNN
+F 2 "azonenberg_pcb:CONN_BELFUSE_0826_1G1T_23_F" H 9500 3500 60  0001 C CNN
+F 3 "" H 9500 3500 60  0000 C CNN
+	1    9500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L special-azonenberg:CONN_INTEGRALSTICK_MCU_HOST J1
+U 1 1 5C38FC71
+P 1100 4300
+F 0 "J1" H 1550 8075 50  0000 C CNN
+F 1 "CONN_INTEGRALSTICK_MCU_HOST" H 1550 7984 50  0000 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 1100 4300 50  0001 C CNN
+F 3 "" H 1100 4300 50  0001 C CNN
+	1    1100 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L special-azonenberg:CONN_INTEGRALSTICK_MCU_HOST J1
+U 2 1 5C39447D
+P 3250 3050
+F 0 "J1" H 3250 3000 50  0000 L CNN
+F 1 "CONN_INTEGRALSTICK_MCU_HOST" H 3250 2900 50  0000 L CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 3250 3050 50  0001 C CNN
+F 3 "" H 3250 3050 50  0001 C CNN
+	2    3250 3050
+	-1   0    0    -1  
+$EndComp
+Text Label 750  750  2    50   ~ 0
+3V3
+Wire Wire Line
+	750  750  900  750 
+Wire Wire Line
+	900  750  900  850 
+Wire Wire Line
+	900  4150 1000 4150
+Connection ~ 900  750 
+Wire Wire Line
+	900  750  1000 750 
+Wire Wire Line
+	1000 4050 900  4050
+Connection ~ 900  4050
+Wire Wire Line
+	900  4050 900  4150
+Wire Wire Line
+	1000 3950 900  3950
+Connection ~ 900  3950
+Wire Wire Line
+	900  3950 900  4050
+Wire Wire Line
+	1000 3850 900  3850
+Connection ~ 900  3850
+Wire Wire Line
+	900  3850 900  3950
+Wire Wire Line
+	1000 3750 900  3750
+Connection ~ 900  3750
+Wire Wire Line
+	900  3750 900  3850
+Wire Wire Line
+	1000 3650 900  3650
+Connection ~ 900  3650
+Wire Wire Line
+	900  3650 900  3750
+Wire Wire Line
+	1000 3550 900  3550
+Connection ~ 900  3550
+Wire Wire Line
+	900  3550 900  3650
+Wire Wire Line
+	1000 3450 900  3450
+Connection ~ 900  3450
+Wire Wire Line
+	900  3450 900  3550
+Wire Wire Line
+	1000 3350 900  3350
+Connection ~ 900  3350
+Wire Wire Line
+	900  3350 900  3450
+Wire Wire Line
+	1000 3250 900  3250
+Connection ~ 900  3250
+Wire Wire Line
+	900  3250 900  3350
+Wire Wire Line
+	1000 3150 900  3150
+Connection ~ 900  3150
+Wire Wire Line
+	900  3150 900  3250
+Wire Wire Line
+	1000 3050 900  3050
+Connection ~ 900  3050
+Wire Wire Line
+	900  3050 900  3150
+Wire Wire Line
+	1000 2950 900  2950
+Connection ~ 900  2950
+Wire Wire Line
+	900  2950 900  3050
+Wire Wire Line
+	1000 2850 900  2850
+Connection ~ 900  2850
+Wire Wire Line
+	900  2850 900  2950
+Wire Wire Line
+	1000 2750 900  2750
+Connection ~ 900  2750
+Wire Wire Line
+	900  2750 900  2850
+Wire Wire Line
+	1000 2650 900  2650
+Connection ~ 900  2650
+Wire Wire Line
+	900  2650 900  2750
+Wire Wire Line
+	1000 2550 900  2550
+Connection ~ 900  2550
+Wire Wire Line
+	900  2550 900  2650
+Wire Wire Line
+	1000 2450 900  2450
+Connection ~ 900  2450
+Wire Wire Line
+	900  2450 900  2550
+Wire Wire Line
+	1000 2350 900  2350
+Connection ~ 900  2350
+Wire Wire Line
+	900  2350 900  2450
+Wire Wire Line
+	1000 2250 900  2250
+Connection ~ 900  2250
+Wire Wire Line
+	900  2250 900  2350
+Wire Wire Line
+	1000 2150 900  2150
+Connection ~ 900  2150
+Wire Wire Line
+	900  2150 900  2250
+Wire Wire Line
+	1000 2050 900  2050
+Connection ~ 900  2050
+Wire Wire Line
+	900  2050 900  2150
+Wire Wire Line
+	1000 1950 900  1950
+Connection ~ 900  1950
+Wire Wire Line
+	900  1950 900  2050
+Wire Wire Line
+	1000 1850 900  1850
+Connection ~ 900  1850
+Wire Wire Line
+	900  1850 900  1950
+Wire Wire Line
+	1000 1750 900  1750
+Connection ~ 900  1750
+Wire Wire Line
+	900  1750 900  1850
+Wire Wire Line
+	1000 1650 900  1650
+Connection ~ 900  1650
+Wire Wire Line
+	900  1650 900  1750
+Wire Wire Line
+	1000 1550 900  1550
+Connection ~ 900  1550
+Wire Wire Line
+	900  1550 900  1650
+Wire Wire Line
+	1000 850  900  850 
+Connection ~ 900  850 
+Wire Wire Line
+	900  850  900  950 
+Wire Wire Line
+	1000 950  900  950 
+Connection ~ 900  950 
+Wire Wire Line
+	900  950  900  1050
+Wire Wire Line
+	1000 1050 900  1050
+Connection ~ 900  1050
+Wire Wire Line
+	900  1050 900  1150
+Wire Wire Line
+	1000 1150 900  1150
+Connection ~ 900  1150
+Wire Wire Line
+	900  1150 900  1250
+Wire Wire Line
+	1000 1250 900  1250
+Connection ~ 900  1250
+Wire Wire Line
+	900  1250 900  1350
+Wire Wire Line
+	1000 1350 900  1350
+Connection ~ 900  1350
+Wire Wire Line
+	900  1350 900  1450
+Wire Wire Line
+	1000 1450 900  1450
+Connection ~ 900  1450
+Wire Wire Line
+	900  1450 900  1550
+Text Label 2250 750  0    50   ~ 0
+GND
+Wire Wire Line
+	2250 750  2200 750 
+Wire Wire Line
+	2200 750  2200 850 
+Wire Wire Line
+	2200 2050 2100 2050
+Connection ~ 2200 750 
+Wire Wire Line
+	2200 750  2100 750 
+Wire Wire Line
+	2100 1950 2200 1950
+Connection ~ 2200 1950
+Wire Wire Line
+	2200 1950 2200 2050
+Wire Wire Line
+	2100 1850 2200 1850
+Connection ~ 2200 1850
+Wire Wire Line
+	2200 1850 2200 1950
+Wire Wire Line
+	2100 1750 2200 1750
+Connection ~ 2200 1750
+Wire Wire Line
+	2200 1750 2200 1850
+Wire Wire Line
+	2100 1650 2200 1650
+Connection ~ 2200 1650
+Wire Wire Line
+	2200 1650 2200 1750
+Wire Wire Line
+	2100 1450 2200 1450
+Connection ~ 2200 1450
+Wire Wire Line
+	2200 1450 2200 1650
+Wire Wire Line
+	2100 850  2200 850 
+Connection ~ 2200 850 
+Wire Wire Line
+	2200 850  2200 950 
+Wire Wire Line
+	2100 950  2200 950 
+Connection ~ 2200 950 
+Wire Wire Line
+	2200 950  2200 1050
+Wire Wire Line
+	2100 1050 2200 1050
+Connection ~ 2200 1050
+Wire Wire Line
+	2200 1050 2200 1150
+Wire Wire Line
+	2100 1150 2200 1150
+Connection ~ 2200 1150
+Wire Wire Line
+	2200 1150 2200 1250
+Wire Wire Line
+	2100 1250 2200 1250
+Connection ~ 2200 1250
+Wire Wire Line
+	2200 1250 2200 1350
+Wire Wire Line
+	2100 1350 2200 1350
+Connection ~ 2200 1350
+Wire Wire Line
+	2200 1350 2200 1450
+$Comp
+L special-azonenberg:CONN_INTEGRALSTICK_MCU_HOST J1
+U 8 1 5C3E12F2
+P 7800 3050
+F 0 "J1" H 8017 4325 50  0000 C CNN
+F 1 "CONN_INTEGRALSTICK_MCU_HOST" H 8017 4234 50  0000 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 7800 3050 50  0001 C CNN
+F 3 "" H 7800 3050 50  0001 C CNN
+	8    7800 3050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L special-azonenberg:CONN_INTEGRALSTICK_MCU_HOST J1
+U 4 1 5C3E2A73
+P 3250 5450
+F 0 "J1" H 3467 6425 50  0000 C CNN
+F 1 "CONN_INTEGRALSTICK_MCU_HOST" H 3467 6334 50  0000 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 3250 5450 50  0001 C CNN
+F 3 "" H 3250 5450 50  0001 C CNN
+	4    3250 5450
+	-1   0    0    -1  
+$EndComp
+Text Label 8000 2000 0    50   ~ 0
+ETH_A_P
+Wire Wire Line
+	7900 2000 9200 2000
+Text Label 8000 2100 0    50   ~ 0
+ETH_A_N
+Wire Wire Line
+	7900 2100 8300 2100
+Wire Wire Line
+	8300 2100 8300 2200
+Wire Wire Line
+	8300 2200 9200 2200
+Text Label 9200 2100 2    50   ~ 0
+ETH_A_TAP
+Text Label 5850 800  2    50   ~ 0
+ETH_A_TAP
+$Comp
+L device:C C1
+U 1 1 5C3FE945
+P 6000 800
+F 0 "C1" V 5748 800 50  0000 C CNN
+F 1 "0.1 uF" V 5839 800 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 6038 650 50  0001 C CNN
+F 3 "" H 6000 800 50  0001 C CNN
+	1    6000 800 
+	0    1    1    0   
+$EndComp
+Text Label 6150 800  0    50   ~ 0
+GND
+Text Label 5850 1250 2    50   ~ 0
+ETH_B_TAP
+$Comp
+L device:C C2
+U 1 1 5C403B41
+P 6000 1250
+F 0 "C2" V 5748 1250 50  0000 C CNN
+F 1 "0.1 uF" V 5839 1250 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 6038 1100 50  0001 C CNN
+F 3 "" H 6000 1250 50  0001 C CNN
+	1    6000 1250
+	0    1    1    0   
+$EndComp
+Text Label 6150 1250 0    50   ~ 0
+GND
+Text Label 5850 1700 2    50   ~ 0
+ETH_C_TAP
+$Comp
+L device:C C3
+U 1 1 5C40724B
+P 6000 1700
+F 0 "C3" V 5748 1700 50  0000 C CNN
+F 1 "0.1 uF" V 5839 1700 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 6038 1550 50  0001 C CNN
+F 3 "" H 6000 1700 50  0001 C CNN
+	1    6000 1700
+	0    1    1    0   
+$EndComp
+Text Label 6150 1700 0    50   ~ 0
+GND
+Text Label 5850 2150 2    50   ~ 0
+ETH_D_TAP
+$Comp
+L device:C C4
+U 1 1 5C407257
+P 6000 2150
+F 0 "C4" V 5748 2150 50  0000 C CNN
+F 1 "0.1 uF" V 5839 2150 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 6038 2000 50  0001 C CNN
+F 3 "" H 6000 2150 50  0001 C CNN
+	1    6000 2150
+	0    1    1    0   
+$EndComp
+Text Label 6150 2150 0    50   ~ 0
+GND
+Text Label 8000 2300 0    50   ~ 0
+ETH_B_P
+Wire Wire Line
+	7900 2300 9200 2300
+Wire Wire Line
+	9200 2300 9200 2400
+Text Label 8000 2400 0    50   ~ 0
+ETH_B_N
+Wire Wire Line
+	8750 2400 8750 2600
+Wire Wire Line
+	8750 2600 9200 2600
+Wire Wire Line
+	7900 2400 8750 2400
+Text Label 9200 2500 2    50   ~ 0
+ETH_B_TAP
+Text Label 9200 2900 2    50   ~ 0
+ETH_C_TAP
+Text Label 9200 3300 2    50   ~ 0
+ETH_D_TAP
+Text Label 8000 2600 0    50   ~ 0
+ETH_C_P
+Wire Wire Line
+	7900 2600 8650 2600
+Wire Wire Line
+	8650 2600 8650 2800
+Wire Wire Line
+	8650 2800 9200 2800
+Text Label 8000 2700 0    50   ~ 0
+ETH_C_N
+Wire Wire Line
+	7900 2700 8550 2700
+Wire Wire Line
+	8550 2700 8550 3000
+Wire Wire Line
+	8550 3000 9200 3000
+Text Label 8000 2900 0    50   ~ 0
+ETH_D_P
+Wire Wire Line
+	7900 2900 8450 2900
+Wire Wire Line
+	8450 2900 8450 3200
+Wire Wire Line
+	8450 3200 9200 3200
+Text Label 8000 3000 0    50   ~ 0
+ETH_D_N
+Wire Wire Line
+	7900 3000 8350 3000
+Wire Wire Line
+	8350 3000 8350 3400
+Wire Wire Line
+	8350 3400 9200 3400
+Text Label 9200 3600 2    50   ~ 0
+GND
+Text Label 9200 1600 2    50   ~ 0
+GND
+Text Label 9200 1800 2    50   ~ 0
+GND
+$Comp
+L device:R R5
+U 1 1 5C41F7E2
+P 9050 1500
+F 0 "R5" V 8950 1500 50  0000 C CNN
+F 1 "270" V 9050 1500 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 8980 1500 50  0001 C CNN
+F 3 "" H 9050 1500 50  0001 C CNN
+	1    9050 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R6
+U 1 1 5C41FE52
+P 9050 1700
+F 0 "R6" V 8950 1700 50  0000 C CNN
+F 1 "270" V 9050 1700 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 8980 1700 50  0001 C CNN
+F 3 "" H 9050 1700 50  0001 C CNN
+	1    9050 1700
+	0    1    1    0   
+$EndComp
+Text Label 8900 1500 2    50   ~ 0
+ETH_LED1_P
+Text Label 8900 1700 2    50   ~ 0
+ETH_LED2_P
+Text Label 3350 3600 0    50   ~ 0
+PMOD0_DQ0
+Text Label 3350 3500 0    50   ~ 0
+PMOD0_DQ1
+Text Label 7600 5650 0    50   ~ 0
+PMOD0_DQ2
+Text Label 7600 5450 0    50   ~ 0
+PMOD0_DQ3
+Text Label 3350 4800 0    50   ~ 0
+PMOD0_DQ4
+Text Label 3350 3400 0    50   ~ 0
+PMOD0_DQ5
+Text Label 1850 5100 0    50   ~ 0
+PMOD0_DQ6
+Text Label 7600 5550 0    50   ~ 0
+PMOD0_DQ7
+$Comp
+L xilinx-azonenberg:XILINX_JTAG J2
+U 1 1 5C4387A3
+P 3400 2000
+F 0 "J2" H 3738 3547 60  0000 C CNN
+F 1 "XILINX_JTAG" H 3738 3441 60  0000 C CNN
+F 2 "azonenberg_pcb:XILINX_JTAG_PTH_MOLEX_0878311420" H 3400 2000 60  0001 C CNN
+F 3 "" H 3400 2000 60  0000 C CNN
+	1    3400 2000
+	-1   0    0    -1  
+$EndComp
+Text Label 3550 900  0    50   ~ 0
+3V3
+Wire Wire Line
+	3550 900  3400 900 
+Text Label 3550 1000 0    50   ~ 0
+GND
+Wire Wire Line
+	3550 1000 3500 1000
+Wire Wire Line
+	3500 1000 3500 1100
+Wire Wire Line
+	3500 1400 3400 1400
+Connection ~ 3500 1000
+Wire Wire Line
+	3500 1000 3400 1000
+Wire Wire Line
+	3400 1300 3500 1300
+Connection ~ 3500 1300
+Wire Wire Line
+	3500 1300 3500 1400
+Wire Wire Line
+	3400 1200 3500 1200
+Connection ~ 3500 1200
+Wire Wire Line
+	3500 1200 3500 1300
+Wire Wire Line
+	3400 1100 3500 1100
+Connection ~ 3500 1100
+Wire Wire Line
+	3500 1100 3500 1200
+NoConn ~ 3400 1500
+NoConn ~ 3400 2000
+Text Label 3550 1600 0    50   ~ 0
+JTAG_TMS
+Wire Wire Line
+	3550 1600 3400 1600
+Text Label 3550 1700 0    50   ~ 0
+JTAG_TCK
+Wire Wire Line
+	3550 1700 3400 1700
+Text Label 3550 1800 0    50   ~ 0
+JTAG_TDO
+Wire Wire Line
+	3550 1800 3400 1800
+Text Label 3550 1900 0    50   ~ 0
+JTAG_TDI
+Wire Wire Line
+	3550 1900 3400 1900
+Text Label 3550 2200 0    50   ~ 0
+JTAG_TDI
+Text Label 3550 2300 0    50   ~ 0
+JTAG_TMS
+Text Label 3550 2400 0    50   ~ 0
+JTAG_TCK
+Text Label 3550 2500 0    50   ~ 0
+JTAG_TDO
+Wire Wire Line
+	3550 2500 3350 2500
+Wire Wire Line
+	3350 2400 3550 2400
+Wire Wire Line
+	3550 2300 3350 2300
+Wire Wire Line
+	3350 2200 3550 2200
+$Comp
+L device:R R1
+U 1 1 5C4A1FBC
+P 3600 2700
+F 0 "R1" V 3650 2500 50  0000 C CNN
+F 1 "1K" V 3600 2700 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 3530 2700 50  0001 C CNN
+F 3 "" H 3600 2700 50  0001 C CNN
+	1    3600 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 2700 3350 2700
+$Comp
+L device:R R2
+U 1 1 5C4A7B8A
+P 3600 2800
+F 0 "R2" V 3650 2600 50  0000 C CNN
+F 1 "1K" V 3600 2800 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 3530 2800 50  0001 C CNN
+F 3 "" H 3600 2800 50  0001 C CNN
+	1    3600 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 2800 3350 2800
+Text Label 3900 2700 0    50   ~ 0
+3V3
+Wire Wire Line
+	3900 2700 3750 2700
+Text Label 3900 2800 0    50   ~ 0
+3V3
+Wire Wire Line
+	3900 2800 3750 2800
+$Comp
+L device:R R4
+U 1 1 5C4B6F43
+P 3600 3000
+F 0 "R4" V 3650 2800 50  0000 C CNN
+F 1 "1K" V 3600 3000 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 3530 3000 50  0001 C CNN
+F 3 "" H 3600 3000 50  0001 C CNN
+	1    3600 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 3000 3350 3000
+Text Label 3900 3000 0    50   ~ 0
+GND
+Wire Wire Line
+	3900 3000 3750 3000
+$Comp
+L device:R R3
+U 1 1 5C4C11C2
+P 3600 2900
+F 0 "R3" V 3650 2700 50  0000 C CNN
+F 1 "470" V 3600 2900 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 3530 2900 50  0001 C CNN
+F 3 "" H 3600 2900 50  0001 C CNN
+	1    3600 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 2900 3350 2900
+$Comp
+L device:LED D1
+U 1 1 5C4C66A4
+P 4250 2900
+F 0 "D1" H 4243 2645 50  0000 C CNN
+F 1 "GREEN" H 4243 2736 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0603_LED" H 4250 2900 50  0001 C CNN
+F 3 "~" H 4250 2900 50  0001 C CNN
+	1    4250 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 2900 4100 2900
+Text Label 4500 2900 0    50   ~ 0
+GND
+Wire Wire Line
+	4500 2900 4400 2900
+$Comp
+L special-azonenberg:PMOD_HOST J4
+U 1 1 5C4D8E67
+P 5650 4150
+F 0 "J4" H 6028 4858 60  0000 L CNN
+F 1 "PMOD_HOST" H 6028 4752 60  0000 L CNN
+F 2 "azonenberg_pcb:CONN_HEADER_2.54MM_2x6_RA_PMOD_HOST" H 5650 4150 60  0001 C CNN
+F 3 "" H 5650 4150 60  0001 C CNN
+	1    5650 4150
+	1    0    0    -1  
+$EndComp
+Text Label 5450 6450 2    50   ~ 0
+PMOD0_DQ0
+Text Label 5450 6550 2    50   ~ 0
+PMOD0_DQ1
+Text Label 5450 6650 2    50   ~ 0
+PMOD0_DQ2
+Text Label 5450 6750 2    50   ~ 0
+PMOD0_DQ3
+Text Label 5450 6850 2    50   ~ 0
+PMOD0_DQ4
+Text Label 5450 6950 2    50   ~ 0
+PMOD0_DQ5
+Text Label 5450 7050 2    50   ~ 0
+PMOD0_DQ6
+Text Label 5450 7150 2    50   ~ 0
+PMOD0_DQ7
+Text Label 5450 2900 2    50   ~ 0
+3V3
+Text Label 5450 3000 2    50   ~ 0
+3V3
+Text Label 5450 3100 2    50   ~ 0
+GND
+Text Label 5450 3200 2    50   ~ 0
+GND
+$Comp
+L special-azonenberg:PMOD_HOST J5
+U 1 1 5C4E23AE
+P 5650 5650
+F 0 "J5" H 6028 6358 60  0000 L CNN
+F 1 "PMOD_HOST" H 6028 6252 60  0000 L CNN
+F 2 "azonenberg_pcb:CONN_HEADER_2.54MM_2x6_RA_PMOD_HOST" H 5650 5650 60  0001 C CNN
+F 3 "" H 5650 5650 60  0001 C CNN
+	1    5650 5650
+	1    0    0    -1  
+$EndComp
+Text Label 5450 3400 2    50   ~ 0
+PMOD1_DQ0
+Text Label 5450 3600 2    50   ~ 0
+PMOD1_DQ2
+Text Label 5450 3700 2    50   ~ 0
+PMOD1_DQ3
+Text Label 5450 3800 2    50   ~ 0
+PMOD1_DQ4
+Text Label 5450 3900 2    50   ~ 0
+PMOD1_DQ5
+Text Label 5450 4000 2    50   ~ 0
+PMOD1_DQ6
+Text Label 5450 4100 2    50   ~ 0
+PMOD1_DQ7
+Text Label 5450 4400 2    50   ~ 0
+3V3
+Text Label 5450 4500 2    50   ~ 0
+3V3
+Text Label 5450 4600 2    50   ~ 0
+GND
+Text Label 5450 4700 2    50   ~ 0
+GND
+$Comp
+L device:R R7
+U 1 1 5C4E8778
+P 3500 5700
+F 0 "R7" V 3450 5850 50  0000 C CNN
+F 1 "1K" V 3500 5700 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 3430 5700 50  0001 C CNN
+F 3 "" H 3500 5700 50  0001 C CNN
+	1    3500 5700
+	0    1    1    0   
+$EndComp
+Text Label 3350 5100 0    50   ~ 0
+PMOD1_DQ0
+Text Label 3200 6500 0    50   ~ 0
+PMOD1_DQ1
+Text Label 3200 6300 0    50   ~ 0
+PMOD1_DQ2
+Text Label 3200 7500 0    50   ~ 0
+PMOD1_DQ3
+Text Label 1900 6000 0    50   ~ 0
+PMOD1_DQ4
+Text Label 3350 5000 0    50   ~ 0
+PMOD1_DQ5
+Text Label 3200 6400 0    50   ~ 0
+PMOD1_DQ6
+Text Label 3200 7000 0    50   ~ 0
+PMOD1_DQ7
+Text Label 3350 5700 2    50   ~ 0
+PMOD1_DQ3
+Text Label 3750 5700 0    50   ~ 0
+3V3
+Wire Wire Line
+	3750 5700 3650 5700
+$Comp
+L special-azonenberg:PMOD_HOST J6
+U 1 1 5C4F6120
+P 5650 7200
+F 0 "J6" H 6028 7908 60  0000 L CNN
+F 1 "PMOD_HOST" H 6028 7802 60  0000 L CNN
+F 2 "azonenberg_pcb:CONN_HEADER_2.54MM_2x6_RA_PMOD_HOST" H 5650 7200 60  0001 C CNN
+F 3 "" H 5650 7200 60  0001 C CNN
+	1    5650 7200
+	1    0    0    -1  
+$EndComp
+Text Label 5450 4900 2    50   ~ 0
+PMOD2_DQ0
+Text Label 5450 5000 2    50   ~ 0
+PMOD2_DQ1
+Text Label 5450 5100 2    50   ~ 0
+PMOD2_DQ2
+Text Label 5450 5200 2    50   ~ 0
+PMOD2_DQ3
+Text Label 5450 5300 2    50   ~ 0
+PMOD2_DQ4
+Text Label 5450 5400 2    50   ~ 0
+PMOD2_DQ5
+Text Label 5450 5500 2    50   ~ 0
+PMOD2_DQ6
+Text Label 5450 5600 2    50   ~ 0
+PMOD2_DQ7
+Text Label 5450 5950 2    50   ~ 0
+3V3
+Text Label 5450 6050 2    50   ~ 0
+3V3
+Text Label 5450 6150 2    50   ~ 0
+GND
+Text Label 5450 6250 2    50   ~ 0
+GND
+Text Label 7600 5350 0    50   ~ 0
+PMOD2_DQ0
+Text Label 1900 6600 0    50   ~ 0
+PMOD2_DQ2
+Text Label 1900 6200 0    50   ~ 0
+PMOD2_DQ3
+Text Label 1850 5400 0    50   ~ 0
+PMOD2_DQ4
+Text Label 1900 6400 0    50   ~ 0
+PMOD2_DQ5
+Text Label 1900 6300 0    50   ~ 0
+PMOD2_DQ6
+Text Label 1900 6100 0    50   ~ 0
+PMOD2_DQ7
+NoConn ~ 3200 7400
+NoConn ~ 3200 7300
+NoConn ~ 3200 7200
+NoConn ~ 3200 7100
+NoConn ~ 3200 6900
+NoConn ~ 3200 6800
+Text Label 5450 3500 2    50   ~ 0
+PMOD1_DQ1
+$Comp
+L special-azonenberg:CONN_INTEGRALSTICK_MCU_HOST J1
+U 5 1 5C55A7AD
+P 1650 5450
+F 0 "J1" H 1767 6225 50  0000 C CNN
+F 1 "CONN_INTEGRALSTICK_MCU_HOST" H 1767 6134 50  0000 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 1650 5450 50  0001 C CNN
+F 3 "" H 1650 5450 50  0001 C CNN
+	5    1650 5450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 5100 1750 5100
+NoConn ~ 1750 4900
+NoConn ~ 1750 5200
+NoConn ~ 1750 5300
+NoConn ~ 1750 5000
+NoConn ~ 3350 4000
+$Comp
+L special-azonenberg:CONN_INTEGRALSTICK_MCU_HOST J1
+U 7 1 5C593989
+P 1700 7550
+F 0 "J1" H 1842 9325 50  0000 C CNN
+F 1 "CONN_INTEGRALSTICK_MCU_HOST" H 1842 9234 50  0000 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 1700 7550 50  0001 C CNN
+F 3 "" H 1700 7550 50  0001 C CNN
+	7    1700 7550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 5650 7500 5650
+$Comp
+L special-azonenberg:CONN_INTEGRALSTICK_MCU_HOST J1
+U 9 1 5C5A239B
+P 7400 6300
+F 0 "J1" H 7542 7475 50  0000 C CNN
+F 1 "CONN_INTEGRALSTICK_MCU_HOST" H 7542 7384 50  0000 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 7400 6300 50  0001 C CNN
+F 3 "" H 7400 6300 50  0001 C CNN
+	9    7400 6300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 5550 7500 5550
+Wire Wire Line
+	7600 5450 7500 5450
+Wire Wire Line
+	7600 5350 7500 5350
+Text Label 1900 6500 0    50   ~ 0
+PMOD2_DQ1
+Wire Wire Line
+	1900 6500 1800 6500
+Wire Wire Line
+	1750 5400 1850 5400
+Wire Wire Line
+	1900 6400 1800 6400
+Wire Wire Line
+	1900 6600 1800 6600
+Wire Wire Line
+	1900 6300 1800 6300
+Wire Wire Line
+	1900 6200 1800 6200
+Wire Wire Line
+	1900 6100 1800 6100
+Wire Wire Line
+	1900 6000 1800 6000
+$Comp
+L special-azonenberg:CONN_INTEGRALSTICK_MCU_HOST J1
+U 6 1 5C4FCA66
+P 3100 7550
+F 0 "J1" H 3242 9325 50  0000 C CNN
+F 1 "CONN_INTEGRALSTICK_MCU_HOST" H 3242 9234 50  0000 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 3100 7550 50  0001 C CNN
+F 3 "" H 3100 7550 50  0001 C CNN
+	6    3100 7550
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 1800 6900
+NoConn ~ 1800 7000
+NoConn ~ 1800 7100
+NoConn ~ 1800 7200
+NoConn ~ 1800 7300
+NoConn ~ 1800 7400
+NoConn ~ 1800 7500
+NoConn ~ 3200 6700
+NoConn ~ 3200 6600
+NoConn ~ 3200 6200
+NoConn ~ 3200 6100
+NoConn ~ 3200 6000
+NoConn ~ 3350 5200
+NoConn ~ 3350 5300
+NoConn ~ 3350 5400
+NoConn ~ 3350 4900
+NoConn ~ 3350 4700
+NoConn ~ 3350 3900
+NoConn ~ 3350 4100
+NoConn ~ 7500 6250
+NoConn ~ 7500 6150
+NoConn ~ 7500 6050
+NoConn ~ 7500 5950
+NoConn ~ 7500 5850
+NoConn ~ 7500 5750
+Text Label 1900 6800 0    50   ~ 0
+ETH_LED1_P
+Text Label 1900 6700 0    50   ~ 0
+ETH_LED2_P
+$Comp
+L special-azonenberg:CONN_INTEGRALSTICK_MCU_HOST J1
+U 3 1 5C396410
+P 3250 4150
+F 0 "J1" H 3250 4100 50  0000 L CNN
+F 1 "CONN_INTEGRALSTICK_MCU_HOST" H 3250 4000 50  0000 L CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 3250 4150 50  0001 C CNN
+F 3 "" H 3250 4150 50  0001 C CNN
+	3    3250 4150
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 3350 3700
+NoConn ~ 3350 3800
+Wire Wire Line
+	1900 6700 1800 6700
+Wire Wire Line
+	1800 6800 1900 6800
+$EndSCHEMATC
