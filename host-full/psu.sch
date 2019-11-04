@@ -1,0 +1,394 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 2 4
+Title "INTEGRALSTICK Full Host"
+Date "2019-11-03"
+Rev "0.1"
+Comp "Antikernel Labs"
+Comment1 "Andrew D. Zonenberg"
+Comment2 "Power Supply"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L special-azonenberg:CONN_INTEGRALSTICK_FPGA_HOST J?
+U 1 1 5DF74650
+P 12950 8150
+AR Path="/5DF74650" Ref="J?"  Part="1" 
+AR Path="/5DF7080A/5DF74650" Ref="J2"  Part="1" 
+F 0 "J2" H 13425 11325 50  0000 C CNN
+F 1 "CONN_INTEGRALSTICK_FPGA_HOST" H 13425 11234 50  0000 C CNN
+F 2 "" H 12950 8150 50  0001 C CNN
+F 3 "" H 12950 8150 50  0001 C CNN
+	1    12950 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L special-azonenberg:CONN_INTEGRALSTICK_MCU_HOST J?
+U 1 1 5DF7920E
+P 13000 4650
+AR Path="/5DF7920E" Ref="J?"  Part="1" 
+AR Path="/5DF7080A/5DF7920E" Ref="J1"  Part="1" 
+F 0 "J1" H 13450 8425 50  0000 C CNN
+F 1 "CONN_INTEGRALSTICK_MCU_HOST" H 13450 8334 50  0000 C CNN
+F 2 "" H 13000 4650 50  0001 C CNN
+F 3 "" H 13000 4650 50  0001 C CNN
+	1    13000 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14100 5900 14100 5800
+Connection ~ 14100 5300
+Wire Wire Line
+	14100 5300 14100 5200
+Connection ~ 14100 5400
+Wire Wire Line
+	14100 5400 14100 5300
+Connection ~ 14100 5500
+Wire Wire Line
+	14100 5500 14100 5400
+Connection ~ 14100 5600
+Wire Wire Line
+	14100 5600 14100 5500
+Connection ~ 14100 5700
+Wire Wire Line
+	14100 5700 14100 5600
+Connection ~ 14100 5800
+Wire Wire Line
+	14100 5800 14100 5700
+Text Label 14100 5200 0    50   ~ 0
+GND
+Wire Wire Line
+	14000 1800 14000 1700
+Connection ~ 14000 1200
+Wire Wire Line
+	14000 1200 14000 1100
+Connection ~ 14000 1300
+Wire Wire Line
+	14000 1300 14000 1200
+Connection ~ 14000 1400
+Wire Wire Line
+	14000 1400 14000 1300
+Connection ~ 14000 1500
+Wire Wire Line
+	14000 1500 14000 1400
+Connection ~ 14000 1600
+Wire Wire Line
+	14000 1600 14000 1500
+Connection ~ 14000 1700
+Wire Wire Line
+	14000 1700 14000 1600
+Text Label 14000 1100 0    50   ~ 0
+GND
+Wire Wire Line
+	14000 1800 14000 2000
+Connection ~ 14000 1800
+Connection ~ 14000 2000
+Wire Wire Line
+	14000 2000 14000 2100
+Connection ~ 14000 2100
+Wire Wire Line
+	14000 2100 14000 2200
+Connection ~ 14000 2200
+Wire Wire Line
+	14000 2200 14000 2300
+Connection ~ 14000 2300
+Wire Wire Line
+	14000 2300 14000 2400
+Wire Wire Line
+	12900 4500 12900 4400
+Connection ~ 12900 1200
+Wire Wire Line
+	12900 1200 12900 1100
+Connection ~ 12900 1300
+Wire Wire Line
+	12900 1300 12900 1200
+Connection ~ 12900 1400
+Wire Wire Line
+	12900 1400 12900 1300
+Connection ~ 12900 1500
+Wire Wire Line
+	12900 1500 12900 1400
+Connection ~ 12900 1600
+Wire Wire Line
+	12900 1600 12900 1500
+Connection ~ 12900 1700
+Wire Wire Line
+	12900 1700 12900 1600
+Connection ~ 12900 1800
+Wire Wire Line
+	12900 1800 12900 1700
+Connection ~ 12900 1900
+Wire Wire Line
+	12900 1900 12900 1800
+Connection ~ 12900 2000
+Wire Wire Line
+	12900 2000 12900 1900
+Connection ~ 12900 2100
+Wire Wire Line
+	12900 2100 12900 2000
+Connection ~ 12900 2200
+Wire Wire Line
+	12900 2200 12900 2100
+Connection ~ 12900 2300
+Wire Wire Line
+	12900 2300 12900 2200
+Connection ~ 12900 2400
+Wire Wire Line
+	12900 2400 12900 2300
+Connection ~ 12900 2500
+Wire Wire Line
+	12900 2500 12900 2400
+Connection ~ 12900 2600
+Wire Wire Line
+	12900 2600 12900 2500
+Connection ~ 12900 2700
+Wire Wire Line
+	12900 2700 12900 2600
+Connection ~ 12900 2800
+Wire Wire Line
+	12900 2800 12900 2700
+Connection ~ 12900 2900
+Wire Wire Line
+	12900 2900 12900 2800
+Connection ~ 12900 3000
+Wire Wire Line
+	12900 3000 12900 2900
+Connection ~ 12900 3100
+Wire Wire Line
+	12900 3100 12900 3000
+Connection ~ 12900 3200
+Wire Wire Line
+	12900 3200 12900 3100
+Connection ~ 12900 3300
+Wire Wire Line
+	12900 3300 12900 3200
+Connection ~ 12900 3400
+Wire Wire Line
+	12900 3400 12900 3300
+Connection ~ 12900 3500
+Wire Wire Line
+	12900 3500 12900 3400
+Connection ~ 12900 3600
+Wire Wire Line
+	12900 3600 12900 3500
+Connection ~ 12900 3700
+Wire Wire Line
+	12900 3700 12900 3600
+Connection ~ 12900 3800
+Wire Wire Line
+	12900 3800 12900 3700
+Connection ~ 12900 3900
+Wire Wire Line
+	12900 3900 12900 3800
+Connection ~ 12900 4000
+Wire Wire Line
+	12900 4000 12900 3900
+Connection ~ 12900 4100
+Wire Wire Line
+	12900 4100 12900 4000
+Connection ~ 12900 4200
+Wire Wire Line
+	12900 4200 12900 4100
+Connection ~ 12900 4300
+Wire Wire Line
+	12900 4300 12900 4200
+Connection ~ 12900 4400
+Wire Wire Line
+	12900 4400 12900 4300
+Wire Wire Line
+	12750 5700 12750 5600
+Connection ~ 12750 5300
+Wire Wire Line
+	12750 5300 12750 5200
+Connection ~ 12750 5400
+Wire Wire Line
+	12750 5400 12750 5300
+Connection ~ 12750 5500
+Wire Wire Line
+	12750 5500 12750 5400
+Connection ~ 12750 5600
+Wire Wire Line
+	12750 5600 12750 5500
+Text Label 12750 5200 2    50   ~ 0
+5V0
+Wire Wire Line
+	12750 5900 12750 6000
+Connection ~ 12750 6000
+Wire Wire Line
+	12750 6000 12750 6100
+Connection ~ 12750 6100
+Wire Wire Line
+	12750 6100 12750 6200
+Connection ~ 12750 6200
+Wire Wire Line
+	12750 6200 12750 6300
+Connection ~ 12750 6300
+Wire Wire Line
+	12750 6300 12750 6400
+Connection ~ 12750 6400
+Wire Wire Line
+	12750 6400 12750 6500
+Connection ~ 12750 6500
+Wire Wire Line
+	12750 6500 12750 6600
+Connection ~ 12750 6600
+Wire Wire Line
+	12750 6600 12750 6700
+Connection ~ 12750 6700
+Wire Wire Line
+	12750 6700 12750 6800
+Wire Wire Line
+	12750 7000 12750 7100
+Connection ~ 12750 7100
+Wire Wire Line
+	12750 7100 12750 7200
+Connection ~ 12750 7200
+Wire Wire Line
+	12750 7200 12750 7300
+Connection ~ 12750 7300
+Wire Wire Line
+	12750 7300 12750 7400
+Connection ~ 12750 7400
+Wire Wire Line
+	12750 7400 12750 7500
+Connection ~ 12750 7500
+Wire Wire Line
+	12750 7500 12750 7600
+Connection ~ 12750 7600
+Wire Wire Line
+	12750 7600 12750 7700
+Connection ~ 12750 7700
+Wire Wire Line
+	12750 7700 12750 7800
+Connection ~ 12750 7800
+Wire Wire Line
+	12750 7800 12750 7900
+Connection ~ 12750 7900
+Wire Wire Line
+	12750 7900 12750 8000
+Connection ~ 12750 8000
+Wire Wire Line
+	12750 8000 12750 8100
+Text Label 12750 7000 2    50   ~ 0
+2V5
+Wire Wire Line
+	14100 6100 14100 6200
+Connection ~ 14100 6200
+Wire Wire Line
+	14100 6200 14100 6300
+Connection ~ 14100 6300
+Wire Wire Line
+	14100 6300 14100 6400
+Connection ~ 14100 6400
+Wire Wire Line
+	14100 6400 14100 6500
+Connection ~ 14100 6500
+Wire Wire Line
+	14100 6500 14100 6600
+Connection ~ 14100 6600
+Wire Wire Line
+	14100 6600 14100 6700
+Connection ~ 14100 6700
+Wire Wire Line
+	14100 6700 14100 6800
+Connection ~ 14100 6800
+Wire Wire Line
+	14100 6800 14100 6900
+Connection ~ 14100 6900
+Wire Wire Line
+	14100 6900 14100 7000
+Connection ~ 14100 7000
+Wire Wire Line
+	14100 7000 14100 7100
+Connection ~ 14100 7100
+Wire Wire Line
+	14100 7100 14100 7200
+Connection ~ 14100 7200
+Wire Wire Line
+	14100 7200 14100 7300
+Connection ~ 14100 7300
+Wire Wire Line
+	14100 7300 14100 7400
+Connection ~ 14100 7400
+Wire Wire Line
+	14100 7400 14100 7500
+Connection ~ 14100 7500
+Wire Wire Line
+	14100 7500 14100 7600
+Connection ~ 14100 7600
+Wire Wire Line
+	14100 7600 14100 7700
+Connection ~ 14100 7700
+Wire Wire Line
+	14100 7700 14100 7800
+Text Label 14100 6100 0    50   ~ 0
+3V3
+$Comp
+L power-azonenberg:CONN_3_PWROUT K1
+U 1 1 5DFB2206
+P 1150 1000
+F 0 "K1" H 1017 1300 50  0000 C CNN
+F 1 "CONN_3_PWROUT" H 1017 1216 40  0000 C CNN
+F 2 "" H 1150 1000 60  0000 C CNN
+F 3 "" H 1150 1000 60  0000 C CNN
+	1    1150 1000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1000 1500 1100
+Text Label 1500 1100 0    50   ~ 0
+GND
+Text Label 1500 900  0    50   ~ 0
+5V0_UNFUSED
+$Comp
+L power-azonenberg:FUSE_PWROUT F1
+U 1 1 5DFB7FB2
+P 2350 900
+F 0 "F1" H 2350 1140 50  0000 C CNN
+F 1 "2A" H 2350 1049 50  0000 C CNN
+F 2 "" H 2350 900 60  0000 C CNN
+F 3 "" H 2350 900 60  0000 C CNN
+	1    2350 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 900  2100 900 
+$Comp
+L passive-azonenberg:INDUCTOR_PWROUT L7
+U 1 1 5DFBDA0D
+P 3050 900
+F 0 "L7" V 2892 900 40  0000 C CNN
+F 1 "BLM31KN271SH1L" V 2968 900 40  0000 C CNN
+F 2 "" H 3050 900 60  0000 C CNN
+F 3 "" H 3050 900 60  0000 C CNN
+	1    3050 900 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 900  2600 900 
+$Comp
+L device:C C75
+U 1 1 5DFC347C
+P 3450 1050
+F 0 "C75" H 3565 1096 50  0000 L CNN
+F 1 "47 uF" H 3565 1005 50  0000 L CNN
+F 2 "" H 3488 900 50  0001 C CNN
+F 3 "" H 3450 1050 50  0001 C CNN
+	1    3450 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 900  3350 900 
+Text HLabel 3450 1200 0    50   Output ~ 0
+GND
+Text HLabel 12900 1100 0    50   Output ~ 0
+3V3
+Text HLabel 12750 5900 0    50   Output ~ 0
+1V8
+Text Label 3450 900  0    50   ~ 0
+5V0
+$EndSCHEMATC
