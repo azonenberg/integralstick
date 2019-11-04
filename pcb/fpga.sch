@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:integralstick-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8

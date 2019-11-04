@@ -6,6 +6,9 @@ MEMORY
 	SRAM1(RW):	ORIGIN = 0x20020000, LENGTH = 368K
 	DTCM(RW):	ORIGIN = 0x20000000, LENGTH = 128K
 	SRAM2(RW):	ORIGIN = 0x2007c000, LENGTH = 16K
+
+	/* SFRs */
+	AHB1(RW):	ORIGIN = 0x40020000, LENGTH = 384K
 }
 
 SECTIONS
@@ -43,4 +46,39 @@ SECTIONS
 		. += 0x8000;
 		__stack_end = .;
 	} > DTCM
+
+	/* SFRs */
+	.sfr_ahb1 :
+	{
+
+		. = ALIGN(1024);
+		*(.gpioa)
+		. = ALIGN(1024);
+		*(.gpiob)
+		. = ALIGN(1024);
+		*(.gpioc)
+		. = ALIGN(1024);
+		*(.gpiod)
+		. = ALIGN(1024);
+		*(.gpioe)
+		. = ALIGN(1024);
+		*(.gpiof)
+		. = ALIGN(1024);
+		*(.gpiog)
+		. = ALIGN(1024);
+		*(.gpioh)
+		. = ALIGN(1024);
+		*(.gpioi)
+		. = ALIGN(1024);
+		*(.gpioj)
+		. = ALIGN(1024);
+		*(.gpiok)
+
+		. += 1024;		/* reserved 4002_2c00 */
+		. += 1024;		/* CRC not yet implemented */
+		. += 1024;		/* reserved 4002_3400 */
+
+		. = ALIGN(1024);
+		*(.rcc)
+	} > AHB1
 }

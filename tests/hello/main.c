@@ -1,26 +1,22 @@
+#include "stm32f7.h"
+
 int main()
 {
-	volatile unsigned int* signature = 0x2007c000;
-	*signature = 0xdeadc0de;
-
-	volatile unsigned int* GPIOA_BASE = (volatile unsigned int*)(0x40020000);
+	//configure PLL
+	//(0 wait states up to 30 MHz, configure flash later)
+	//HSI clock is internal 16 MHz
 
 	//enable gpio port a
-	volatile unsigned int* RCC_AHB1ENR = (volatile unsigned int*)(0x40023830);
-	*RCC_AHB1ENR = (*RCC_AHB1ENR) | 0x1;
+	RCC.AHB1ENR |= RCC_AHB1_GPIOA;
 
 	//set as output
-	volatile unsigned int* GPIOA_MODER = (volatile unsigned int*)(0x40020000);
-	*GPIOA_MODER = (*GPIOA_MODER) | 0x40;
+	GPIOA.MODER |= 0x40;
 
 	//toggle PA3 in a loop
-	volatile unsigned int* GPIOA_ODR = (volatile unsigned int*)(0x40020014);
 	while(1)
 	{
-		*signature = 0xcafebabe;
-		*GPIOA_ODR = 0x0;
-		*signature = 0x8badf00d;
-		*GPIOA_ODR = 0x8;
+		GPIOA.ODR = 0x0;
+		GPIOA.ODR = 0x8;
 	}
 
 	return 0;
