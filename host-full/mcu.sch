@@ -5,11 +5,11 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 4
 Title "INTEGRALSTICK Full Host"
-Date "2019-11-03"
+Date "2019-11-04"
 Rev "0.1"
 Comp "Antikernel Labs"
 Comment1 "Andrew D. Zonenberg"
-Comment2 ""
+Comment2 "PMOD connectors"
 Comment3 ""
 Comment4 ""
 $EndDescr

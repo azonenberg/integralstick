@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
 Title "INTEGRALSTICK Full Host"
-Date "2019-11-03"
+Date "2019-11-04"
 Rev "0.1"
 Comp "Antikernel Labs"
 Comment1 "Andrew D. Zonenberg"
@@ -13,25 +13,16 @@ Comment2 "Top Level"
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L special-azonenberg:CONN_INTEGRALSTICK_FPGA_HOST J2
-U 3 1 5DBBCD32
-P 9600 5900
-F 0 "J2" H 9600 5850 50  0000 L CNN
-F 1 "CONN_INTEGRALSTICK_FPGA_HOST" H 9600 5750 50  0000 L CNN
-F 2 "" H 9600 5900 50  0001 C CNN
-F 3 "" H 9600 5900 50  0001 C CNN
-	3    9600 5900
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 700  850  800  650 
 U 5DF7080A
 F0 "Power Supply" 50
 F1 "psu.sch" 50
 F2 "GND" O R 1500 1400 50 
-F4 "3V3" O R 1500 1000 50 
-F5 "1V8" O R 1500 1200 50 
+F3 "3V3" O R 1500 1000 50 
+F4 "1V8" O R 1500 1200 50 
+F5 "2V5" O R 1500 1100 50 
+F6 "1V2" O R 1500 1300 50 
 $EndSheet
 $Sheet
 S 700  1750 800  300 
@@ -93,10 +84,8 @@ F 3 "" H 1800 6850 60  0000 C CNN
 $EndComp
 Text Label 1800 5750 0    50   ~ 0
 3V3
-Text Notes 700  700  0    50   ~ 0
-Ethernet 2V5, 1V2 are high power rails we need to generate\n1V8, 3V3 are just RGMII power
 Text Label 1500 2450 0    50   ~ 0
-ETH_2V5
+2V5
 Text Label 1500 2350 0    50   ~ 0
 3V3
 Text Label 1500 1850 0    50   ~ 0
@@ -108,7 +97,7 @@ GND
 Text Label 1500 2550 0    50   ~ 0
 1V8
 Text Label 1500 2650 0    50   ~ 0
-ETH_1V2
+1V2
 Text Label 1800 5850 0    50   ~ 0
 GND
 Wire Wire Line
@@ -363,14 +352,6 @@ Text Label 9400 3350 2    50   ~ 0
 LVDS_DQ1_P
 Text Label 9400 3450 2    50   ~ 0
 LVDS_DQ1_N
-NoConn ~ 9400 3650
-NoConn ~ 9400 3750
-NoConn ~ 9400 3950
-NoConn ~ 9400 4050
-NoConn ~ 9400 4250
-NoConn ~ 9400 4350
-NoConn ~ 9400 4550
-NoConn ~ 9400 4650
 NoConn ~ 9400 4850
 NoConn ~ 9400 4950
 NoConn ~ 9400 5150
@@ -391,4 +372,72 @@ Text Label 9400 5750 2    50   ~ 0
 ETH0_LED1_P
 Text Label 9400 5850 2    50   ~ 0
 ETH0_LED2_P
+Text Label 1500 1100 0    50   ~ 0
+2V5
+Text Label 1500 1300 0    50   ~ 0
+1V2
+Wire Wire Line
+	7000 3200 7000 3300
+Wire Wire Line
+	7000 3400 7000 3500
+Text Label 7000 3700 0    50   ~ 0
+LVDS_DQ2_P
+Text Label 7000 3800 0    50   ~ 0
+LVDS_DQ2_N
+Text Label 7000 3900 0    50   ~ 0
+LVDS_DQ3_P
+Text Label 7000 4000 0    50   ~ 0
+LVDS_DQ3_N
+Text Label 7000 4100 0    50   ~ 0
+LVDS_DQ4_P
+Text Label 7000 4200 0    50   ~ 0
+LVDS_DQ4_N
+$Comp
+L special-azonenberg:PMOD_HOST J?
+U 1 1 5E1F1FA5
+P 6800 4450
+AR Path="/5DF8FFFE/5E1F1FA5" Ref="J?"  Part="1" 
+AR Path="/5E1F1FA5" Ref="J23"  Part="1" 
+F 0 "J23" H 6867 5947 60  0000 C CNN
+F 1 "PMOD_HOST" H 6867 5841 60  0000 C CNN
+F 2 "" H 6800 4450 60  0001 C CNN
+F 3 "" H 6800 4450 60  0001 C CNN
+	1    6800 4450
+	-1   0    0    -1  
+$EndComp
+Text Label 7000 4300 0    50   ~ 0
+LVDS_DQ5_P
+Text Label 7000 4400 0    50   ~ 0
+LVDS_DQ5_N
+$Comp
+L special-azonenberg:CONN_INTEGRALSTICK_FPGA_HOST J2
+U 3 1 5DBBCD32
+P 9600 5900
+F 0 "J2" H 9600 5850 50  0000 L CNN
+F 1 "CONN_INTEGRALSTICK_FPGA_HOST" H 9600 5750 50  0000 L CNN
+F 2 "" H 9600 5900 50  0001 C CNN
+F 3 "" H 9600 5900 50  0001 C CNN
+	3    9600 5900
+	1    0    0    -1  
+$EndComp
+Text Label 9400 3650 2    50   ~ 0
+LVDS_DQ2_P
+Text Label 9400 3750 2    50   ~ 0
+LVDS_DQ2_N
+Text Label 9400 3950 2    50   ~ 0
+LVDS_DQ3_P
+Text Label 9400 4050 2    50   ~ 0
+LVDS_DQ3_N
+Text Label 9400 4250 2    50   ~ 0
+LVDS_DQ4_P
+Text Label 9400 4350 2    50   ~ 0
+LVDS_DQ4_N
+Text Label 9400 4550 2    50   ~ 0
+LVDS_DQ5_P
+Text Label 9400 4650 2    50   ~ 0
+LVDS_DQ5_N
+Text Label 7000 3200 0    50   ~ 0
+3V3
+Text Label 7000 3400 0    50   ~ 0
+GND
 $EndSCHEMATC

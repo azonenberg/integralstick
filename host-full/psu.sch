@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 2 4
 Title "INTEGRALSTICK Full Host"
-Date "2019-11-03"
+Date "2019-11-04"
 Rev "0.1"
 Comp "Antikernel Labs"
 Comment1 "Andrew D. Zonenberg"
@@ -273,8 +273,6 @@ Wire Wire Line
 Connection ~ 12750 8000
 Wire Wire Line
 	12750 8000 12750 8100
-Text Label 12750 7000 2    50   ~ 0
-2V5
 Wire Wire Line
 	14100 6100 14100 6200
 Connection ~ 14100 6200
@@ -391,4 +389,284 @@ Text HLabel 12750 5900 0    50   Output ~ 0
 1V8
 Text Label 3450 900  0    50   ~ 0
 5V0
+Text Notes 1050 1600 0    50   ~ 0
+Power rails:\n3 PHYs * 221 mA = 663 mA @ 1V2\n3 PHYs * 58.8 mA = 176 mA @ 2V5
+Text HLabel 12750 7000 0    50   Output ~ 0
+2V5
+Text HLabel 5150 2900 2    50   Output ~ 0
+1V2
+$Comp
+L power-azonenberg:SC185 U7
+U 1 1 5E16AEF4
+P 3400 3600
+F 0 "U7" H 3375 4687 60  0000 C CNN
+F 1 "SC185EUL" H 3375 4581 60  0000 C CNN
+F 2 "" H 3400 3600 60  0000 C CNN
+F 3 "" H 3400 3600 60  0000 C CNN
+	1    3400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L passive-azonenberg:INDUCTOR_PWROUT L11
+U 1 1 5E17287D
+P 4750 2900
+F 0 "L11" V 4592 2900 40  0000 C CNN
+F 1 "1 uH" V 4668 2900 40  0000 C CNN
+F 2 "" H 4750 2900 60  0000 C CNN
+F 3 "" H 4750 2900 60  0000 C CNN
+	1    4750 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 2900 4450 2900
+Wire Wire Line
+	5050 2900 5150 2900
+Text Notes 4900 2550 0    50   ~ 0
+1 uH TBD
+Wire Wire Line
+	4250 2900 4250 3000
+Connection ~ 4250 2900
+Connection ~ 4250 3000
+Wire Wire Line
+	4250 3000 4250 3100
+Wire Wire Line
+	4250 2800 4250 2650
+Wire Wire Line
+	4250 2650 5050 2650
+Wire Wire Line
+	5050 2650 5050 2900
+Connection ~ 5050 2900
+Text Label 2300 2800 2    50   ~ 0
+5V0
+Wire Wire Line
+	2500 2800 2500 2900
+Connection ~ 2500 2800
+$Comp
+L device:R R54
+U 1 1 5E198AEC
+P 2300 2950
+F 0 "R54" H 2370 2996 50  0000 L CNN
+F 1 "1" H 2370 2905 50  0000 L CNN
+F 2 "" V 2230 2950 50  0001 C CNN
+F 3 "" H 2300 2950 50  0001 C CNN
+	1    2300 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3100 2300 3100
+$Comp
+L device:C C85
+U 1 1 5E19F32B
+P 1800 2950
+F 0 "C85" H 1915 2996 50  0000 L CNN
+F 1 "0.1 uF" H 1915 2905 50  0000 L CNN
+F 2 "" H 1838 2800 50  0001 C CNN
+F 3 "" H 1800 2950 50  0001 C CNN
+	1    1800 2950
+	1    0    0    -1  
+$EndComp
+Text Label 1800 2800 2    50   ~ 0
+GND
+Wire Wire Line
+	1800 3100 2300 3100
+Connection ~ 2300 3100
+$Comp
+L device:C C86
+U 1 1 5E1B1E93
+P 1800 3650
+F 0 "C86" H 1915 3696 50  0000 L CNN
+F 1 "4.7 nF" H 1915 3605 50  0000 L CNN
+F 2 "" H 1838 3500 50  0001 C CNN
+F 3 "" H 1800 3650 50  0001 C CNN
+	1    1800 3650
+	1    0    0    -1  
+$EndComp
+Text Label 1800 3800 2    50   ~ 0
+GND
+Wire Wire Line
+	1800 3500 2500 3500
+Wire Wire Line
+	3200 3900 3300 3900
+Connection ~ 3300 3900
+Wire Wire Line
+	3300 3900 3400 3900
+Connection ~ 3400 3900
+Wire Wire Line
+	3400 3900 3500 3900
+Connection ~ 3500 3900
+Wire Wire Line
+	3500 3900 3600 3900
+Text Label 3100 3900 2    50   ~ 0
+GND
+Wire Wire Line
+	3100 3900 3200 3900
+Connection ~ 3200 3900
+Text Label 2500 3200 2    50   ~ 0
+5V0
+Text Label 2500 3300 2    50   ~ 0
+5V0
+$Comp
+L Connector:Conn_01x01 J22
+U 1 1 5E1CC0BB
+P 1250 3400
+F 0 "J22" H 1168 3175 50  0000 C CNN
+F 1 "TESTPAD" H 1168 3266 50  0000 C CNN
+F 2 "" H 1250 3400 50  0001 C CNN
+F 3 "~" H 1250 3400 50  0001 C CNN
+	1    1250 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:R R53
+U 1 1 5E1CC81F
+P 1600 3250
+F 0 "R53" H 1670 3296 50  0000 L CNN
+F 1 "10K" H 1670 3205 50  0000 L CNN
+F 2 "" V 1530 3250 50  0001 C CNN
+F 3 "" H 1600 3250 50  0001 C CNN
+	1    1600 3250
+	1    0    0    -1  
+$EndComp
+Text Label 1600 3100 2    50   ~ 0
+5V0
+Wire Wire Line
+	1450 3400 1600 3400
+Connection ~ 1600 3400
+Wire Wire Line
+	1600 3400 2500 3400
+Text Label 2500 3400 2    50   ~ 0
+1V2_PGOOD
+Wire Wire Line
+	2300 2800 2500 2800
+Text Label 2300 2500 2    50   ~ 0
+GND
+$Comp
+L device:C C87
+U 1 1 5E1D501F
+P 2300 2650
+F 0 "C87" H 2415 2696 50  0000 L CNN
+F 1 "22 uF" H 2415 2605 50  0000 L CNN
+F 2 "" H 2338 2500 50  0001 C CNN
+F 3 "" H 2300 2650 50  0001 C CNN
+	1    2300 2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 2300 2800
+$Comp
+L device:C C88
+U 1 1 5E1E2C69
+P 5050 3050
+F 0 "C88" H 5165 3096 50  0000 L CNN
+F 1 "47 uF" H 5165 3005 50  0000 L CNN
+F 2 "" H 5088 2900 50  0001 C CNN
+F 3 "" H 5050 3050 50  0001 C CNN
+	1    5050 3050
+	1    0    0    -1  
+$EndComp
+Text Label 5050 3200 2    50   ~ 0
+GND
+$Comp
+L Connector:Conn_01x01 J24
+U 1 1 5E1F8CEF
+P 1250 4500
+F 0 "J24" H 1168 4275 50  0000 C CNN
+F 1 "TESTPAD" H 1168 4366 50  0000 C CNN
+F 2 "" H 1250 4500 50  0001 C CNN
+F 3 "~" H 1250 4500 50  0001 C CNN
+	1    1250 4500
+	-1   0    0    1   
+$EndComp
+Text Label 1450 4500 0    50   ~ 0
+1V2
+$Comp
+L Connector:Conn_01x01 J25
+U 1 1 5E1F95F7
+P 1250 4900
+F 0 "J25" H 1168 4675 50  0000 C CNN
+F 1 "TESTPAD" H 1168 4766 50  0000 C CNN
+F 2 "" H 1250 4900 50  0001 C CNN
+F 3 "~" H 1250 4900 50  0001 C CNN
+	1    1250 4900
+	-1   0    0    1   
+$EndComp
+Text Label 1450 4900 0    50   ~ 0
+1V8
+$Comp
+L Connector:Conn_01x01 J26
+U 1 1 5E1FF834
+P 1250 5250
+F 0 "J26" H 1168 5025 50  0000 C CNN
+F 1 "TESTPAD" H 1168 5116 50  0000 C CNN
+F 2 "" H 1250 5250 50  0001 C CNN
+F 3 "~" H 1250 5250 50  0001 C CNN
+	1    1250 5250
+	-1   0    0    1   
+$EndComp
+Text Label 1450 5250 0    50   ~ 0
+2V5
+$Comp
+L Connector:Conn_01x01 J27
+U 1 1 5E205A4A
+P 1250 5600
+F 0 "J27" H 1168 5375 50  0000 C CNN
+F 1 "TESTPAD" H 1168 5466 50  0000 C CNN
+F 2 "" H 1250 5600 50  0001 C CNN
+F 3 "~" H 1250 5600 50  0001 C CNN
+	1    1250 5600
+	-1   0    0    1   
+$EndComp
+Text Label 1450 5600 0    50   ~ 0
+3V3
+$Comp
+L Connector:Conn_01x01 J28
+U 1 1 5E20BBB7
+P 1250 5950
+F 0 "J28" H 1168 5725 50  0000 C CNN
+F 1 "TESTPAD" H 1168 5816 50  0000 C CNN
+F 2 "" H 1250 5950 50  0001 C CNN
+F 3 "~" H 1250 5950 50  0001 C CNN
+	1    1250 5950
+	-1   0    0    1   
+$EndComp
+Text Label 1450 5950 0    50   ~ 0
+5V0
+$Comp
+L Connector:Conn_01x01 J29
+U 1 1 5E211E99
+P 1250 6300
+F 0 "J29" H 1168 6075 50  0000 C CNN
+F 1 "TESTCLIP" H 1168 6166 50  0000 C CNN
+F 2 "" H 1250 6300 50  0001 C CNN
+F 3 "~" H 1250 6300 50  0001 C CNN
+	1    1250 6300
+	-1   0    0    1   
+$EndComp
+Text Label 1450 6300 0    50   ~ 0
+GND
+$Comp
+L Connector:Conn_01x01 J30
+U 1 1 5E281900
+P 1250 6650
+F 0 "J30" H 1168 6425 50  0000 C CNN
+F 1 "TESTCLIP" H 1168 6516 50  0000 C CNN
+F 2 "" H 1250 6650 50  0001 C CNN
+F 3 "~" H 1250 6650 50  0001 C CNN
+	1    1250 6650
+	-1   0    0    1   
+$EndComp
+Text Label 1450 6650 0    50   ~ 0
+GND
+$Comp
+L Connector:Conn_01x01 J31
+U 1 1 5E287B2B
+P 1250 7000
+F 0 "J31" H 1168 6775 50  0000 C CNN
+F 1 "TESTCLIP" H 1168 6866 50  0000 C CNN
+F 2 "" H 1250 7000 50  0001 C CNN
+F 3 "~" H 1250 7000 50  0001 C CNN
+	1    1250 7000
+	-1   0    0    1   
+$EndComp
+Text Label 1450 7000 0    50   ~ 0
+GND
 $EndSCHEMATC
