@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
 Title "INTEGRALSTICK Full Host"
-Date "2019-11-07"
+Date "2019-11-08"
 Rev "0.1"
 Comp "Antikernel Labs"
 Comment1 "Andrew D. Zonenberg"
@@ -287,7 +287,7 @@ F 3 "" H 2850 3700 50  0001 C CNN
 	1    2850 3700
 	1    0    0    -1  
 $EndComp
-Text Label 2700 3700 2    50   ~ 0
+Text Label 4100 4100 2    50   ~ 0
 LVDS_DQ0_P
 Text Label 2700 3900 2    50   ~ 0
 GND
@@ -304,7 +304,7 @@ F 3 "" H 2850 4100 50  0001 C CNN
 	1    2850 4100
 	1    0    0    -1  
 $EndComp
-Text Label 2700 4100 2    50   ~ 0
+Text Label 4100 3700 2    50   ~ 0
 LVDS_DQ0_N
 Text Label 2700 4300 2    50   ~ 0
 GND
@@ -321,7 +321,7 @@ F 3 "" H 4250 3700 50  0001 C CNN
 	1    4250 3700
 	1    0    0    -1  
 $EndComp
-Text Label 4100 3700 2    50   ~ 0
+Text Label 2700 4100 2    50   ~ 0
 LVDS_DQ1_P
 Text Label 4100 3900 2    50   ~ 0
 GND
@@ -338,7 +338,7 @@ F 3 "" H 4250 4100 50  0001 C CNN
 	1    4250 4100
 	1    0    0    -1  
 $EndComp
-Text Label 4100 4100 2    50   ~ 0
+Text Label 2700 3700 2    50   ~ 0
 LVDS_DQ1_N
 Text Label 4100 4300 2    50   ~ 0
 GND
@@ -352,12 +352,8 @@ Text Label 9400 3350 2    50   ~ 0
 LVDS_DQ1_P
 Text Label 9400 3450 2    50   ~ 0
 LVDS_DQ1_N
-NoConn ~ 9400 4850
-NoConn ~ 9400 4950
 NoConn ~ 9400 5150
 NoConn ~ 9400 5250
-NoConn ~ 9400 5450
-NoConn ~ 9400 5550
 Text Label 1500 1000 0    50   ~ 0
 3V3
 Text Label 1500 1200 0    50   ~ 0
@@ -380,17 +376,17 @@ Wire Wire Line
 	7000 3200 7000 3300
 Wire Wire Line
 	7000 3400 7000 3500
-Text Label 7000 3700 0    50   ~ 0
+Text Label 7000 4400 0    50   ~ 0
 LVDS_DQ2_P
-Text Label 7000 3800 0    50   ~ 0
+Text Label 7000 4300 0    50   ~ 0
 LVDS_DQ2_N
-Text Label 7000 3900 0    50   ~ 0
-LVDS_DQ3_P
-Text Label 7000 4000 0    50   ~ 0
-LVDS_DQ3_N
-Text Label 7000 4100 0    50   ~ 0
-LVDS_DQ4_P
 Text Label 7000 4200 0    50   ~ 0
+LVDS_DQ6_P
+Text Label 7000 4100 0    50   ~ 0
+LVDS_DQ6_N
+Text Label 7000 4000 0    50   ~ 0
+LVDS_DQ4_P
+Text Label 7000 3900 0    50   ~ 0
 LVDS_DQ4_N
 $Comp
 L special-azonenberg:PMOD_HOST J?
@@ -405,10 +401,10 @@ F 3 "" H 6800 4450 60  0001 C CNN
 	1    6800 4450
 	-1   0    0    -1  
 $EndComp
-Text Label 7000 4300 0    50   ~ 0
-LVDS_DQ5_P
-Text Label 7000 4400 0    50   ~ 0
-LVDS_DQ5_N
+Text Label 7000 3800 0    50   ~ 0
+LVDS_DQ8_P
+Text Label 7000 3700 0    50   ~ 0
+LVDS_DQ8_N
 $Comp
 L special-azonenberg:CONN_INTEGRALSTICK_FPGA_HOST J2
 U 3 1 5DBBCD32
@@ -424,20 +420,24 @@ Text Label 9400 3650 2    50   ~ 0
 LVDS_DQ2_P
 Text Label 9400 3750 2    50   ~ 0
 LVDS_DQ2_N
-Text Label 9400 3950 2    50   ~ 0
-LVDS_DQ3_P
-Text Label 9400 4050 2    50   ~ 0
-LVDS_DQ3_N
+Text Label 9400 4850 2    50   ~ 0
+LVDS_DQ6_P
+Text Label 9400 4950 2    50   ~ 0
+LVDS_DQ6_N
 Text Label 9400 4250 2    50   ~ 0
 LVDS_DQ4_P
 Text Label 9400 4350 2    50   ~ 0
 LVDS_DQ4_N
-Text Label 9400 4550 2    50   ~ 0
-LVDS_DQ5_P
-Text Label 9400 4650 2    50   ~ 0
-LVDS_DQ5_N
+Text Label 9400 5450 2    50   ~ 0
+LVDS_DQ8_P
+Text Label 9400 5550 2    50   ~ 0
+LVDS_DQ8_N
 Text Label 7000 3200 0    50   ~ 0
 3V3
 Text Label 7000 3400 0    50   ~ 0
 GND
+NoConn ~ 9400 4650
+NoConn ~ 9400 4550
+NoConn ~ 9400 4050
+NoConn ~ 9400 3950
 $EndSCHEMATC

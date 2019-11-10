@@ -5,7 +5,7 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 4 4
 Title "INTEGRALSTICK Full Host"
-Date "2019-11-07"
+Date "2019-11-08"
 Rev "0.1"
 Comp "Antikernel Labs"
 Comment1 "Andrew D. Zonenberg"
@@ -182,20 +182,18 @@ Wire Wire Line
 	20100 3350 20100 3550
 Text Label 20100 3550 2    50   ~ 0
 GND
-Text Label 17950 1450 0    50   ~ 0
-ETH0_1_P
 Text Label 17950 1550 0    50   ~ 0
+ETH0_1_P
+Text Label 17950 1450 0    50   ~ 0
 ETH0_1_N
 Text Label 17950 1750 0    50   ~ 0
 ETH0_2_P
 Text Label 17950 1850 0    50   ~ 0
 ETH0_2_N
-Text Label 17950 2050 0    50   ~ 0
-ETH0_3_P
 Text Label 17950 2150 0    50   ~ 0
+ETH0_3_P
+Text Label 17950 2050 0    50   ~ 0
 ETH0_3_N
-Text Label 17950 2350 0    50   ~ 0
-ETH0_4_P
 Text Label 17950 2450 0    50   ~ 0
 ETH0_4_N
 $Comp
@@ -403,17 +401,17 @@ Text Label 1450 3400 2    50   ~ 0
 ETH1_1_P
 Text Label 1450 3500 2    50   ~ 0
 ETH1_1_N
-Text Label 1450 3600 2    50   ~ 0
-ETH1_2_P
 Text Label 1450 3700 2    50   ~ 0
+ETH1_2_P
+Text Label 1450 3600 2    50   ~ 0
 ETH1_2_N
 Text Label 1450 3800 2    50   ~ 0
 ETH1_3_P
 Text Label 1450 3900 2    50   ~ 0
 ETH1_3_N
-Text Label 1450 4000 2    50   ~ 0
-ETH1_4_P
 Text Label 1450 4100 2    50   ~ 0
+ETH1_4_P
+Text Label 1450 4000 2    50   ~ 0
 ETH1_4_N
 $Comp
 L special-azonenberg:CONN_INTEGRALSTICK_FPGA_HOST J?
@@ -428,7 +426,7 @@ F 3 "" H 7000 900 50  0001 C CNN
 	2    7000 900 
 	-1   0    0    1   
 $EndComp
-Text HLabel 1450 1450 0    50   Input ~ 0
+Text HLabel 8250 8000 0    50   Input ~ 0
 1V8
 Text HLabel 1450 1950 0    50   Input ~ 0
 1V2
@@ -475,21 +473,21 @@ Wire Wire Line
 Text Label 19950 4200 2    50   ~ 0
 3V3
 Text Label 4500 1350 0    50   ~ 0
-ETH1_LED1_N_1V8
+ETH1_LED1_N
 Wire Wire Line
 	4500 1350 4150 1350
 Connection ~ 4150 1350
 Text Label 4500 1250 0    50   ~ 0
-ETH1_LED2_N_1V8
+ETH1_LED2_N
 Wire Wire Line
 	4500 1250 3850 1250
 Connection ~ 3850 1250
 Text Notes 4500 900  0    50   ~ 0
 Strap: PHYADR[1:0] = 2'b00
-Text Label 7200 2750 0    50   ~ 0
-ETH1_LED2_N_1V8
-Text Label 7200 1050 0    50   ~ 0
-ETH1_LED1_N_1V8
+Text Label 7200 1650 0    50   ~ 0
+ETH3_LED2_N_1V8
+Text Label 7200 1850 0    50   ~ 0
+ETH3_LED1_N_1V8
 Text HLabel 19950 4000 0    50   Input ~ 0
 3V3
 Text Label 3700 1650 0    50   ~ 0
@@ -502,18 +500,18 @@ Text Label 3700 2050 0    50   ~ 0
 ETH1_TX_CLK
 Text Label 3700 2150 0    50   ~ 0
 ETH1_TX_EN
-Text Label 7200 1150 0    50   ~ 0
-ETH1_TXD0
-Text Label 7200 1250 0    50   ~ 0
-ETH1_TXD1
-Text Label 7200 1350 0    50   ~ 0
-ETH1_TXD2
-Text Label 7200 1450 0    50   ~ 0
-ETH1_TXD3
-Text Label 7200 1550 0    50   ~ 0
-ETH1_TX_CLK
-Text Label 7200 1650 0    50   ~ 0
-ETH1_TX_EN
+Text Label 7200 2750 0    50   ~ 0
+ETH3_TXD0
+Text Label 7200 2550 0    50   ~ 0
+ETH3_TXD1
+Text Label 7200 2350 0    50   ~ 0
+ETH3_TXD2
+Text Label 7200 2850 0    50   ~ 0
+ETH3_TXD3
+Text Label 7200 2650 0    50   ~ 0
+ETH3_TX_CLK
+Text Label 7200 2450 0    50   ~ 0
+ETH3_TX_EN
 Text Label 4100 2300 0    50   ~ 0
 ETH1_RXD3
 $Comp
@@ -622,7 +620,7 @@ F 3 "" H 4800 3000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 5100 3000 0    50   ~ 0
-1V8
+3V3
 Wire Wire Line
 	5100 3000 4950 3000
 Wire Wire Line
@@ -640,7 +638,7 @@ F 3 "" H 3850 3200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 4100 3200 0    50   ~ 0
-1V8
+3V3
 Wire Wire Line
 	4100 3200 4000 3200
 Text Notes 4350 3200 0    50   ~ 0
@@ -649,27 +647,24 @@ Text Label 4100 3300 0    50   ~ 0
 ETH1_RST_N
 Wire Wire Line
 	4100 3300 3700 3300
-Text Label 7200 2250 0    50   ~ 0
-ETH1_RXD3
-Text Label 7200 2350 0    50   ~ 0
-ETH1_RXD2
-Text Label 7200 2450 0    50   ~ 0
-ETH1_RXD1
-Text Label 7200 2550 0    50   ~ 0
-ETH1_RXD0
-Text Label 7200 2650 0    50   ~ 0
-ETH1_RX_DV
-Text Label 7200 950  0    50   ~ 0
-ETH1_RX_CLK
-Text Label 7200 2050 0    50   ~ 0
-ETH1_MDC
 Text Label 7200 2150 0    50   ~ 0
-ETH1_MDIO
+ETH3_RXD3
+Text Label 7200 1950 0    50   ~ 0
+ETH3_RXD2
 Text Label 7200 1750 0    50   ~ 0
-ETH1_RST_N
-NoConn ~ 7200 1950
-NoConn ~ 7200 1850
-NoConn ~ 7200 2850
+ETH3_RXD1
+Text Label 7200 1550 0    50   ~ 0
+ETH3_RXD0
+Text Label 7200 1350 0    50   ~ 0
+ETH3_RX_DV
+Text Label 7200 950  0    50   ~ 0
+ETH3_RX_CLK
+Text Label 7200 1050 0    50   ~ 0
+ETH3_MDC
+Text Label 7200 1150 0    50   ~ 0
+ETH3_MDIO
+Text Label 7200 1250 0    50   ~ 0
+ETH3_RST_N
 $Comp
 L device:R R9
 U 1 1 5DC51C19
@@ -738,7 +733,7 @@ Wire Wire Line
 	6000 3650 6400 3650
 Connection ~ 6000 3650
 Text Label 6750 3650 0    50   ~ 0
-1V8
+3V3
 Wire Wire Line
 	6750 3650 6400 3650
 Connection ~ 6400 3650
@@ -827,7 +822,7 @@ ETH1_LED1_N
 Text Label 19950 4300 2    50   ~ 0
 ETH1_LED2_N
 Text Label 1250 5500 2    50   ~ 0
-1V8
+3V3
 $Comp
 L device:C C2
 U 1 1 5DCAA237
@@ -1251,17 +1246,17 @@ Text Label 1450 9950 2    50   ~ 0
 ETH2_1_P
 Text Label 1450 10050 2    50   ~ 0
 ETH2_1_N
-Text Label 1450 10150 2    50   ~ 0
-ETH2_2_P
 Text Label 1450 10250 2    50   ~ 0
+ETH2_2_P
+Text Label 1450 10150 2    50   ~ 0
 ETH2_2_N
 Text Label 1450 10350 2    50   ~ 0
 ETH2_3_P
 Text Label 1450 10450 2    50   ~ 0
 ETH2_3_N
-Text Label 1450 10550 2    50   ~ 0
-ETH2_4_P
 Text Label 1450 10650 2    50   ~ 0
+ETH2_4_P
+Text Label 1450 10550 2    50   ~ 0
 ETH2_4_N
 $Comp
 L device:R R10
@@ -1447,7 +1442,7 @@ F 3 "" H 3850 9750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 4100 9750 0    50   ~ 0
-1V8
+3V3
 Wire Wire Line
 	4100 9750 4000 9750
 Text Notes 4350 9750 0    50   ~ 0
@@ -2061,18 +2056,14 @@ Text Label 8250 9950 2    50   ~ 0
 ETH3_1_P
 Text Label 8250 10050 2    50   ~ 0
 ETH3_1_N
-Text Label 8250 10150 2    50   ~ 0
-ETH3_2_P
 Text Label 8250 10250 2    50   ~ 0
+ETH3_2_P
+Text Label 8250 10150 2    50   ~ 0
 ETH3_2_N
 Text Label 8250 10350 2    50   ~ 0
 ETH3_3_P
-Text Label 8250 10450 2    50   ~ 0
-ETH3_3_N
-Text Label 8250 10550 2    50   ~ 0
-ETH3_4_P
 Text Label 8250 10650 2    50   ~ 0
-ETH3_4_N
+ETH3_4_P
 $Comp
 L device:R R25
 U 1 1 5DD845A3
@@ -2231,7 +2222,7 @@ F 3 "" H 11600 9550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 11900 9550 0    50   ~ 0
-3V3
+1V8
 Wire Wire Line
 	11900 9550 11750 9550
 Wire Wire Line
@@ -2326,7 +2317,7 @@ Wire Wire Line
 	12800 10200 13200 10200
 Connection ~ 12800 10200
 Text Label 13550 10200 0    50   ~ 0
-3V3
+1V8
 Wire Wire Line
 	13550 10200 13200 10200
 Connection ~ 13200 10200
@@ -2409,7 +2400,7 @@ Wire Wire Line
 Text Label 10500 8300 0    50   ~ 0
 ETH3_TXD1
 Text Label 8050 12050 2    50   ~ 0
-3V3
+1V8
 $Comp
 L device:C C38
 U 1 1 5DD846A8
@@ -2628,7 +2619,7 @@ Wire Wire Line
 Connection ~ 10850 13400
 Wire Wire Line
 	10850 13400 11400 13400
-Text Label 8250 8000 2    50   ~ 0
+Text Label 1450 1450 2    50   ~ 0
 3V3
 Text Label 8250 8500 2    50   ~ 0
 1V2
@@ -2637,9 +2628,9 @@ GND
 Text Label 8050 11500 2    50   ~ 0
 2V5
 Text Label 11300 7900 0    50   ~ 0
-ETH3_LED1_N
+ETH3_LED1_N_1V8
 Text Label 11300 7800 0    50   ~ 0
-ETH3_LED2_N
+ETH3_LED2_N_1V8
 Text Label 10500 8200 0    50   ~ 0
 ETH3_TXD0
 $Comp
@@ -2655,70 +2646,70 @@ F 3 "" H 9400 4300 50  0001 C CNN
 	4    9400 4300
 	-1   0    0    -1  
 $EndComp
-Text Label 9600 1150 0    50   ~ 0
-ETH2_TXD0
-Text Label 9600 1350 0    50   ~ 0
-ETH2_TXD2
-Text Label 9600 1450 0    50   ~ 0
-ETH2_TXD3
-Text Label 9600 1550 0    50   ~ 0
-ETH2_TX_CLK
-Text Label 9600 1650 0    50   ~ 0
-ETH2_TX_EN
-Text Label 9600 1250 0    50   ~ 0
-ETH2_TXD1
-Text Label 9600 1750 0    50   ~ 0
-ETH2_RXD3
-Text Label 9600 1850 0    50   ~ 0
-ETH2_RXD2
-Text Label 9600 1950 0    50   ~ 0
-ETH2_RXD1
-Text Label 9600 2050 0    50   ~ 0
-ETH2_RXD0
-Text Label 9600 2150 0    50   ~ 0
-ETH2_RX_DV
-Text Label 9600 950  0    50   ~ 0
-ETH2_RX_CLK
-Text Label 9600 2250 0    50   ~ 0
-ETH2_MDC
-Text Label 9600 2350 0    50   ~ 0
-ETH2_MDIO
-Text Label 9600 2450 0    50   ~ 0
-ETH2_RST_N
-Text Label 9600 2550 0    50   ~ 0
-ETH1_LED1_N
-Text Label 9600 2650 0    50   ~ 0
-ETH1_LED2_N
-Text Label 9600 2950 0    50   ~ 0
-ETH3_TXD2
-Text Label 9600 3050 0    50   ~ 0
-ETH3_TXD3
-Text Label 9600 3150 0    50   ~ 0
-ETH3_TX_CLK
-Text Label 9600 3250 0    50   ~ 0
-ETH3_TX_EN
-Text Label 9600 2850 0    50   ~ 0
-ETH3_TXD1
-Text Label 9600 2750 0    50   ~ 0
-ETH3_TXD0
-Text Label 9600 3450 0    50   ~ 0
-ETH3_RXD3
-Text Label 9600 3650 0    50   ~ 0
-ETH3_RXD2
-Text Label 9600 3750 0    50   ~ 0
-ETH3_RXD1
-Text Label 9600 3850 0    50   ~ 0
-ETH3_RXD0
-Text Label 9600 3950 0    50   ~ 0
-ETH3_RX_DV
-Text Label 9600 1050 0    50   ~ 0
-ETH3_RX_CLK
-Text Label 9600 4050 0    50   ~ 0
-ETH3_MDC
-Text Label 9600 4150 0    50   ~ 0
-ETH3_MDIO
 Text Label 9600 4250 0    50   ~ 0
-ETH3_RST_N
+ETH2_TXD0
+Text Label 9600 3850 0    50   ~ 0
+ETH2_TXD2
+Text Label 9600 3650 0    50   ~ 0
+ETH2_TXD3
+Text Label 9600 3450 0    50   ~ 0
+ETH2_TX_CLK
+Text Label 9600 3250 0    50   ~ 0
+ETH2_TX_EN
+Text Label 9600 4050 0    50   ~ 0
+ETH2_TXD1
+Text Label 9600 3050 0    50   ~ 0
+ETH2_RXD3
+Text Label 9600 2850 0    50   ~ 0
+ETH2_RXD2
+Text Label 9600 2650 0    50   ~ 0
+ETH2_RXD1
+Text Label 9600 2450 0    50   ~ 0
+ETH2_RXD0
+Text Label 9600 2250 0    50   ~ 0
+ETH2_RX_DV
+Text Label 9600 1050 0    50   ~ 0
+ETH2_RX_CLK
+Text Label 9600 2050 0    50   ~ 0
+ETH2_MDC
+Text Label 9600 1850 0    50   ~ 0
+ETH2_MDIO
+Text Label 9600 1650 0    50   ~ 0
+ETH2_RST_N
+Text Label 9600 1450 0    50   ~ 0
+ETH3_LED1_N
+Text Label 9600 1250 0    50   ~ 0
+ETH3_LED2_N
+Text Label 9600 3750 0    50   ~ 0
+ETH1_TXD2
+Text Label 9600 3150 0    50   ~ 0
+ETH1_TXD3
+Text Label 9600 2950 0    50   ~ 0
+ETH1_TX_CLK
+Text Label 9600 2750 0    50   ~ 0
+ETH1_TX_EN
+Text Label 9600 3950 0    50   ~ 0
+ETH1_TXD1
+Text Label 9600 4150 0    50   ~ 0
+ETH1_TXD0
+Text Label 9600 2550 0    50   ~ 0
+ETH1_RXD3
+Text Label 9600 2350 0    50   ~ 0
+ETH1_RXD2
+Text Label 9600 2150 0    50   ~ 0
+ETH1_RXD1
+Text Label 9600 1950 0    50   ~ 0
+ETH1_RXD0
+Text Label 9600 1750 0    50   ~ 0
+ETH1_RX_DV
+Text Label 9600 950  0    50   ~ 0
+ETH1_RX_CLK
+Text Label 9600 1550 0    50   ~ 0
+ETH1_MDC
+Text Label 9600 1350 0    50   ~ 0
+ETH1_MDIO
+Text Label 9600 1150 0    50   ~ 0
+ETH1_RST_N
 Text HLabel 10200 3350 2    50   Input ~ 0
 LVDS_CLK_N
 Text HLabel 10200 3550 2    50   Input ~ 0
@@ -2923,4 +2914,21 @@ Connection ~ 4400 5500
 Wire Wire Line
 	4950 5800 4400 5800
 Connection ~ 4400 5800
+Text Notes 1750 4300 0    50   ~ 0
+Pairs 2/4 swapped for routability
+Text Notes 1750 10850 0    50   ~ 0
+Pairs 2/4 swapped for routability
+Text Notes 8550 10850 0    50   ~ 0
+Pairs 2/4 swapped for routability
+Text Label 8250 10450 2    50   ~ 0
+ETH3_3_N
+Text Label 8250 10550 2    50   ~ 0
+ETH3_4_N
+Text Notes 17300 1350 0    50   ~ 0
+Pairs 1/3 swapped for routability
+Text Label 17950 2350 0    50   ~ 0
+ETH0_4_P
+NoConn ~ 7200 1450
+NoConn ~ 7200 2250
+NoConn ~ 7200 2050
 $EndSCHEMATC

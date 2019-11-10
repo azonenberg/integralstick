@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 2 4
 Title "INTEGRALSTICK Full Host"
-Date "2019-11-07"
+Date "2019-11-08"
 Rev "0.1"
 Comp "Antikernel Labs"
 Comment1 "Andrew D. Zonenberg"
