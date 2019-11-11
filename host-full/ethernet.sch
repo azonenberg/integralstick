@@ -5,7 +5,7 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 4 4
 Title "INTEGRALSTICK Full Host"
-Date "2019-11-08"
+Date "2019-11-10"
 Rev "0.1"
 Comp "Antikernel Labs"
 Comment1 "Andrew D. Zonenberg"
@@ -2931,4 +2931,25 @@ ETH0_4_P
 NoConn ~ 7200 1450
 NoConn ~ 7200 2250
 NoConn ~ 7200 2050
+$Comp
+L device:C C89
+U 1 1 5EBB13E4
+P 14500 14950
+F 0 "C89" H 14615 14996 50  0000 L CNN
+F 1 "0.47 uF" H 14615 14905 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 14538 14800 50  0001 C CNN
+F 3 "" H 14500 14950 50  0001 C CNN
+	1    14500 14950
+	1    0    0    -1  
+$EndComp
+Text Notes 14450 15250 0    50   ~ 0
+RGMII ref plane changing caps
+Text Label 14400 14800 2    50   ~ 0
+1V8
+Wire Wire Line
+	14400 14800 14500 14800
+Text Label 14400 15100 2    50   ~ 0
+GND
+Wire Wire Line
+	14400 15100 14500 15100
 $EndSCHEMATC

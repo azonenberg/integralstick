@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
 Title "INTEGRALSTICK Full Host"
-Date "2019-11-08"
+Date "2019-11-10"
 Rev "0.1"
 Comp "Antikernel Labs"
 Comment1 "Andrew D. Zonenberg"
@@ -440,4 +440,5 @@ NoConn ~ 9400 4650
 NoConn ~ 9400 4550
 NoConn ~ 9400 4050
 NoConn ~ 9400 3950
+NoConn ~ 7300 5450
 $EndSCHEMATC
