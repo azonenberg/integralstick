@@ -1,0 +1,38 @@
+Part number:		host-full v0.1
+
+General fabrication notes
+
+	* Boards are be individually routed.
+	* Board material is Isola 370HR
+	* Blue LPI solder mask on both sides of board. All vias to be tented.
+	* White LPI legend on both sides of board.
+	* Pad finish is ENIG.
+	* Finished board thickness is 1.6 mm.
+	* Electrical testing requested.
+	* The small soldermask apertures over traces are test points.
+	* Place UL mark and date code in the area marked on the "F. Fab" gerber layer.
+
+Suggested stackup
+	1	35 μm (1 oz) copper			Signal
+		Isola 370HR 2116 core
+	2	35 μm (1 oz) copper			Ground
+		Core(s) and prepregs as needed for 1.6mm finished PCB thickness
+	3	35 μm (1 oz) copper			Power
+		Isola 370HR 2116 core
+	4	35 μm (1 oz) copper			Signal
+
+File naming
+	host-full.d356				IPC D-356 electrical test netlist
+	host-full-Edge_Cuts.gbr		Board outline
+	host-full-F.Fab.gbr			Shows requested location of date code and UL marking
+	host-full-PTH.drl			Through-board plated holes
+	host-full-NPTH.drl			Through-board unplated holes
+	host-full-F_SilkS.gbr		Front silkscreen
+	host-full-F_Mask.gbr		Front solder mask
+	host-full-F_Cu.gbr			Layer 1 copper
+	host-full-In1_Cu.gbr		Layer 2 copper
+	host-full-In2_Cu.gbr		Layer 3 copper
+	host-full-B_Cu.gbr			Layer 4 copper
+	host-full-B_Mask.gbr		Back solder mask
+	host-full-B_SilkS.gbr		Back silkscreen
+
